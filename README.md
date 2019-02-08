@@ -1,6 +1,6 @@
 # New ml5 website
 
-------
+---
 
 ## Description
 
@@ -8,7 +8,7 @@ This is the experimental repo for a ml5 website redesign! ml5.js is a library fo
 
 See below for our roadmap and how to get involved in the project. 
 
-------
+---
 
 ## Road Map 
 
