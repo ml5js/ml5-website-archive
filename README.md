@@ -1,2 +1,4 @@
-# ml5-website-2
-Website redesign for ml5!
+# New ml5 website
+
+This is the experimental repo for a ml5 website redesign!
+
