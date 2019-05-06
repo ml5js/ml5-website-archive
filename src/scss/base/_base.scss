@@ -1,0 +1,110 @@
+html {
+  box-sizing: border-box;
+  background-color: white;
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: $primary-font-family;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+}
+
+a {
+  color: $primary-color;
+
+  &:hover {
+    color: $primary-color;
+  }
+
+  &:active {
+    color: $primary-color;
+  }
+}
+
+.gatsby-highlight-code-line {
+  background-color: #feb;
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #f99;
+}
+
+/**
+ * Add back the container background-color, border-radius, padding, margin
+ * and overflow that we removed from <pre>.
+ */
+.gatsby-highlight {
+  background-color: #fdf6e3;
+  border-radius: 0.3em;
+  margin: 0.5em 0;
+  padding: 1em;
+  overflow: auto;
+}
+
+/**
+ * Remove the default PrismJS theme background-color, border-radius, margin,
+ * padding and overflow.
+ * 1. Make the element just wide enough to fit its content.
+ * 2. Always fill the visible space in .gatsby-highlight.
+ * 3. Adjust the position of the line numbers
+ */
+.gatsby-highlight pre[class*="language-"] {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  overflow: initial;
+  float: left; /* 1 */
+  min-width: 100%; /* 2 */
+}
+
+code {
+  display: block;
+  background-color: #fdf6e3;
+}
+
+.number {
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  // display: -webkit-inline-flex;
+  display: inline !important;
+  font-size: 1rem !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+}
+
+.tag:not(body) {
+  /* -webkit-align-items: center; */
+  align-items: normal !important;
+  background-color: transparent !important;
+  /* border-radius: 4px; */
+  /* color: #4a4a4a; */
+  // display: -webkit-inline-flex;
+  display: inline !important;
+  font-size: 1rem !important;
+  height: 1em !important;
+  /* -webkit-justify-content: center; */
+  /* justify-content: center; */
+  /* line-height: 1.5; */
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  /* white-space: nowrap; */
+}

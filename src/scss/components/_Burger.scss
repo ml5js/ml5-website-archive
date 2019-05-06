@@ -1,0 +1,41 @@
+.Burger {
+  position: relative;
+  display: block;
+  height: $Navbar-height;
+  width: $Navbar-height;
+  margin-left: auto;
+  color: $purple;
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    display: block;
+    height: 1px;
+    left: calc(50% - 8px);
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    transition-duration: 86ms;
+    transition-property: background-color, opacity, -webkit-transform;
+    transition-property: background-color, opacity, transform;
+    transition-property: background-color, opacity, transform, -webkit-transform;
+    transition-timing-function: ease-out;
+    width: 16px;
+    background-color: currentColor;
+  }
+
+  span:nth-child(1) {
+    top: calc(50% - 6px);
+  }
+
+  span:nth-child(2) {
+    top: calc(50% - 1px);
+  }
+
+  span:nth-child(3) {
+    top: calc(50% + 4px);
+  }
+
+  @include tablet-up() {
+    display: none;
+  }
+}

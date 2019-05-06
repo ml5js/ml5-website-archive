@@ -1,0 +1,59 @@
+.Footer {
+  background-color: $primary-color;
+  display: flex;
+  padding-top: 56px;
+  padding-bottom: 30px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  justify-content: space-between;
+  a {
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: $secondary-font-color;
+    // background: white;
+  }
+}
+
+.Footer__logo {
+  padding-top: 40px;
+  padding-left: 56px;
+  padding-right: 56px;
+  img {
+    max-width: 70px;
+  }
+}
+
+.Footer__list {
+}
+
+.Footer__item {
+  display: block;
+  color: white;
+  font-size: $font-size-4;
+
+  margin-bottom: 0.5em;
+
+  padding-top: 0;
+  padding-bottom: 0;
+
+  &--title {
+    // padding: 0.5em 0.75em;
+    font-size: $font-size-4;
+    font-weight: $weight-bold;
+  }
+}
+
+.Footer__social {
+  display: flex;
+  align-items: stretch;
+  padding-left: 56px;
+
+  a {
+    width: 20px;
+    margin: 0.5rem 0.75rem;
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,35 @@
+.Post {
+  margin-bottom: 50px;
+}
+
+.Post__wrapper {
+  display: grid;
+  grid-gap: $gutter;
+  grid-template-columns: minmax(600px, 1fr) minmax(200px, 1fr);
+
+  @include referenceBreakpoint() {
+    grid-template-columns: auto;
+  }
+}
+
+.Post__thumbnail {
+  // width: 600px;
+}
+
+.Post__meta {
+}
+
+.Post__title {
+  color: $blue;
+  font-size: $font-size-1;
+}
+
+.Post__author {
+  color: $secondary-font-color;
+  font-size: $font-size-2;
+  margin-top: 0;
+}
+
+.Post__link {
+  color: $blue;
+}

@@ -1,0 +1,28 @@
+.ModelList {
+}
+
+.ModelList__item {
+}
+
+.ModelList__title {
+  font-size: $font-size-4;
+  color: $secondary-font-color;
+  line-height: 2em;
+  padding-left: 0.75rem;
+
+  a {
+    transition: color 0.3s;
+    color: $secondary-font-color;
+  }
+
+  a:hover {
+    color: $purple;
+  }
+}
+
+.ModelList__link {
+  &--active {
+    color: $purple !important;
+    font-weight: $weight-medium;
+  }
+}

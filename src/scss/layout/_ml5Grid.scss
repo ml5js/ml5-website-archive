@@ -1,0 +1,113 @@
+.ml5Grid__wrapper {
+  padding: $gutter;
+  width: 100%;
+}
+
+.ml5Grid__container {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: 200px minmax(350px, 1fr);
+
+  @include referenceBreakpoint() {
+    grid-template-columns: auto;
+    grid-template-rows: auto minmax(350px, 1fr);
+  }
+
+  &--homePage {
+    display: grid;
+    grid-gap: 24px;
+    grid-template-rows: calc(100vh - #{$Navbar-height}) auto auto auto auto auto;
+  }
+
+  &--communityPage {
+    grid-template-columns: auto 1fr auto;
+    @include referenceBreakpoint() {
+      grid-template-columns: auto;
+    }
+  }
+}
+
+.ml5Grid__content {
+  padding: $gutter;
+  max-width: 960px;
+  width: 100%;
+  margin: auto;
+  margin-top: 0;
+  overflow-x: auto;
+
+  @include tablet-up() {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  @include referenceBreakpoint() {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0;
+    width: auto;
+  }
+
+  &--footerlinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: $gutter;
+    text-align: center;
+  }
+}
+
+.ml5Grid__sidebar {
+  position: sticky;
+  overflow-y: auto;
+  height: calc(100vh - #{$Navbar-height} - #{$gutter});
+  top: calc(#{$Navbar-height} + #{$gutter});
+  grid-column: 1;
+  grid-row: 1;
+
+  @include referenceBreakpoint() {
+    height: auto;
+    background-color: aliceblue;
+    position: static;
+  }
+}
+
+.ml5Grid__sidebarTitle {
+  font-size: $font-size-4;
+  color: $secondary-color;
+  font-weight: $weight-bold;
+  line-height: 38px;
+  padding-left: 0.75rem;
+}
+
+.ml5Grid__footerContainer {
+  display: grid;
+  grid-gap: 24px;
+  width: 100%;
+
+  @include referenceBreakpoint() {
+    grid-template-columns: auto !important;
+  }
+
+  @include mobile-only() {
+    // grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
+  }
+
+  @include tablet-up() {
+    grid-template-columns: 200px 1fr;
+  }
+}
+
+.ml5Grid__itplogo {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+  justify-self: center;
+
+  img {
+    width: 70px;
+  }
+}
+
+.ml5Grid__postWrapper {
+  padding: 0 $gutter 0 $gutter;
+}

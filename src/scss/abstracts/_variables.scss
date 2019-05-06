@@ -1,0 +1,54 @@
+// Color
+$blue: #4a90e2;
+$purple: #a256ff;
+$green: #0ace81;
+$primary-color: $blue;
+$secondary-color: $purple;
+$primary-font-color: #000000 !default;
+$secondary-font-color: #4e4e4e !default;
+
+// Typography
+/// Brand font
+$primary-font-family: "HK Grotesk", sans-serif !default;
+$secondary-font-family: "HK Grotesk", "Arial", sans-serif !default;
+$monospace-font-family: monospace !default;
+
+$font-size-1: 30px; // for model name on model page
+$font-size-2: 18px; // for tabs
+$font-size-3: 18px; // for subjects headings in markdown
+$font-size-4: 16px; // Nav bar items, Sidebar list items, footer items
+$font-size-5: 16px; // code block
+$font-size-6: 10px; // tag
+$font-size-paragraph: 14px;
+$font-size-pitch: 18px;
+
+$weight-light: 300 !default;
+$weight-medium: 500 !default;
+$weight-normal: 400 !default;
+$weight-bold: 700 !default;
+
+// Resonpsiveness
+/// gap is acting as the horizontal gap of container
+$gap: 64px !default;
+/// fullhd >= 1472px;
+$fullhd: 1344px + (2 * $gap) !default;
+
+/// widescreen >= 1280px;
+$widescreen: 1152px + (2 * $gap) !default;
+
+/// desktop >= 1088px
+$desktop: 960px + (2 * $gap) !default;
+
+/// tablet >= 769px;
+$tablet: 769px !default;
+
+/// mobile
+$mobile: $tablet - 1px !default;
+
+/// special breakpoint for reference page
+/// 960
+
+///layout variables
+$Navbar-height: 3.75rem !default;
+$sidebar-width: 200px;
+$gutter: 1.5rem;

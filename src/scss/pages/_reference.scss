@@ -1,0 +1,16 @@
+.reference__wrapper {
+  ul {
+    // width:
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    width: 200px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    // padding: 3rem;
+  }
+
+  margin-bottom: 40vh;
+}

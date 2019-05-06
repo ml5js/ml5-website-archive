@@ -1,0 +1,16 @@
+.Sidebar {
+  position: sticky;
+  overflow-y: auto;
+  height: calc(100vh - 3.75rem);
+  top: calc(3.75rem + #{$gutter});
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.Sidebar__title {
+  font-size: $font-size-4;
+  color: $secondary-color;
+  font-weight: $weight-medium;
+  line-height: 38px;
+  padding-left: 0.75rem;
+}

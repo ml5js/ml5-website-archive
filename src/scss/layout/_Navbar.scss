@@ -1,0 +1,120 @@
+$Navbar-background-color: white !default;
+$Navbar-breakpoint: $tablet !default;
+
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: $Navbar-height;
+
+  display: flex;
+  align-items: stretch;
+
+  background-color: $Navbar-background-color;
+
+  z-index: 10;
+}
+
+.Navbar__wrapper {
+  display: block;
+  width: 100vw;
+  // padding-top: 0.8rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  // padding-bottom: 0.8rem;
+  min-height: $Navbar-height;
+
+  @include tablet-up() {
+    display: flex;
+  }
+
+  &.is-active {
+    box-shadow: 0px 0px 0px 10px $purple;
+  }
+}
+
+.Navbar__brand {
+  justify-content: flex-start;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-items: stretch;
+}
+
+.Navbar__tagline {
+  display: none;
+
+  &.is-active {
+    display: none !important;
+  }
+
+  @include tablet-up() {
+    display: flex;
+    align-items: stretch;
+  }
+}
+
+.Navbar__menu {
+  display: none;
+
+  @include tablet-up() {
+    display: flex;
+    align-items: stretch;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+
+  @include mobile-only() {
+    &.is-active {
+      display: block;
+      padding-bottom: $gutter;
+    }
+  }
+}
+
+.Navbar__itemContainer {
+  display: block;
+
+  @include tablet-up() {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+  }
+}
+
+.Navbar__item {
+  font-size: $font-size-4;
+  font-weight: $weight-medium;
+  color: #000000;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  position: relative;
+  transition: color 0.3s;
+  &:hover {
+    color: $purple;
+  }
+
+  &.is-active {
+    color: $purple;
+    font-weight: $weight-bold;
+  }
+
+  img {
+    max-height: 1.75rem;
+  }
+
+  span {
+    padding: 0 3px;
+    text-align: center;
+  }
+}
+
+//temporary overwrite
+.navbar-burger {
+  @include tablet-up() {
+    display: none;
+  }
+}

@@ -1,0 +1,41 @@
+.GridContainer {
+  // display: flex;
+  // flex-grow: 0.5;
+  // padding-left: 1.5rem;
+  // padding-right: 1.5rem;
+  // flex-wrap: wrap;
+  display: grid;
+  grid-gap: $gutter;
+  grid-auto-flow: column;
+
+  @include mobile-only() {
+    grid-auto-flow: row;
+  }
+
+  &--vertical {
+    grid-auto-flow: row;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--homeUpdate {
+    flex-direction: column;
+    width: 60%;
+    padding: 60px;
+    margin: auto;
+  }
+
+  &--hometeam {
+    flex-direction: column;
+    width: 50%;
+    // margin: auto;
+  }
+}
+
+.GridContainer__item {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0 $gutter;
+}

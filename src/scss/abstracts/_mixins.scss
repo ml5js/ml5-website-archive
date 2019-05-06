@@ -1,0 +1,43 @@
+// Responsiveness
+
+@mixin mobile-only() {
+  @media screen and (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet-up() {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin tablet-only() {
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    @content;
+  }
+}
+
+@mixin desktop-up() {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin widescreen() {
+  @media screen and (min-width: $widescreen) {
+    @content;
+  }
+}
+
+@mixin fullhd() {
+  @media screen and (min-width: $fullhd) {
+    @content;
+  }
+}
+
+@mixin referenceBreakpoint() {
+  @media screen and (max-width: 961px) {
+    @content;
+  }
+}

@@ -1,0 +1,9 @@
+.Section {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  padding-left: calc(#{$sidebar-width} + 3 * #{$gutter});
+  padding-right: $gutter;
+  padding-top: $gutter;
+  padding-bottom: $gutter;
+}

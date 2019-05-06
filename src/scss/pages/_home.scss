@@ -1,0 +1,170 @@
+.home__container {
+  padding: 0 $gutter;
+
+  //fullhd screen design
+  width: 100vw;
+
+  @include fullhd() {
+    max-width: 1440px;
+    margin: auto;
+  }
+}
+
+.home__featuredTitle {
+  color: white;
+  z-index: 2;
+  padding: calc(#{$gutter} * 2);
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  font-size: $font-size-1;
+}
+
+.home__featuredImage {
+  width: 100vw;
+  position: relative;
+  background-position: top left;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.home__overlay {
+  position: absolute;
+  background-color: #3636366e;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.home__gridContainer {
+  display: grid;
+  grid-gap: 12px;
+
+  @include tablet-up() {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.home__gridItem {
+  // grid-column: 2;
+  // grid-row: 1;
+  &--6out12 {
+    @include tablet-only() {
+      grid-column-start: 2;
+      grid-column-end: 12;
+    }
+
+    @include desktop-up() {
+      grid-column-start: 3;
+      grid-column-end: 11;
+    }
+
+    @include fullhd() {
+      grid-column-start: 4;
+      grid-column-end: 10;
+    }
+  }
+
+  &--10out12 {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+}
+
+.home__pitchTitle {
+  color: $purple !important;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: $font-size-1;
+}
+
+.home__pitchDescription {
+  font-size: $font-size-pitch;
+  font-weight: $weight-light;
+  margin: auto;
+  a {
+    color: $purple;
+  }
+}
+
+.home__figureWrapper {
+  // display: flex;
+  // align-items: center;
+  padding: $gutter 0;
+}
+
+.home__figure {
+  width: 100%;
+}
+
+.home__blurbs {
+  padding: calc(#{$gutter} * 2) $gutter;
+}
+
+.home__model {
+  padding: calc(#{$gutter} * 2) $gutter;
+
+  h2 {
+    color: #333333;
+    font-size: $font-size-1;
+    padding: 0 $gutter;
+  }
+}
+
+.home__update {
+  background-color: $green;
+  text-align: center;
+  padding: calc(#{$gutter} * 2) $gutter;
+  h2 {
+    color: whitesmoke;
+    font-size: $font-size-1;
+    line-height: 1.5em;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    color: white;
+    font-size: $font-size-3;
+  }
+
+  .home__gridItem--6out12 {
+    overflow-x: auto;
+  }
+}
+
+.home__team {
+  background-color: $purple;
+  padding: calc(#{$gutter} * 2) $gutter;
+  width: 100vw;
+
+  h2 {
+    color: whitesmoke;
+    font-size: $font-size-1;
+    padding: 0 $gutter;
+    margin-top: 0;
+  }
+
+  p {
+    color: whitesmoke;
+    padding: $gutter;
+    font-size: $font-size-pitch;
+  }
+}
+
+.home__teamWrapper {
+  display: flex;
+  padding: 0 $gutter;
+
+  @include mobile-only() {
+    flex-wrap: wrap;
+  }
+}
+
+.home__teamHeadshot {
+  width: 150px;
+  min-width: 150px;
+}
