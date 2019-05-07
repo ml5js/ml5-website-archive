@@ -28,17 +28,15 @@ Here is what we are currently working on:
 
 # ml5.js website 2.0
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/ml5-website-2/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/924e3469-3080-465f-a02b-26600b91c69b/deploy-status)](https://app.netlify.com/sites/ml5-website-2/deploys)
 
-This repo contains ml5.js website 2.0 that is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://www.netlifycms.org): **[Preview Link](https://ml5-documentation-site-preview.netlify.com/)**.
+This repo contains ml5.js website 2.0 that is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://www.netlifycms.org): **[Preview Link](https://ml5-website-2.netlify.com/)**.
 
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
 
-## Documentation
+## Updating Instructions
 
-**Site files**
-
-markdown source files
+### markdown source files
 
 - [docs/index.md](https://github.com/ml5js/ml5-website-2/blob/master/docs/index.md): home page content
 - [docs/getting-started/](https://github.com/ml5js/ml5-website-2/tree/master/docs/getting-started): Getting start docs, sorted by file names, except index.md
@@ -46,12 +44,18 @@ markdown source files
 - [docs/community/](https://github.com/ml5js/ml5-website-2/tree/master/docs/community): Experiments, currently feature image doesn't support gif and svg files
 - [docs/about.md](https://github.com/ml5js/ml5-website-2/blob/master/docs/about.md): about page content
 
-React pages
+### markdown templates
+
+- [getting-start markdown template](<https://github.com/ml5js/ml5-website-2/blob/master/markdown_templates/model(reference)-markdown-template.md>)
+- [Model(Reference) markdown template](https://github.com/ml5js/ml5-website-2/blob/master/markdown_templates/getting-started-template.md)
+- [community post markdown template](https://github.com/ml5js/ml5-website-2/blob/master/markdown_templates/community-markdown-template.md)
+
+### React pages
 
 - [src/pages](https://github.com/ml5js/ml5-website-2/tree/master/src/pages): pages(routes) that serve as a collective page of a group of child pages, ex. reference collective page, community collective page, tag collective page
 - [src/templates](https://github.com/ml5js/ml5-website-2/tree/master/src/templates): serve as the layout template for single markdown files
 
-Assets
+### Assets
 
 - [docs/assets](https://github.com/ml5js/ml5-website-2/tree/master/docs/assets): markdown file assets, use relative path `../assets/` or `./assets/` to embed in markdown files.
 - [src/img](https://github.com/ml5js/ml5-website-2/tree/master/src/img): site assets, logos, social platform icons
@@ -81,9 +85,3 @@ $ npm run serve
 ### Setting up the CMS
 
 Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick-start/#authentication) to set up authentication, and hosting.
-
-### Machine Learning Model Template
-
-- [model page markdown template]()
-- [tutorial page markdown template]()
-- [community post markdown template]()
