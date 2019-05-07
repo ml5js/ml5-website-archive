@@ -44,7 +44,7 @@ export default () => (
     query={graphql`
       query StartListQuery {
         allMarkdownRemark(
-          sort: { order: ASC, fields: [frontmatter___order] }
+          sort: { order: ASC, fields: [fields___slug] }
           filter: { frontmatter: { templateKey: { eq: "start-page" } } }
         ) {
           edges {

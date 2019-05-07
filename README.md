@@ -40,23 +40,23 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 
 markdown source files
 
-- [docs/reference/](): API documentation
-- [docs/tutorial/](): Getting start docs
+- [docs/index.md](): home page content
+- [docs/getting-started/](): Getting start docs, sorted by file names, except index.md
+- [docs/reference/](): API documentation, no sorting
 - [docs/community/](): Experiments, currently feature image doesn't support gif and svg files
 - [docs/about.md](): about page content
-- [src/pages/index.md](): home page content
 
 React pages
 
-- [src/pages](): routes that are a portal page for reference, community
-- [src/templates](): templates for different pages
+- [src/pages](): routes that are a collective page of a group of child pages, reference collective page, community collective page.
+- [src/templates](): react templates
 - [src/components](): react components
 
 Assets
 
-- [docs/assets](): post assets
+- [docs/assets](): markdown file assets, use relative path `../assets/` or `./assets/` to embed in markdown files.
 - [src/img](): site assets, logos, social platform icons
-- [static/img](): images that used in page content
+- [static/img](): images that used in templates
 
 **Style files**
 

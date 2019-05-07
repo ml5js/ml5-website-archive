@@ -19,13 +19,15 @@ examples:
   - demo: >-
 
       <div class="example">
-
+      <script src="../assets/scripts/example-image-classification.js"></script>
       <button id="btn" >test</button>
          <script>
+            let btn = document.getElementById('btn')
+            console.log(btn);
+            btn.addEventListener('click', ()=>{
+              console.log("XX");
+            })
 
-          function clickyes(){
-            console.log("x")
-          }
         </script>
       <img src="/assets/img/bird.jpg" id="targetImage" width=400/>
       <p id="status">Loading Model...</p>
@@ -86,7 +88,7 @@ examples:
 
 > ( A blue block use blockquote )
 >
-> ### ml5.charRNN(**model**, `?callback`) ( A syntax highlight use H5, which is green )
+> ### ml5.charRNN(**model**, **?callback**) ( A syntax highlight use H5, which is green )
 >
 > Generates content a stateless manner, based on some initial text (known as a "seed"). Returns a string.
 >

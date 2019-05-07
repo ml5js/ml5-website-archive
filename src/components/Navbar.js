@@ -73,7 +73,7 @@ const Navbar = class extends React.Component {
               <Link
                 className="Navbar__item"
                 activeClassName="is-active"
-                to="/tutorial/"
+                to="/getting-started/"
               >
                 Getting Started
               </Link>
