@@ -28,7 +28,7 @@ Here is what we are currently working on:
 
 # ml5.js website 2.0
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/ml5-website-2/deploys)
 
 This repo contains ml5.js website 2.0 that is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://www.netlifycms.org): **[Preview Link](https://ml5-documentation-site-preview.netlify.com/)**.
 
@@ -40,33 +40,22 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 
 markdown source files
 
-- [docs/index.md](): home page content
-- [docs/getting-started/](): Getting start docs, sorted by file names, except index.md
-- [docs/reference/](): API documentation, no sorting
-- [docs/community/](): Experiments, currently feature image doesn't support gif and svg files
-- [docs/about.md](): about page content
+- [docs/index.md](https://github.com/ml5js/ml5-website-2/blob/master/docs/index.md): home page content
+- [docs/getting-started/](https://github.com/ml5js/ml5-website-2/tree/master/docs/getting-started): Getting start docs, sorted by file names, except index.md
+- [docs/reference/](https://github.com/ml5js/ml5-website-2/tree/master/docs/reference): API documentation, no sorting
+- [docs/community/](https://github.com/ml5js/ml5-website-2/tree/master/docs/community): Experiments, currently feature image doesn't support gif and svg files
+- [docs/about.md](https://github.com/ml5js/ml5-website-2/blob/master/docs/about.md): about page content
 
 React pages
 
-- [src/pages](): routes that are a collective page of a group of child pages, reference collective page, community collective page.
-- [src/templates](): react templates
-- [src/components](): react components
+- [src/pages](https://github.com/ml5js/ml5-website-2/tree/master/src/pages): pages(routes) that serve as a collective page of a group of child pages, ex. reference collective page, community collective page, tag collective page
+- [src/templates](https://github.com/ml5js/ml5-website-2/tree/master/src/templates): serve as the layout template for single markdown files
 
 Assets
 
-- [docs/assets](): markdown file assets, use relative path `../assets/` or `./assets/` to embed in markdown files.
-- [src/img](): site assets, logos, social platform icons
-- [static/img](): images that used in templates
-
-**Style files**
-
-- [scss/abstract]()
-- [scss/base]()
-- [scss/components]()
-- [scss/layout]()
-- [scss/pages]()
-- [scss/vendors]()
-- [main.scss]()
+- [docs/assets](https://github.com/ml5js/ml5-website-2/tree/master/docs/assets): markdown file assets, use relative path `../assets/` or `./assets/` to embed in markdown files.
+- [src/img](https://github.com/ml5js/ml5-website-2/tree/master/src/img): site assets, logos, social platform icons
+- [static/img](https://github.com/ml5js/ml5-website-2/tree/master/static/assets/img)(**depracated**): images that used in templates
 
 ## Prerequisites
 
