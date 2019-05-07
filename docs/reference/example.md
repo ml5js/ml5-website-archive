@@ -10,12 +10,23 @@ tags:
 description: >-
   RNN and [LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) (Long Short Term Memory networks) are a type of Neural Network architecture useful for working with sequential data (like characters in text or the musical notes of a song) where the order of the that sequence matters. This class allows you run a model pre-trained on a body of text to generate new text.
 
+  <br/>
+  <br/>
 
   You can train your own models [using this tutorial](/docs/training-lstm) or use [this set of pre trained models](https://github.com/ml5js/ml5-data-and-training/tree/master/models/lstm).
 
 examples:
   - demo: >-
+
       <div class="example">
+
+      <button id="btn" >test</button>
+         <script>
+
+          function clickyes(){
+            console.log("x")
+          }
+        </script>
       <img src="/assets/img/bird.jpg" id="targetImage" width=400/>
       <p id="status">Loading Model...</p>
       <p>The MobileNet model labeled this as <span id="result">...</span>, with a confidence of <span id="probability">...</span>.</p>
@@ -36,7 +47,8 @@ examples:
         console.log(results); // Will output bounding boxes of detected objects
       });
   - demo: >-
-      const video = document.getElementById("video");
+      <div>
+          const video = document.getElementById("video");
 
       // Create a YOLO method
       const yolo = ml5.YOLO(video, modelLoaded);
@@ -50,7 +62,10 @@ examples:
       yolo.detect(function(err, results) {
         console.log(results); // Will output bounding boxes of detected objects
       });
+      </div>
+
     code: >-
+
       const video = document.getElementById("video");
 
       // Create a YOLO method
@@ -67,36 +82,38 @@ examples:
       });
 ---
 
-### Syntax ( A subject should use H3 )
+## Syntax ( A subject should use H2 )
 
-> ##### ml5.charRNN(**model**, **?callback**)
+> ( A blue block use blockquote )
+>
+> ### ml5.charRNN(**model**, `?callback`) ( A syntax highlight use H5, which is green )
 >
 > Generates content a stateless manner, based on some initial text (known as a "seed"). Returns a string.
 >
-> - **model** : The pre-trained charRNN model.
+> - `model`, **model** (props use strong or inline block inside a list item, which is purple): The pre-trained charRNN model.
 > - **callback** — Optional. A callback to be called once the model has loaded. If no callback is provided, it will return a promise that will be resolved once the model has loaded.
 
-### Properties
+## Properties
 
-##### .ready
+### .ready
 
 Boolean value that specifies if the model has loaded.
 
-##### .state
+### .state
 
 The current state of the model.
 
-##### .model
+### .model
 
 The pre-trained charRNN model.
 
-##### .vocabSize
+### .vocabSize
 
 The vocabulary size (or total number of possible characters).
 
-### Methods
+## Methods
 
-> ##### .generate(**options**, **?callback**)
+> ### .generate(**options**, **?callback**)
 >
 > Generates content in a stateless manner, based on some initial text (known as a "seed"). Returns a string.
 >
@@ -112,24 +129,24 @@ The vocabulary size (or total number of possible characters).
 >
 > - **callback** - Optional. A function to be called when the model has generated content. If no callback is provided, it will return a promise that will be resolved once the model has generated new content.
 
-> ##### .feed(**seed**, **?callback**)
+> ### .feed(**seed**, **?callback**)
 >
 > Feed a string of characters to the model state.
 >
 > - **seed** - A string to feed the charRNN model state.
 > - **callback** - Optional. A function to be called when the model finished adding the seed. If no callback is provided, it will return a promise that will be resolved once seed has been fed.
 
-> ##### .predict(**temperature**, **?callback**)
+> ### .predict(**temperature**, **?callback**)
 >
 > Feed a string of characters to the model state.
 >
 > - **predict** - Predict the next character based on the model's current state.
 > - **callback** - Optional. A function to be called when the model finished adding the seed. If no callback is provided, it will return a promise that will be resolved once the prediction has been generated.
 
-> ##### .reset()
+> ### .reset()
 >
 > Reset the model state
 
-### Source
+## Source
 
 [/src/charRNN/](https://github.com/ml5js/ml5-library/tree/master/src/charRNN)

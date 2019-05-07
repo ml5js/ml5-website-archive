@@ -23,7 +23,7 @@ export const ModelPageTemplate = ({
   return (
     <article className="ml5Grid__content">
       {helmet || ""}
-      <div className="">
+      <div className="docs">
         <h1 className="">
           {title}
           {tags && tags.length ? (

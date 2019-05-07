@@ -68,51 +68,6 @@ a {
   text-decoration: none;
 }
 
-blockquote {
-  // background-color: #f8f5ff;
-  padding: 1.75rem;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  margin-bottom: 2em;
-  border: 1px solid $blue;
-  border-radius: 5px;
-
-  strong {
-    color: whitesmoke !important;
-    font-family: $monospace-font-family;
-    background-color: $purple;
-    padding: 5px !important;
-    margin: 0px 3px;
-    border-radius: 5px;
-  }
-
-  .gatsby-highlight {
-    margin: $gutter;
-  }
-
-  h5 {
-    margin-top: 0;
-    margin-bottom: 0.5em;
-  }
-
-  p {
-    line-height: 2em;
-  }
-
-  p:not(:last-child) {
-    margin-bottom: 1.5em;
-  }
-
-  p:last-child {
-    margin-bottom: 1em;
-  }
-
-  li {
-    margin-bottom: 0.5em;
-  }
-}
-
 code.language-javascript {
   background-color: none !important;
 }
@@ -130,10 +85,73 @@ li {
   font-size: $font-size-paragraph !important;
   code {
     display: inline;
+    margin: 0px 3px;
+    padding: 5px !important;
+    border-radius: 5px;
     background-color: $purple !important;
-    color: white !important;
-    padding: 4px 7px !important;
-    margin: 0;
-    font-size: 16px !important;
+    color: whitesmoke !important;
+    font-size: $font-size-paragraph !important;
+    font-weight: $weight-bold;
+    font-family: $monospace-font-family !important;
+  }
+}
+
+// Docs typography
+.docs {
+  // inline code block: ``
+  :not(pre) > code[class*="language-"] {
+    display: inline;
+  }
+
+  // subheading
+  h2 {
+    font-size: $font-size-2;
+    font-weight: 700;
+    margin-top: 2em;
+  }
+
+  // property, method
+  h3 {
+    font-size: $font-size-5;
+    font-family: $monospace-font-family;
+    color: #6db51e;
+    line-height: 1.8;
+    margin: 1em 0 0 0;
+  }
+
+  // Blue outline block
+  blockquote {
+    padding: $gutter;
+    margin: 0 0 $gutter 0;
+    border: 1px solid $blue;
+    border-radius: 5px;
+
+    h3 {
+      margin-top: 0;
+    }
+
+    p {
+      line-height: 2em;
+      margin-bottom: 1.5em;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    // purple inline block
+    strong {
+      padding: 5px !important;
+      margin: 0px 3px;
+      border-radius: 5px;
+      color: whitesmoke !important;
+      font-family: $monospace-font-family;
+      background-color: $purple;
+    }
+
+    // code block nested in blue outline block
+    .gatsby-highlight {
+      margin: $gutter;
+    }
   }
 }

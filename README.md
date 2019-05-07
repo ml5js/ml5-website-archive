@@ -34,16 +34,28 @@ This repo contains ml5.js website 2.0 that is built with [Gatsby](https://www.ga
 
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
 
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/gatsby-starter-netlify-cms&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
-
 ## Documentation
 
 **Site files**
 
-- [src/pages](): routes for pages with URLs, mostly Markdown files and index pages
+markdown source files
+
+- [docs/reference/](): API documentation
+- [docs/tutorial/](): Getting start docs
+- [docs/community/](): Experiments, currently feature image doesn't support gif and svg files
+- [docs/about.md](): about page content
+- [src/pages/index.md](): home page content
+
+React pages
+
+- [src/pages](): routes that are a portal page for reference, community
 - [src/templates](): templates for different pages
 - [src/components](): react components
-- [src/img](): images that used in website structure
+
+Assets
+
+- [docs/assets](): post assets
+- [src/img](): site assets, logos, social platform icons
 - [static/img](): images that used in page content
 
 **Style files**
@@ -83,11 +95,6 @@ Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick
 
 ### Machine Learning Model Template
 
-- Title
-- Description
-- Tag
-- Example(code)
-- Documentation
-- Github Link
-- P5 sketch Link
-- Credit
+- [model page markdown template]()
+- [tutorial page markdown template]()
+- [community post markdown template]()
