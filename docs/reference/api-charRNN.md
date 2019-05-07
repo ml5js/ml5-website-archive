@@ -1,24 +1,22 @@
 ---
 templateKey: "model-page"
-id: CharRNN
 title: CharRNN()
-date: 2017-01-04T15:04:10.000Z
-featuredpost: true
-description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
 tags:
   - image
   - video
   - text
   - sound
+
+description: >-
+  RNN and [LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) (Long Short Term Memory networks) are a type of Neural Network architecture useful for working with sequential data (like characters in text or the musical notes of a song) where the order of the that sequence matters. This class allows you run a model pre-trained on a body of text to generate new text.
+
+  <br />
+  <br />
+
+  You can train your own models [using this tutorial](/docs/training-lstm) or use [this set of pre trained models](https://github.com/ml5js/ml5-data-and-training/tree/master/models/lstm).
 ---
 
-RNN and [LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) (Long Short Term Memory networks) are a type of Neural Network architecture useful for working with sequential data (like characters in text or the musical notes of a song) where the order of the that sequence matters. This class allows you run a model pre-trained on a body of text to generate new text.
-
-You can train your own models [using this tutorial](/docs/training-lstm) or use [this set of pre trained models](https://github.com/ml5js/ml5-data-and-training/tree/master/models/lstm).
-
-## Example
+### Example
 
 ```javascript
 // Create the character level generator with a pre trained model
@@ -37,90 +35,69 @@ rnn.generate({ seed: "the meaning of pizza is" }, function(err, results) {
 
 [Here](https://github.com/ml5js/ml5-examples/blob/master/p5js/LSTM/LSTM_Text/sketch.js) is a complete example using the [p5.js](https://p5js.org) library.
 
-## Syntax
+### Syntax
 
-```javascript
-ml5.charRNN(model, ?callback)
-```
+> ##### ml5.charRNN(**model**, **?callback**)
+>
+> <br />
+>
+> - **model** - The path to the trained charRNN model.
+> - **callback** - Optional. A callback to be called once the model has loaded. If no callback is provided, it will return a promise that will be resolved once the model has loaded.
 
-### Parameters
+### Properties
 
-- `model` - The path to the trained charRNN model.
+##### .ready
 
-- `callback` - Optional. A callback to be called once the model has loaded. If no callback is provided, it will return a promise that will be resolved once the model has loaded.
+Boolean value that specifies if the model has loaded.
 
-## Properties
+##### .state
 
-```javascript
-.ready
-```
+The current state of the model.
 
-> Boolean value that specifies if the model has loaded.
+##### .model
 
-```javascript
-.state
-```
+The pre-trained charRNN model.
 
-> The current state of the model.
+##### .vocabSize
 
-```javascript
-.model
-```
+The vocabulary size (or total number of possible characters).
 
-> The pre-trained charRNN model.
+### Methods
 
-```javascript
-.vocabSize
-```
-
-> The vocabulary size (or total number of possible characters).
-
-## Methods
-
-```javascript
-.generate(options, ?callback)
-```
-
+> ##### .generate(**options**, **?callback**)
+>
 > Generates content in a stateless manner, based on some initial text (known as a "seed"). Returns a string.
+>
+> - **options** - An object specifying the input parameters of seed, length and temperature. Default length is 20, temperature is 0.5 and seed is a random character from the model. The object should look like this:
+>
+> ```javascript
+> {
+>  seed: 'The meaning of pizza is'
+>  length: 20,
+>  temperature: 0.5
+> }
+> ```
+>
+> - **callback** - Optional. A function to be called when the model has generated content. If no callback is provided, it will return a promise that will be resolved once the model has generated new content.
 
-`options` - An object specifying the input parameters of seed, length and temperature. Default length is 20, temperature is 0.5 and seed is a random character from the model. The object should look like this:
-
-```javascript
-{
-  seed: 'The meaning of pizza is'
-  length: 20,
-  temperature: 0.5
-}
-```
-
-`callback` - Optional. A function to be called when the model has generated content. If no callback is provided, it will return a promise that will be resolved once the model has generated new content.
-
-```javascript
-.feed(seed, ?callback)
-```
-
+> ##### .feed(**seed**, **?callback**)
+>
 > Feed a string of characters to the model state.
+>
+> - **seed** - A string to feed the charRNN model state.
+> - **callback** - Optional. A function to be called when the model finished adding the seed. If no callback is provided, it will return a promise that will be resolved once seed has been fed.
 
-`seed` - A string to feed the charRNN model state.
-
-`callback` - Optional. A function to be called when the model finished adding the seed. If no callback is provided, it will return a promise that will be resolved once seed has been fed.
-
-```javascript
-.predict(temperature, ?callback)
-```
-
+> ##### .predict(**temperature**, **?callback**)
+>
 > Feed a string of characters to the model state.
+>
+> - **predict** - Predict the next character based on the model's current state.
+> - **callback** - Optional. A function to be called when the model finished adding the seed. If no callback is provided, it will return a promise that will be resolved once the prediction has been generated.
 
-`predict` - Predict the next character based on the model's current state.
-
-`callback` - Optional. A function to be called when the model finished adding the seed. If no callback is provided, it will return a promise that will be resolved once the prediction has been generated.
-
-```javascript
-.reset()
-```
-
+> ##### .reset()
+>
 > Reset the model state
 
-## Source
+### Source
 
 [/src/charRNN/](https://github.com/ml5js/ml5-library/tree/master/src/charRNN)

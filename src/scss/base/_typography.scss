@@ -48,7 +48,7 @@ h5 {
   font-family: $monospace-font-family;
   font-weight: $weight-bold;
   margin: auto;
-  margin-bottom: 0.5em;
+  margin-top: 1em;
   color: #6db51e;
   line-height: 2em;
 }
@@ -89,6 +89,11 @@ blockquote {
 
   .gatsby-highlight {
     margin: $gutter;
+  }
+
+  h5 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
   }
 
   p {

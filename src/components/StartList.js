@@ -19,7 +19,9 @@ class StartList extends React.Component {
                   to={model.fields.slug}
                   activeClassName="ModelList__link--active"
                 >
-                  {model.frontmatter.sidebar_label}
+                  {model.frontmatter.sidebar_label
+                    ? model.frontmatter.sidebar_label
+                    : model.frontmatter.title}
                 </Link>
               </div>
             </li>
@@ -42,7 +44,7 @@ export default () => (
     query={graphql`
       query StartListQuery {
         allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
+          sort: { order: ASC, fields: [frontmatter___order] }
           filter: { frontmatter: { templateKey: { eq: "start-page" } } }
         ) {
           edges {

@@ -30,13 +30,25 @@ class BlogRoll extends React.Component {
                 ) : null}
                 <header className="Post__meta">
                   <h2>
-                    <Link className="Post__title" to={post.fields.slug}>
-                      {post.frontmatter.title}
-                    </Link>
+                    {post.frontmatter.externalLink ? (
+                      <a
+                        className="Post__title"
+                        href={post.frontmatter.externalLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {post.frontmatter.title}
+                      </a>
+                    ) : (
+                      <Link className="Post__title" to={post.fields.slug}>
+                        {post.frontmatter.title}
+                      </Link>
+                    )}
                   </h2>
                   <h3 className="Post__author">By {post.frontmatter.author}</h3>
                   <p>
-                    {post.excerpt}
+                    {post.frontmatter.description}
+                    {/* {post.excerpt} */}
                     <br />
                     <br />
                     {post.frontmatter.externalLink ? (
@@ -95,10 +107,11 @@ export default () => (
                 slug
               }
               frontmatter {
+                templateKey
                 title
                 author
+                description
                 externalLink
-                templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
                 featuredimage {

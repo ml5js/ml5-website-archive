@@ -1,19 +1,22 @@
 ---
 templateKey: "model-page"
-id: FeatureExtractor
 title: featureExtractor()
 tags:
   - image
   - video
   - text
   - sound
+
+description: >-
+  You can use neural networks to recognize the content of images. Most of the time you will be using a "pre-trained" model trained on a large dataset to classify an image into a fixed set of categories. However you can also use a part of the pre-trained model: the [features](https://en.wikipedia.org/wiki/Feature_extraction). Those features allow you to 'retrain' or 'reuse' the model for a new custom task. This is known as [Transfer Learning](https://en.wikipedia.org/wiki/Transfer_learning).
+
+  <br/>
+  <br/>
+
+  This class allows you to extract features of an image via a pre-trained model and re-train that model with new data.
 ---
 
-You can use neural networks to recognize the content of images. Most of the time you will be using a "pre-trained" model trained on a large dataset to classify an image into a fixed set of categories. However you can also use a part of the pre-trained model: the [features](https://en.wikipedia.org/wiki/Feature_extraction). Those features allow you to 'retrain' or 'reuse' the model for a new custom task. This is known as [Transfer Learning](https://en.wikipedia.org/wiki/Transfer_learning).
-
-This class allows you to extract features of an image via a pre-trained model and re-train that model with new data.
-
-## Example
+### Example
 
 ```javascript
 // Extract the already learned features from MobileNet
@@ -50,82 +53,66 @@ classifier.classify(document.getElementById("dogB"), function(err, result) {
 
 [Here](https://github.com/ml5js/ml5-examples/blob/master/p5js/FeatureExtractor/FeatureExtractor_Image_Classification/sketch.js) is a complete example to create a custom classifier.
 
-## Syntax
+### Syntax
 
-```javascript
-ml5.featureExtractor(model, ?callback)
-```
-
-```javascript
-ml5.featureExtractor(model, ?options, ?callback)
-```
-
-### Parameters
-
-- `model` - The model from which extract the learned features. Case-insensitive
-- `callback` - Optional. A function to be executed once the model has been loaded. If no callback is provided, it will return a promise that will be resolved once the model has loaded.
-- `options` - Optional. An object containing custom options. For the MobileNet model these are the custom options you can reset:
-
-```javascript
-{
-  version: 1,
-  alpha: 1.0,
-  topk: 3,
-  learningRate: 0.0001,
-  hiddenUnits: 100,
-  epochs: 20,
-  numClasses: 2,
-  batchSize: 0.4,
-}
-```
+> ##### ml5.featureExtractor(**model**, **?callback**)
+>
+> ##### ml5.featureExtractor(**model**, **?options**, **?callback**)
+>
+> <br/>
+>
+> - **model** - The model from which extract the learned features. Case-insensitive
+> - **callback** - Optional. A function to be executed once the model has been loaded. If no callback is provided, it will return a promise that will be resolved once the model has loaded.
+> - **options** - Optional. An object containing custom options. For the MobileNet model these are the custom options you can reset:
+>
+> ```javascript
+> {
+>   version: 1,
+>   alpha: 1.0,
+>   topk: 3,
+>   learningRate: 0.0001,
+>   hiddenUnits: 100,
+>   epochs: 20,
+>   numClasses: 2,
+>   batchSize: 0.4,
+> }
+> ```
 
 ### MobileNet Features
 
----
-
 The following are the Properties and Methods when MobileNet is selected as the model from which to extract the Features:
 
-```javascript
-ml5.featureExtractor("MobileNet");
-```
+<br />
+
+> ##### ml5.featureExtractor("MobileNet");
 
 ### Properties
 
-```javascript
-.modelLoaded
-```
+##### .modelLoaded
 
-> Boolean value that specifies if the model has loaded.
+Boolean value that specifies if the model has loaded.
 
-```javascript
-.hasAnyTrainedClass
-```
+##### .hasAnyTrainedClass
 
-> Boolean value that specifies if new data has been added to the model
+Boolean value that specifies if new data has been added to the model
 
-```javascript
-.usageType
-```
+##### .usageType
 
-> String that specifies how is the Extractor being used. Possible values are 'regressor' and 'classifier'
+String that specifies how is the Extractor being used. Possible values are 'regressor' and 'classifier'
 
-```javascript
-.isPredicting
-```
+##### .isPredicting
 
-> Boolean value to check if the model is predicting.
+Boolean value to check if the model is predicting.
 
 ### Methods
 
-```javascript
-.classification(?video, ?callback)
-```
-
+> ##### .classification(**?video**, **?callback**)
+>
 > Use the features of MobileNet as a classifier
-
-`video` - Optional. An HTML video element or a p5.js video element.
-
-`callback` - Optional. A function to be called once the video is ready. If no callback is provided, it will return a promise that will be resolved once the video element has loaded.
+>
+> - **video** - Optional. An HTML video element or a p5.js video element.
+>
+> - **callback** - Optional. A function to be called once the video is ready. If no callback is provided, it will return a promise that will be resolved once the video element has loaded.
 
 ```javascript
 .regression(?video, ?callback)
@@ -189,6 +176,6 @@ ml5.featureExtractor("MobileNet");
 
 `callback` - Optional. A function to be called once the input has been predicted. If no callback is provided, it will return a promise that will be resolved once the model has predicted the image.
 
-## Source
+### Source
 
 [src/FeatureExtractor](https://github.com/ml5js/ml5-library/tree/master/src/FeatureExtractor)
