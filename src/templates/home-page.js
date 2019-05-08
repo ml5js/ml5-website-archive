@@ -30,7 +30,7 @@ export const HomePageTemplate = ({
       }}
     >
       <div className="home__overlay" />
-      <Link style={{zIndex:"9999"}} to="">
+      <Link style={{zIndex:"9"}} to="">
         {/* heading */}
         <h2 style={{width:"100%", 
         maxWidth:"680px", 
