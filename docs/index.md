@@ -73,8 +73,8 @@ model:
 
 team:
   heading: Meet our team!
-  image: ./assets/joey.png
-  profile: Joey Lee is a New York based designer, creative technologist, and geographer who leads the development of ml5.js by creating new examples, maintaining the library, doing code reviews, addressing issues, and merging/communicating with contributors.
+  image: ./assets/logo-purple-circle.png
+  profile: ml5.js is an open source project developed and maintained by NYU's Interactive Telecommunications/Interactive Media Arts program and by artists, designers, students, technologists, and developers from all over the world.
 ---
 
 ## Build tools using easy classification systems with tons of **pre trained models**!
