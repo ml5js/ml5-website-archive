@@ -22,26 +22,28 @@ export const HomePageTemplate = ({
 }) => (
   <div className="ml5Grid__container--homePage">
     <section
-      className="home__featuredImage"
+      className="circles-1"
       style={{display:"flex", 
       flexDirection:"column", 
       justifyContent:"center",
       alignItems:"center"
-    }}
+      }}
     >
       <div className="home__overlay" />
-      <Link to="">
+      <Link style={{zIndex:"9999"}} to="">
         {/* heading */}
         <h2 style={{width:"100%", 
         maxWidth:"680px", 
         fontSize:"4rem", 
         color:"#a15ffb",
+        backgroundColor:"white",
         textAlign:"center"}} className="home__heading">{heading}</h2>
         {/* subheading */}
         <p style={{width:"100%", 
         maxWidth:"680px", 
         fontSize:"1.5rem", 
         color:"#a15ffb",
+        backgroundColor:"white",
         textAlign:"center"}} className="home__subheading">{subheading}</p>
       </Link>
 
