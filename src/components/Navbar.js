@@ -41,15 +41,6 @@ const Navbar = class extends React.Component {
               <img src={logo} alt="ml5.js logo" />
             </Link>
             <div className={`Navbar__tagline ${this.state.navBarActiveClass}`}>
-              <span className="Navbar__item">
-                <span role="img" aria-label="star">
-                  🌟
-                </span>
-                <span>Friendly machine learning for the web!</span>
-                <span role="img" aria-label="star">
-                  🌟
-                </span>
-              </span>
             </div>
             {/* Hamburger menu */}
             <div

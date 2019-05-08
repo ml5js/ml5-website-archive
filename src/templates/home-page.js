@@ -11,6 +11,8 @@ export const HomePageTemplate = ({
   image,
   title,
   heading,
+  featureheading,
+  subheading,
   mainpitch,
   description,
   intro,
@@ -20,17 +22,34 @@ export const HomePageTemplate = ({
 }) => (
   <div className="ml5Grid__container--homePage">
     <section
-      className="home__featuredImage"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`
+      className="circles-1"
+      style={{display:"flex", 
+      flexDirection:"column", 
+      justifyContent:"center",
+      alignItems:"center"
       }}
     >
       <div className="home__overlay" />
-      <Link to="">
-        <h2 className="home__featuredTitle">{heading}</h2>
+      <Link style={{zIndex:"9"}} to="">
+        {/* heading */}
+        <h2 style={{width:"100%", 
+        maxWidth:"680px", 
+        fontSize:"4rem", 
+        color:"#a15ffb",
+        backgroundColor:"white",
+        textAlign:"center"}} className="home__heading">{heading}</h2>
+        {/* subheading */}
+        <p style={{width:"100%", 
+        maxWidth:"680px", 
+        fontSize:"1.5rem", 
+        color:"#a15ffb",
+        backgroundColor:"white",
+        textAlign:"center"}} className="home__subheading">{subheading}</p>
       </Link>
+
+      {/* <Link to="">
+        <h2 className="home__featuredTitle">{featureheading}</h2>
+      </Link> */}
     </section>
 
     <section className="home__container home__gridContainer">
@@ -103,6 +122,8 @@ const HomePage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
+        featureheading={frontmatter.featureheading}
+        subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
@@ -138,6 +159,8 @@ export const pageQuery = graphql`
           }
         }
         heading
+        featureheading
+        subheading
 
         mainpitch {
           title

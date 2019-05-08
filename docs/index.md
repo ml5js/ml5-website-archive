@@ -7,7 +7,10 @@ description: >-
   and usage.
 
 image: ./assets/itay-banner.jpg
-heading: Let’s read a story!Discover how Itay Niv created a story-telling app for children!
+heading: Friendly Machine Learning for the Web
+subheading: A neighborly approach to creating and exploring artifical intelligence in the browser.
+featureheading: >- 
+  Let’s read a story! Discover how Itay Niv created a story-telling app for children!
 
 mainpitch:
   title: Why ml5.js?
@@ -18,16 +21,15 @@ mainpitch:
 
 intro:
   blurbs:
-    - image: ./assets/tenser_flow_figure.png
+    - image: ./assets/2000px-TensorFlowLogo-branded.png
       text: >
-        ml5.js is a friendly high level interface to TensorFlow.js, a library for handling GPU-accelerated mathematical operations and memory management for machine learning algorithms.
-    - image: ./assets/tenser_flow_figure.png
+        ml5.js is an open source, friendly high level interface to TensorFlow.js, a library for handling GPU-accelerated mathematical operations and memory management for machine learning algorithms.
+    - image: ./assets/imageclassification-demo-bg.png
       text: >
-        ml5.js provides immediate access in the browser to pre-trained models for detecting human poses, generating text, styling an image with another, composing music, pitch detection, and common English language word relationships.
-    - image: ./assets/tenser_flow_figure.png
+        ml5.js provides immediate access in the browser to pre-trained models for detecting human poses, generating text, styling an image with another, composing music, pitch detection, and common English language word relationships, and much more.
+    - image: ./assets/everyday-ai-mimi.png
       text: >
-        ml5.js is a friendly high level interface to TensorFlow.js, a library for handling GPU-accelerated
-        mathematical operations and memory management for machine learning algorithms.
+        ml5.js aims to support broader public understanding of machine learning and foster deeper engagement with ethical computing, responsible data collection, and accessiblity and diversity of people and perspectives in technology and the arts.
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
@@ -52,19 +54,16 @@ version:
 
 model:
   blurbs:
-    - image: ./assets/modelplaceholder.png
+    - image: ./assets/posenet-single.png
       text: >
         PoseNet is a machine learning model that allows for Real-time Human Pose Estimation.
-    - image: ./assets/modelplaceholder.png
+    - image: ./assets/yolo-cat.png
       text: >
-        PoseNet is a machine learning model that allows for Real-time Human Pose Estimation.
-    - image: ./assets/modelplaceholder.png
+        YOLO (You only look once) is a state-of-the-art, real-time object detection and classification system.
+    - image: ./assets/styletransfer-grid.png
       text: >
-        PoseNet is a machine learning model that allows for Real-time Human Pose Estimation.
-    - image: ./assets/modelplaceholder.png
-      text: >
-        PoseNet is a machine learning model that allows for Real-time Human Pose Estimation.
-  heading: Discover these awesome learning models!
+        pix2pix is image-to-image translation with conditional adversarial networks. 
+  heading: Discover the creative possiblities of machine learning!
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
     java’s origin and support the farmers that grew it. We take coffee
@@ -73,8 +72,8 @@ model:
 
 team:
   heading: Meet our team!
-  image: ./assets/joey.png
-  profile: Joey Lee is a New York based designer, creative technologist, and geographer who leads the development of ml5.js by creating new examples, maintaining the library, doing code reviews, addressing issues, and merging/communicating with contributors.
+  image: ./assets/logo-purple-circle.png
+  profile: ml5.js is an open source project developed and maintained by NYU's Interactive Telecommunications/Interactive Media Arts program and by artists, designers, students, technologists, and developers from all over the world.
 ---
 
 ## Build tools using easy classification systems with tons of **pre trained models**!
@@ -83,14 +82,19 @@ Current version: 0.71
 Last update: 24 April, 2019
 
 ```javascript
-const pix2pix = ml5.pix2pix("models/customModel.pict", modelLoaded);
+// Step 1: Create an image classifier with MobileNet
+const classifier = ml5.imageClassifier('MobileNet', onModelReady);
 
-function modelLoaded() {
-  console.log("Model Loaded!");
+// Step 2: select an image
+const img = document.querySelector("#myImage")
+
+// Step 3: Make a prediction
+let prediction = classifier.predict(img, gotResults);
+
+// Step 4: Do something with the results!
+function gotResults(err, results) {
+  console.log(results);
+  // all the amazing things you'll add
+
 }
-
-// Transfer using a canvas
-pix2pix.transfer(canvas, function(err, result) {
-  console.log(result);
-});
 ```
