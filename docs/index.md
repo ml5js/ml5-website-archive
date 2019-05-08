@@ -18,13 +18,13 @@ mainpitch:
 
 intro:
   blurbs:
-    - image: ./assets/tenser_flow_figure.png
+    - image: ./assets/2000px-TensorFlowLogo-branded.png
       text: >
         ml5.js is an open source, friendly high level interface to TensorFlow.js, a library for handling GPU-accelerated mathematical operations and memory management for machine learning algorithms.
-    - image: ./assets/tenser_flow_figure.png
+    - image: ./assets/imageclassification-demo-bg.png
       text: >
         ml5.js provides immediate access in the browser to pre-trained models for detecting human poses, generating text, styling an image with another, composing music, pitch detection, and common English language word relationships, and much more.
-    - image: ./assets/tenser_flow_figure.png
+    - image: ./assets/everyday-ai-mimi.png
       text: >
         ml5.js aims to support broader public understanding of machine learning and foster deeper engagement with ethical computing, responsible data collection, and accessiblity and diversity of people and perspectives in technology and the arts.
   heading: What we offer
