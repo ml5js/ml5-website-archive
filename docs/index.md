@@ -20,14 +20,13 @@ intro:
   blurbs:
     - image: ./assets/tenser_flow_figure.png
       text: >
-        ml5.js is a friendly high level interface to TensorFlow.js, a library for handling GPU-accelerated mathematical operations and memory management for machine learning algorithms.
+        ml5.js is an open source, friendly high level interface to TensorFlow.js, a library for handling GPU-accelerated mathematical operations and memory management for machine learning algorithms.
     - image: ./assets/tenser_flow_figure.png
       text: >
-        ml5.js provides immediate access in the browser to pre-trained models for detecting human poses, generating text, styling an image with another, composing music, pitch detection, and common English language word relationships.
+        ml5.js provides immediate access in the browser to pre-trained models for detecting human poses, generating text, styling an image with another, composing music, pitch detection, and common English language word relationships, and much more.
     - image: ./assets/tenser_flow_figure.png
       text: >
-        ml5.js is a friendly high level interface to TensorFlow.js, a library for handling GPU-accelerated
-        mathematical operations and memory management for machine learning algorithms.
+        ml5.js aims to support broader public understanding of machine learning and foster deeper engagement with ethical computing, responsible data collection, and accessiblity and diversity of people and perspectives in technology and the arts.
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
@@ -83,14 +82,19 @@ Current version: 0.71
 Last update: 24 April, 2019
 
 ```javascript
-const pix2pix = ml5.pix2pix("models/customModel.pict", modelLoaded);
+// Step 1: Create an image classifier with MobileNet
+const classifier = ml5.imageClassifier('MobileNet', onModelReady);
 
-function modelLoaded() {
-  console.log("Model Loaded!");
+// Step 2: select an image
+const img = document.querySelector("#myImage")
+
+// Step 3: Make a prediction
+let prediction = classifier.predict(img, gotResults);
+
+// Step 4: Do something with the results!
+function gotResults(err, results) {
+  console.log(results);
+  // all the amazing things you'll add
+
 }
-
-// Transfer using a canvas
-pix2pix.transfer(canvas, function(err, result) {
-  console.log(result);
-});
 ```
