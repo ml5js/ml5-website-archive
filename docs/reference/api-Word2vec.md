@@ -1,6 +1,8 @@
 ---
 templateKey: "model-page"
 id: Word2vec
+exampleimgsrc: ../img/word2vec-placeholder.png
+exampleimgalt: tbd
 title: word2vec()
 ---
 

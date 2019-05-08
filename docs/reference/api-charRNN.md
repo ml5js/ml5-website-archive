@@ -1,6 +1,8 @@
 ---
 templateKey: "model-page"
 title: CharRNN()
+exampleimgsrc: ../img/charRnn-placeholder.png
+exampleimgalt: tbd
 tags:
   - image
   - video

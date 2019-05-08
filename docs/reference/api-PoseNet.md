@@ -1,6 +1,8 @@
 ---
 templateKey: "model-page"
 id: PoseNet
+exampleimgsrc: ../img/posenet-single.png
+exampleimgalt: tbd
 title: poseNet()
 ---
 

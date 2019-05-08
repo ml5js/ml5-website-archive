@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import ModelList from "../../components/ModelList";
+import ModelListCards from "../../components/ModelListCards";
 
 export default class ReferenceIndexPage extends React.Component {
   render() {
@@ -19,7 +20,7 @@ export default class ReferenceIndexPage extends React.Component {
             <article className="ml5Grid__content">
               <h1>Reference</h1>
               <div className="reference__wrapper">
-                <ModelList />
+                <ModelListCards />
               </div>
             </article>
           </div>

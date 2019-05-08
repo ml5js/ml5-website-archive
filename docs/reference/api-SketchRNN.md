@@ -1,6 +1,8 @@
 ---
 templateKey: "model-page"
 id: SketchRNN
+exampleimgsrc: ../img/sketchrnn-collage.png
+exampleimgalt: tbd
 title: SketchRNN()
 ---
 

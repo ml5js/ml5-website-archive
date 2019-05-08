@@ -1,6 +1,8 @@
 ---
 templateKey: "model-page"
 id: KNNClassifier
+exampleimgsrc: ../img/knnclassifier.png
+exampleimgalt: tbd
 title: KNNClassifier()
 ---
 

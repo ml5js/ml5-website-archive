@@ -1,6 +1,8 @@
 ---
 templateKey: "model-page"
 id: YOLO
+exampleimgsrc: ../img/yolo-cat.png
+exampleimgalt: tbd
 title: YOLO()
 ---
 
