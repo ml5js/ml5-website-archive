@@ -12,6 +12,8 @@
 
 .home__featuredTitle {
   color: white;
+  background-color: #a15ffb;
+  margin:2rem;
   z-index: 2;
   padding: calc(#{$gutter} * 2);
   position: absolute;
@@ -31,7 +33,7 @@
 
 .home__overlay {
   position: absolute;
-  background-color: #3636366e;
+  background-color: #FFFFFF, #363636BF;
   top: 0;
   left: 0;
   right: 0;

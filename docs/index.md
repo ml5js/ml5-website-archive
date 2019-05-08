@@ -7,7 +7,10 @@ description: >-
   and usage.
 
 image: ./assets/itay-banner.jpg
-heading: Let’s read a story!Discover how Itay Niv created a story-telling app for children!
+heading: Friendly Machine Learning for the Web
+subheading: A neighborly approach to creating and exploring artifical intelligence in the browser.
+featureheading: >- 
+  Let’s read a story! Discover how Itay Niv created a story-telling app for children!
 
 mainpitch:
   title: Why ml5.js?
