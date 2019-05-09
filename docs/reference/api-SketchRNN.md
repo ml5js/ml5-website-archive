@@ -5,6 +5,9 @@ exampleimgsrc: ../img/ref-sketchrnn.png
 title: SketchRNN()
 description: >-
   The SketchRNN model can create new drawings (from a list of categories) based on an initial path.
+tags:
+  - image
+  - text
 ---
 
 SketchRNN is a recurrent neural network model trained on millions of doodles collected from the [Quick, Draw! game](https://quickdraw.withgoogle.com/). The SketchRNN model can create new drawings (from a list of categories) based on an initial path.
