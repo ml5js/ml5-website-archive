@@ -110,7 +110,7 @@ const ModelPage = ({ data }) => {
           <section className="ml5Grid__sidebar">
             <div className="Sidebar__container">
               <div>
-                <span className="ml5Grid__sidebarTitle">Models</span>
+                <span className="ml5Grid__sidebarTitle">Reference</span>
               </div>
               <ModelList />
             </div>
