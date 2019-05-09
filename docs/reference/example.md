@@ -2,10 +2,9 @@
 templateKey: "model-page"
 title: example()
 tags:
-  - image
-  - video
-  - text
-  - sound
+  - tag1
+  - tag2
+  - tag3
 
 description: >-
   RNN and [LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) (Long Short Term Memory networks) are a type of Neural Network architecture useful for working with sequential data (like characters in text or the musical notes of a song) where the order of the that sequence matters. This class allows you run a model pre-trained on a body of text to generate new text.
