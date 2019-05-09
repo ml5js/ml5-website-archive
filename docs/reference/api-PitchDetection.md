@@ -1,6 +1,8 @@
 ---
 templateKey: "model-page"
 id: PitchDetection
+exampleimgsrc: ../img/pitchDetection-placeholder.png
+exampleimgalt: tbd
 title: pitchDetection()
 ---
 
