@@ -55,7 +55,7 @@ export const HomePageTemplate = ({
     <section className="home__container home__gridContainer">
       <div className="home__gridItem--6out12">
         <h2 className="Button__wrapper">
-          <Link className="Button" to="/start">
+          <Link className="Button" to="/getting-started">
             Get started with ml5.js
           </Link>
         </h2>
