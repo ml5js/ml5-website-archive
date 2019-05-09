@@ -1,7 +1,7 @@
 ---
 templateKey: community-post
 title: The Subtext of a Black Corpus
-author: ml5.js community
+author: ml5 community
 description: In conversation with ITP SIRs Nikita Huggins & Ayodamola Okunseinde
 featuredimage: ../assets/community-nikita-and-ayo-subtext-on-black-corpus.png
 externalLink: https://medium.com/@ml5js/the-subtext-of-a-black-corpus-4440de02eb32
