@@ -1,7 +1,7 @@
 ---
 templateKey: "model-page"
 id: StyleTransfer
-exampleimgsrc: ../img/styletransfer-grid.png
+exampleimgsrc: ../img/ref-styletransfer.png
 exampleimgalt: tbd
 title: styleTransfer()
 ---

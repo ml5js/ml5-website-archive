@@ -1,7 +1,7 @@
 ---
 templateKey: "model-page"
 title: featureExtractor()
-exampleimgsrc: ../img/featureextractor.png
+exampleimgsrc: ../img/ref-featureextractor.png
 exampleimgalt: tbd
 tags:
   - image

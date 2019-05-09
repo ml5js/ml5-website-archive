@@ -3,7 +3,7 @@ templateKey: 'model-page'
 title: imageClassifier()
 date: 2017-01-04T15:04:10.000Z
 featuredpost: true
-exampleimgsrc: ../img/image-classification.png
+exampleimgsrc: ../img/ref-classification.png
 exampleimgalt: tbd
 description: >-
   We’re proud to announce that we’ll be offering a small batch of Jamaica Blue

@@ -1,7 +1,7 @@
 ---
 templateKey: "model-page"
 title: CharRNN()
-exampleimgsrc: ../img/charRnn-placeholder.png
+exampleimgsrc: ../img/ref-charRnn.png
 exampleimgalt: tbd
 tags:
   - image
