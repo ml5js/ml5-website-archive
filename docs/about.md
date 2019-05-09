@@ -32,3 +32,5 @@ Funding and support is generously provided by a [Google Education grant](https:/
 Website designed with ❤ by [Milan Gary](http://milangary.com/), [Nicole Lloyd](https://www.nicoleflloyd.com/), and [Arnab Chakravarty](http://www.arnabchakravarty.com/). 
 
 Developed using [React/Gatsby.js](https://www.gatsbyjs.org/) and [Netlify](https://www.netlify.com/) by [Wenqi Li](https://www.wenqi.li/), [Joey Lee](https://jk-lee.com/work/), and [Dan Shiffman](https://shiffman.net/).
+
+Shout out to the [OpenMoji Project](https://openmoji.org/index.html) for glyphs.
