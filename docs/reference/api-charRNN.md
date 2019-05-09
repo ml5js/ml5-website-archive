@@ -1,6 +1,7 @@
 ---
 templateKey: "model-page"
 title: CharRNN()
+exampleimgsrc: ../img/ref-charRnn.png
 tags:
   - image
   - video

@@ -1,7 +1,10 @@
 ---
 templateKey: "model-page"
 id: KNNClassifier
+exampleimgsrc: ../img/ref-knnclassifier.png
 title: KNNClassifier()
+description: >-
+  This class allows you to create a classifier using the K-Nearest Neighbors.
 ---
 
 This class allows you to create a classifier using the [K-Nearest Neighbors](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) algorithm. It's a little diffrent from other classes in this library, because it doesn't provide a model with weights, but rather a utility for constructing a KNN model using outputs from another model or any other data that could be classified.

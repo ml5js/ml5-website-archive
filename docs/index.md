@@ -54,15 +54,21 @@ version:
 
 model:
   blurbs:
-    - image: ./assets/posenet-single.png
+    - image: ./assets/ref-posenet.png
       text: >
         PoseNet is a machine learning model that allows for Real-time Human Pose Estimation.
-    - image: ./assets/yolo-cat.png
+    - image: ./assets/ref-yolo.png
       text: >
         YOLO (You only look once) is a state-of-the-art, real-time object detection and classification system.
-    - image: ./assets/styletransfer-grid.png
+    - image: ./assets/ref-styletransfer.png
       text: >
         pix2pix is image-to-image translation with conditional adversarial networks. 
+    - image: ./assets/ref-classification.png
+      text: >
+        Classify the content of images with pre-trained models. 
+    - image: ./assets/ref-sketchrnn.png
+      text: >
+        Generate new doodles with a neural network based on Google's Quick Draw. 
   heading: Discover the creative possiblities of machine learning!
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their

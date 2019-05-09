@@ -1,11 +1,11 @@
 ---
 templateKey: 'model-page'
 title: pix2pix()
+exampleimgsrc: ../img/ref-pix2pix.png
 date: 2017-01-04T15:04:10.000Z
 featuredpost: true
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  pix2pix or image-to-image translation with conditional adversarial nets.
 tags:
   - image
   - video
