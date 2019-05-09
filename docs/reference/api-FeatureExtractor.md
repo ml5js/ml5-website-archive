@@ -2,7 +2,6 @@
 templateKey: "model-page"
 title: featureExtractor()
 exampleimgsrc: ../img/ref-featureextractor.png
-exampleimgalt: tbd
 tags:
   - image
   - video

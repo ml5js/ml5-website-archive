@@ -2,8 +2,9 @@
 templateKey: "model-page"
 id: PoseNet
 exampleimgsrc: ../img/ref-posenet.png
-exampleimgalt: tbd
 title: poseNet()
+description: >-
+  PoseNet is a machine learning model that allows for Real-time Human Pose Estimation.
 ---
 
 PoseNet is a machine learning model that allows for [Real-time Human Pose Estimation](https://medium.com/tensorflow/real-time-human-pose-estimation-in-the-browser-with-tensorflow-js-7dd0bc881cd5).

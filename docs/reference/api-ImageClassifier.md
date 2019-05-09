@@ -4,10 +4,8 @@ title: imageClassifier()
 date: 2017-01-04T15:04:10.000Z
 featuredpost: true
 exampleimgsrc: ../img/ref-classification.png
-exampleimgalt: tbd
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  You can use neural networks to recognize the content of images.
 tags:
   - image
   - video

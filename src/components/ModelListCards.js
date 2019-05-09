@@ -23,7 +23,7 @@ class ModelListCards extends React.Component {
               <div style={{width:"200px", 
             height:"200px", 
             padding:"1rem"}}>
-                <img style={{border:"2px solid black", width:"100%", height:"100%"}} 
+                <img alt={model.frontmatter.description || "tbd"} style={{border:"2px solid black", width:"100%", height:"100%"}} 
                 src={model.frontmatter.exampleimgsrc || "../img/logo-purple-circle.png"}/>
             </div>
             </li>

@@ -2,8 +2,9 @@
 templateKey: "model-page"
 id: YOLO
 exampleimgsrc: ../img/ref-yolo.png
-exampleimgalt: tbd
 title: YOLO()
+description: >- 
+  YOLO (You only look once) is a state-of-the-art, real-time object detection system.
 ---
 
 You only look once ([YOLO](https://pjreddie.com/darknet/yolo/)) is a state-of-the-art, real-time object detection system.
