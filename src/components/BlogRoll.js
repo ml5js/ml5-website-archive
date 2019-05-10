@@ -59,7 +59,7 @@ class BlogRoll extends React.Component {
                         rel="noopener noreferrer"
                       >
                         Launch Experiments{" "}
-                        <span role="img" aria-tag="rocket">
+                        <span role="img" aria-label="rocket">
                           {" "}
                           🚀
                         </span>
@@ -67,7 +67,7 @@ class BlogRoll extends React.Component {
                     ) : (
                       <Link className="Post__link" to={post.fields.slug}>
                         Keep Reading
-                        <span role="img" aria-tag="reading">
+                        <span role="img" aria-label="reading">
                           {" "}
                           👓
                         </span>

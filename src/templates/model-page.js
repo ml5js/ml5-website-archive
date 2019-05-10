@@ -9,6 +9,7 @@ import ModelList from "../components/ModelList";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import MarkdownContent from "../components/MarkdownContent";
 import Highlight from "react-highlight.js";
+
 export const ModelPageTemplate = ({
   content,
   contentComponent,
@@ -16,6 +17,8 @@ export const ModelPageTemplate = ({
   tags,
   title,
   examples,
+  tutorials,
+  training,
   helmet
 }) => {
   const PostContent = contentComponent || Content;
@@ -43,8 +46,8 @@ export const ModelPageTemplate = ({
           <TabList>
             <Tab>documentation</Tab>
             <Tab>examples</Tab>
-            <Tab>tutorial</Tab>
-            <Tab>advanced</Tab>
+            {tutorials ? <Tab>tutorial</Tab> : null}
+            {training ? <Tab>training</Tab> : null}
           </TabList>
 
           <TabPanel>
@@ -72,20 +75,22 @@ export const ModelPageTemplate = ({
                       }}
                     />
                     <MarkdownContent content={example.demo} />
-                    <script>console.log("XXX")</script>
                     <Highlight language="javascript">{example.code}</Highlight>
                   </div>
                 ))
               : null}
           </TabPanel>
+          {tutorials ? (
+            <TabPanel>
+              <h2>Tutorial</h2>
+            </TabPanel>
+          ) : null}
 
-          <TabPanel>
-            <h2>Tutorial</h2>
-          </TabPanel>
-
-          <TabPanel>
-            <h2>Advanced</h2>
-          </TabPanel>
+          {training ? (
+            <TabPanel>
+              <h2>Training</h2>
+            </TabPanel>
+          ) : null}
         </Tabs>
       </div>
     </article>
@@ -135,6 +140,8 @@ const ModelPage = ({ data }) => {
             tags={post.frontmatter.tags}
             title={post.frontmatter.title}
             examples={post.frontmatter.examples}
+            tutorials={post.frontmatter.tutorials}
+            training={post.frontmatter.training}
           />
         </div>
       </section>
@@ -164,6 +171,8 @@ export const pageQuery = graphql`
           demo
           code
         }
+        tutorials
+        training
       }
     }
   }
