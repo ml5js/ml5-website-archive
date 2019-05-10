@@ -82,6 +82,9 @@ examples:
       yolo.detect(function(err, results) {
         console.log(results); // Will output bounding boxes of detected objects
       });
+
+tutorials: ""
+training: ""
 ---
 
 ## Syntax ( A subject should use H2 )
