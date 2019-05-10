@@ -9,8 +9,6 @@ description: >-
 tags:
   - image
   - video
-  - text
-  - sound
 id: imageClassifier
 ---
 

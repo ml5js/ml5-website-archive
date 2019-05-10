@@ -5,6 +5,9 @@ exampleimgsrc: ../img/ref-yolo.png
 title: YOLO()
 description: >- 
   YOLO (You only look once) is a state-of-the-art, real-time object detection system.
+tags:
+  - image
+  - video
 ---
 
 You only look once ([YOLO](https://pjreddie.com/darknet/yolo/)) is a state-of-the-art, real-time object detection system.
