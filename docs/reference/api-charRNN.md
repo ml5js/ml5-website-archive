@@ -1,7 +1,7 @@
 ---
 templateKey: "model-page"
 title: CharRNN()
-exampleimgsrc: ../img/ref-charRnn.png
+exampleimgsrc: ../assets/ref-charRnn.png
 tags:
   - text
 

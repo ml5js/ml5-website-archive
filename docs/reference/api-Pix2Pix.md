@@ -1,7 +1,7 @@
 ---
 templateKey: 'model-page'
 title: pix2pix()
-exampleimgsrc: ../img/ref-pix2pix.png
+exampleimgsrc: ../assets/ref-pix2pix.png
 date: 2017-01-04T15:04:10.000Z
 featuredpost: true
 description: >-

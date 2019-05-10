@@ -3,7 +3,7 @@ templateKey: 'model-page'
 title: imageClassifier()
 date: 2017-01-04T15:04:10.000Z
 featuredpost: true
-exampleimgsrc: ../img/ref-classification.png
+exampleimgsrc: ../assets/ref-classification.png
 description: >-
   You can use neural networks to recognize the content of images.
 tags:

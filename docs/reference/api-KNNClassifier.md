@@ -1,7 +1,7 @@
 ---
 templateKey: "model-page"
 id: KNNClassifier
-exampleimgsrc: ../img/ref-knnclassifier.png
+exampleimgsrc: ../assets/ref-knnclassifier.png
 title: KNNClassifier()
 description: >-
   This class allows you to create a classifier using the K-Nearest Neighbors.

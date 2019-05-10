@@ -1,6 +1,7 @@
 ---
 templateKey: "model-page"
 title: example()
+exampleimgsrc: ../assets/ref-yolo.png
 tags:
   - tag1
   - tag2
