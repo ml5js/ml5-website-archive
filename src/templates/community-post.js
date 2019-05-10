@@ -17,28 +17,28 @@ export const CommunityPostTemplate = ({
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="section">
+    <section className="ml5Grid__wrapper">
       {helmet || ""}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
+      <div className="ml5Grid__container ml5Grid__container--communityPage">
+        <section className="ml5Grid__sidebar">
+          <div className="Sidebar__container" />
+        </section>
+        <div className="ml5Grid__content">
+          <h1>{title}</h1>
+          {/* {tags && tags.length ? (
+            <div>
+              <ul className="taglist">
+                {tags.map(tag => (
+                  <li key={tag + `tag`}>
+                    <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null} */}
+          <h3>{description}</h3>
+          <div ml5Grid__contentPost>
             <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
           </div>
         </div>
       </div>
