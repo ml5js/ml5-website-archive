@@ -2,13 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql, StaticQuery } from "gatsby";
 import { tag } from "postcss-selector-parser";
-
+import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
 function displaySectionByTag(models, tag){
     if(!models) return ""
 
     const selected = models.filter( ({ node: model }) => model.frontmatter.tags.includes(tag));
-
+    console.log(selected)
     return (
         <section id={`section-${tag}`}>
             <h2 style={{fontSize:"28px"}}>{tag}</h2>
@@ -26,8 +26,12 @@ function displaySectionByTag(models, tag){
                 </div>
                 <div style={{width:"100%", 
                 padding:"none"}}>
-                    <img alt={model.frontmatter.description || "tbd"} style={{border:"0px solid black", width:"100%", height:"100%"}} 
-                    src={model.frontmatter.exampleimgsrc || "../img/logo-purple-circle.png"}/>
+                    <PreviewCompatibleImage
+                      imageInfo={{
+                        image: model.frontmatter.exampleimgsrc || "../assets/logo-purple-circle.png",
+                        alt: `featured image thumbnail for post ${model.frontmatter.description}`
+                      }}
+                    />
                 </div>
                 </div>
                 </li>
@@ -96,7 +100,13 @@ export default () => (
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
-                exampleimgsrc
+                exampleimgsrc {
+                    childImageSharp {
+                      fluid(maxWidth: 400, quality: 100) {
+                        ...GatsbyImageSharpFluid
+                      }
+                    }
+                }
                 tags
               }
             }

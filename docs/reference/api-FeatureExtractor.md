@@ -1,7 +1,7 @@
 ---
 templateKey: "model-page"
 title: featureExtractor()
-exampleimgsrc: ../img/ref-featureextractor.png
+exampleimgsrc: ../assets/ref-featureextractor.png
 tags:
   - helpers
 

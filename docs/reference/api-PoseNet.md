@@ -1,7 +1,7 @@
 ---
 templateKey: "model-page"
 id: PoseNet
-exampleimgsrc: ../img/ref-posenet.png
+exampleimgsrc: ../assets/ref-posenet.png
 title: poseNet()
 description: >-
   PoseNet is a machine learning model that allows for Real-time Human Pose Estimation.
