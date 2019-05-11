@@ -34,7 +34,8 @@ function displaySectionByTag(models, tag){
                         alt: `featured image thumbnail for post ${model.frontmatter.description}`
                       }}
                     />
-                </Link>): null}
+                </Link>
+                ): null}
                 </div>
                 </div>
                 </li>
