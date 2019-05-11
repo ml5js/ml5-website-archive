@@ -74,7 +74,7 @@ export const ModelPageTemplate = ({
                         __html: example.demo
                       }}
                     />
-                    <MarkdownContent content={example.demo} />
+                    {/* <MarkdownContent content={example.demo} /> */}
                     <Highlight language="javascript">{example.code}</Highlight>
                   </div>
                 ))
