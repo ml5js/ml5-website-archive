@@ -1,7 +1,7 @@
 ---
 templateKey: "model-page"
 id: CVAE
-exampleimgsrc: ""
+exampleimgsrc: null
 title: CVAE()
 description: >- 
   Conditional Variational Autoencoder (CVAE) is an extension of Variational Autoencoder (VAE), a generative model
