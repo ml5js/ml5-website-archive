@@ -1,16 +1,31 @@
 ---
-templateKey: 'model-page'
+templateKey: "model-page"
 title: pix2pix()
 exampleimgsrc: ../assets/ref-pix2pix.png
-date: 2017-01-04T15:04:10.000Z
-featuredpost: true
-description: >-
-  pix2pix or image-to-image translation with conditional adversarial nets.
 tags:
   - image
-  - video
-id: Pix2Pix
+description: >-
+  pix2pix or image-to-image translation with conditional adversarial nets.
 
+examples:
+  - title: This is a title
+    github: https://github.com/ml5js/ml5-examples/blob/release/javascript/ImageClassification_Video/sketch.js
+    demo: https://yining1023.github.io/fast_style_transfer_in_ML5/
+    code: >
+      const video = document.getElementById("video");
+
+      // Create a YOLO method
+      const yolo = ml5.YOLO(video, modelLoaded);
+
+      // When the model is loaded
+      function modelLoaded() {
+        console.log("Model Loaded!");
+      }
+
+      // Detect objects in the video element
+      yolo.detect(function(err, results) {
+        console.log(results); // Will output bounding boxes of detected objects
+      });
 ---
 
 Image-to-image translation with conditional adversarial nets, or pix2pix, is a machine learning technique developed by
@@ -25,11 +40,11 @@ This version is heavily based on [Christopher Hesse TensorFlow.js implementation
 
 ```javascript
 // Create a pix2pix model using a pre trained network
-const pix2pix = ml5.pix2pix('models/customModel.pict', modelLoaded);
+const pix2pix = ml5.pix2pix("models/customModel.pict", modelLoaded);
 
 // When the model is loaded
 function modelLoaded() {
-  console.log('Model Loaded!');
+  console.log("Model Loaded!");
 }
 
 // Transfer using a canvas
@@ -41,32 +56,35 @@ pix2pix.transfer(canvas, function(err, result) {
 [Here](https://github.com/ml5js/ml5-examples/blob/master/p5js/Pix2Pix/Pix2Pix_callback/sketch.js) is a complete example.
 
 ## Syntax
-  ```javascript
-  ml5.pix2pix(model, ?callback);
-  ```
+
+```javascript
+ml5.pix2pix(model, ?callback);
+```
 
 ### Parameters
 
-  - `model` - The path for a valid model.
-  - `callback` - Optional. A function to run once the model has been loaded. If no callback is provided, it will return a promise that will be resolved once the model has loaded.
+- `model` - The path for a valid model.
+- `callback` - Optional. A function to run once the model has been loaded. If no callback is provided, it will return a promise that will be resolved once the model has loaded.
 
 ## Properties
 
-  ```javascript
-  .ready
-  ```
-  > Boolean to check if the model has loaded
+```javascript
+.ready
+```
+
+> Boolean to check if the model has loaded
 
 ## Methods
 
-  ```javascript
-  .transfer(canvas, ?callback)
-  ```
-  > Given an canvas element, applies image-to-image translation using the provided model. Returns an image.
+```javascript
+.transfer(canvas, ?callback)
+```
 
-  `canvas` -  A HTML canvas element.
+> Given an canvas element, applies image-to-image translation using the provided model. Returns an image.
 
-  `?callback` - A function to run once the model has made the transfer. If no callback is provided, it will return a promise that will be resolved once the model has made the transfer.
+`canvas` - A HTML canvas element.
+
+`?callback` - A function to run once the model has made the transfer. If no callback is provided, it will return a promise that will be resolved once the model has made the transfer.
 
 ## Source
 
