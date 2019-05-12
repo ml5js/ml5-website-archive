@@ -14,7 +14,7 @@ description: >-
   You can train your own models [using this tutorial](/docs/training-lstm) or use [this set of pre trained models](https://github.com/ml5js/ml5-data-and-training/tree/master/models/lstm).
 ---
 
-### Example
+## Example
 
 ```javascript
 // Create the character level generator with a pre trained model
@@ -33,7 +33,7 @@ rnn.generate({ seed: "the meaning of pizza is" }, function(err, results) {
 
 [Here](https://github.com/ml5js/ml5-examples/blob/master/p5js/LSTM/LSTM_Text/sketch.js) is a complete example using the [p5.js](https://p5js.org) library.
 
-### Syntax
+## Syntax
 
 > ##### ml5.charRNN(**model**, **?callback**)
 >
@@ -42,7 +42,7 @@ rnn.generate({ seed: "the meaning of pizza is" }, function(err, results) {
 > - **model** - The path to the trained charRNN model.
 > - **callback** - Optional. A callback to be called once the model has loaded. If no callback is provided, it will return a promise that will be resolved once the model has loaded.
 
-### Properties
+## Properties
 
 ##### .ready
 

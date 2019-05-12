@@ -1,0 +1,141 @@
+.gatsby-highlight,
+.hljs {
+  background-color: #f9f9f9 !important;
+}
+pre code {
+  font-family: $monospace-font-family !important;
+  background-color: #f9f9f9;
+  color: #444444 !important;
+  font-size: $font-size-paragraph !important;
+}
+
+pre .string,
+code .string,
+.hljs-string {
+  color: #8000ff !important;
+} /* string */
+
+pre .keyword,
+code .keyword,
+.hljs-keyword {
+  color: $blue !important;
+} /* keyword */
+
+pre .comment,
+code .comment,
+.hljs-comment {
+  color: #999999 !important;
+} /* comment */
+pre .function,
+code .function,
+.hljs-built_in {
+  color: #6db51e !important;
+} /* type */
+pre .number,
+code .number {
+  color: #ff0080 !important;
+} /* literal */
+pre .operator,
+code .operator {
+  color: #888888 !important;
+} /* punctuation */
+pre .tag,
+code .tag {
+  color: #008 !important;
+} /* plaintext */
+pre .doctype,
+code .doctype {
+  color: #22c0c4 !important;
+} /* decimal */
+
+pre .attr-value,
+code .attr-value {
+  color: #080 !important;
+}
+
+pre .attr-name,
+code .attr-name {
+  color: #606 !important;
+}
+
+.pln {
+  color: #000;
+}
+@media screen {
+  .str {
+    color: #080;
+  }
+  .kwd {
+    color: #008;
+  }
+  .com {
+    color: #800;
+  }
+  .typ {
+    color: #606;
+  }
+  .lit {
+    color: #066;
+  }
+  .pun,
+  .opn,
+  .clo {
+    color: #660;
+  }
+  .tag {
+    color: #008;
+  }
+  .atn {
+    color: #606;
+  }
+  .atv {
+    color: #080;
+  }
+  .dec,
+  .var {
+    color: #606;
+  }
+  .fun {
+    color: red;
+  }
+}
+@media print, projection {
+  .str {
+    color: #060;
+  }
+  .kwd {
+    color: #006;
+    font-weight: bold;
+  }
+  .com {
+    color: #600;
+    font-style: italic;
+  }
+  .typ {
+    color: #404;
+    font-weight: bold;
+  }
+  .lit {
+    color: #044;
+  }
+  .pun,
+  .opn,
+  .clo {
+    color: #440;
+  }
+  .tag {
+    color: #006;
+    font-weight: bold;
+  }
+  .atn {
+    color: #404;
+  }
+}
+pre.prettyprint {
+  padding: 2px;
+  border: 1px solid #888;
+}
+ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
+}
