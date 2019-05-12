@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const ResponsiveIframe = ({ url, title }) => (
-  <div className="iframe--container">
+  <div className="iframe__container">
     <iframe src={url} title={title} allowFullScreen />
   </div>
 );

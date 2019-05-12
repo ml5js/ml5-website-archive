@@ -55,7 +55,9 @@ examples:
         console.log(results); // Will output bounding boxes of detected objects
       });
 
-tutorials: ""
+tutorials:
+  - tutorial: '<div class="iframe__container iframe__container--video"><iframe src="https://www.youtube.com/embed/vYgIKn7iDH8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+  - tutorial: '<div class="iframe__container iframe__container--video"><iframe src="https://www.youtube.com/embed/vYgIKn7iDH8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
 training: ""
 ---
 
