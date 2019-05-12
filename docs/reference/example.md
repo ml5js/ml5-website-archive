@@ -67,7 +67,25 @@ examples:
       </div>
 
     code: >-
+      const classifier = featureExtractor.classification(video, videoReady);
 
+      // Triggers when the video is ready
+      function videoReady() {
+        console.log("The video is ready!");
+      }
+
+      // Add a new image with a label
+      classifier.addImage(document.getElementById("dogA"), "dog");
+
+      // Retrain the network
+      classifier.train(function(lossValue) {
+        console.log("Loss is", lossValue);
+      });
+
+      // Get a prediction for that image
+      classifier.classify(document.getElementById("dogB"), function(err, result) {
+        console.log(result); // Should output 'dog'
+      });
       const video = document.getElementById("video");
 
       // Create a YOLO method
