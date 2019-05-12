@@ -58,7 +58,15 @@ examples:
 tutorials:
   - tutorial: '<div class="iframe__container iframe__container--video"><iframe src="https://www.youtube.com/embed/vYgIKn7iDH8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
   - tutorial: '<div class="iframe__container iframe__container--video"><iframe src="https://www.youtube.com/embed/vYgIKn7iDH8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
-training: ""
+
+training: >
+  ## heading 2
+
+
+  [this is a link](https://www.wenqi.li)
+
+
+  This is some text
 ---
 
 ## Syntax ( A subject should use H2 )

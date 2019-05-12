@@ -91,7 +91,7 @@ export const ModelPageTemplate = ({
           {tutorials ? (
             <TabPanel>
               <div className="ml5Grid__postWrapper">
-                <h2>Tutorial</h2>
+                {/* <h2>Tutorial</h2> */}
                 {tutorials.map(({ tutorial }) => (
                   <MarkdownContent content={tutorial} />
                 ))}
@@ -101,7 +101,10 @@ export const ModelPageTemplate = ({
 
           {training ? (
             <TabPanel>
-              <h2>Training</h2>
+              <div className="ml5Grid__postWrapper">
+                {/* <h2>Training</h2> */}
+                <MarkdownContent content={training} />
+              </div>
             </TabPanel>
           ) : null}
         </Tabs>
