@@ -15,6 +15,7 @@ const NotFoundPage = () => (
             <iframe
               src="https://www.youtube.com/embed/jmznx0Q1fP0"
               frameborder="0"
+              title="404 video"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             />

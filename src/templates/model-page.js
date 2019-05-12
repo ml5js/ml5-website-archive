@@ -67,12 +67,12 @@ export const ModelPageTemplate = ({
                       />
 
                       <h2>Code Snippet</h2>
-
                       <Highlight language="javascript">
                         {example.code}
                       </Highlight>
+
+                      <h2>Source Code</h2>
                       <p>
-                        <h2>Source Code</h2>
                         <a
                           className="example"
                           href={example.github}

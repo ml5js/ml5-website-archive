@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import showdown from "showdown";
+// eslint-disable-next-line
 import prettify from "showdown-prettify";
-// import prettify from "code-prettify";
 
-const converter = new showdown.Converter({ extensions: ["prettify"] });
+const converter = new showdown.Converter({ extensions: [`prettify`] });
 
 const MarkdownContent = ({ content, className }) => (
   <div
