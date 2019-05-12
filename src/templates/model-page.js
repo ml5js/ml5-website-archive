@@ -87,9 +87,15 @@ export const ModelPageTemplate = ({
                 : null}
             </div>
           </TabPanel>
+
           {tutorials ? (
             <TabPanel>
-              <h2>Tutorial</h2>
+              <div className="ml5Grid__postWrapper">
+                <h2>Tutorial</h2>
+                {tutorials.map(({ tutorial }) => (
+                  <MarkdownContent content={tutorial} />
+                ))}
+              </div>
             </TabPanel>
           ) : null}
 
@@ -180,7 +186,9 @@ export const pageQuery = graphql`
           demo
           code
         }
-        tutorials
+        tutorials {
+          tutorial
+        }
         training
       }
     }
