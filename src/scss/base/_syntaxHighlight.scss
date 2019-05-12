@@ -1,6 +1,8 @@
 .gatsby-highlight,
 .hljs {
   background-color: #f9f9f9 !important;
+  font-size: $font-size-paragraph !important;
+  font-family: $monospace-font-family !important;
 }
 pre code {
   font-family: $monospace-font-family !important;
@@ -58,84 +60,67 @@ code .attr-name {
   color: #606 !important;
 }
 
-.pln {
-  color: #000;
+.gatsby-highlight-code-line {
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
 }
-@media screen {
-  .str {
-    color: #080;
-  }
-  .kwd {
-    color: #008;
-  }
-  .com {
-    color: #800;
-  }
-  .typ {
-    color: #606;
-  }
-  .lit {
-    color: #066;
-  }
-  .pun,
-  .opn,
-  .clo {
-    color: #660;
-  }
-  .tag {
-    color: #008;
-  }
-  .atn {
-    color: #606;
-  }
-  .atv {
-    color: #080;
-  }
-  .dec,
-  .var {
-    color: #606;
-  }
-  .fun {
-    color: red;
-  }
+
+/**
+ * Add back the container background-color, border-radius, padding, margin
+ * and overflow that we removed from <pre>.
+ */
+.gatsby-highlight {
+  border-radius: 0.3em;
+  margin: 0.5em 0;
+  padding: 1em;
+  overflow: auto;
 }
-@media print, projection {
-  .str {
-    color: #060;
-  }
-  .kwd {
-    color: #006;
-    font-weight: bold;
-  }
-  .com {
-    color: #600;
-    font-style: italic;
-  }
-  .typ {
-    color: #404;
-    font-weight: bold;
-  }
-  .lit {
-    color: #044;
-  }
-  .pun,
-  .opn,
-  .clo {
-    color: #440;
-  }
-  .tag {
-    color: #006;
-    font-weight: bold;
-  }
-  .atn {
-    color: #404;
-  }
+
+/**
+ * Remove the default PrismJS theme background-color, border-radius, margin,
+ * padding and overflow.
+ * 1. Make the element just wide enough to fit its content.
+ * 2. Always fill the visible space in .gatsby-highlight.
+ * 3. Adjust the position of the line numbers
+ */
+.gatsby-highlight pre[class*="language-"] {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  overflow: initial;
+  float: left; /* 1 */
+  min-width: 100%; /* 2 */
 }
-pre.prettyprint {
-  padding: 2px;
-  border: 1px solid #888;
+
+code {
+  display: block;
 }
-ol.linenums {
-  margin-top: 0;
-  margin-bottom: 0;
+
+.number {
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  // display: -webkit-inline-flex;
+  display: inline !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+}
+
+.tag:not(body) {
+  /* -webkit-align-items: center; */
+  align-items: normal !important;
+  background-color: transparent !important;
+  /* border-radius: 4px; */
+  /* color: #4a4a4a; */
+  // display: -webkit-inline-flex;
+  display: inline !important;
+  height: 1em !important;
+  /* -webkit-justify-content: center; */
+  /* justify-content: center; */
+  /* line-height: 1.5; */
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  /* white-space: nowrap; */
 }

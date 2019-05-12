@@ -35,6 +35,13 @@
   margin-top: 0;
   overflow-x: auto;
 
+  code {
+    background: #f9f9f9 !important;
+    font-size: $font-size-paragraph !important;
+    font-family: $monospace-font-family !important;
+    color: #444444 !important;
+  }
+
   @include tablet-up() {
     grid-column: 2;
     grid-row: 1;
