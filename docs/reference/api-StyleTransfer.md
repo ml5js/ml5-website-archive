@@ -75,6 +75,10 @@ examples:
 
         statusMsg.html('Done!');
       }
+
+tutorials:
+  - tutorial: '<div class="iframe__container iframe__container--video"><iframe src="https://www.youtube.com/embed/STHRNIJc-vI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+  - tutorial: '<div class="iframe__container iframe__container--video"><iframe src="https://www.youtube.com/embed/S_I0SGAO73A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
 ---
 
 Style Transfer is a machine learning technique that allows to transfer the style of one image into another one. This is a two step process, first you need to train a model on one particular style and then you can apply this style to another image.
