@@ -111,6 +111,9 @@ examples:
         classifyVideo();
       }
 
+tutorials:
+  - tutorial: '<div class="iframe__container iframe__container--video"><iframe src="https://www.youtube.com/embed/yNkAuWz5lnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+  - tutorial: '<div class="iframe__container iframe__container--video"><iframe src="https://www.youtube.com/embed/D9BoBSkLvFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
 ---
 
 You can use neural networks to recognize the content of images. `ml5.imageClassifier()` is a method to create an object that classifies an image using a pre-trained model.

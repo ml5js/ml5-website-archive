@@ -104,6 +104,10 @@ examples:
       function gotStroke(err, s) {
         strokePath = s;
       }
+
+tutorials:
+  - tutorial: '<div class="iframe__container iframe__container--video"><iframe src="https://www.youtube.com/embed/pdaNttb7Mr8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+  - tutorial: '<div class="iframe__container iframe__container--video"><iframe src="https://www.youtube.com/embed/yLuk0twx8Hc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
 ---
 
 SketchRNN is a recurrent neural network model trained on millions of doodles collected from the [Quick, Draw! game](https://quickdraw.withgoogle.com/). The SketchRNN model can create new drawings (from a list of categories) based on an initial path.
