@@ -10,6 +10,107 @@ tags:
   - image
   - video
 id: imageClassifier
+
+examples:
+  - title: Image classifier on image
+    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/ImageClassification/ImageClassification
+    demo: https://ml5js.github.io/ml5-examples/p5js/ImageClassification/ImageClassification
+    code: >-
+      // Copyright (c) 2018 ml5
+      
+      //
+      
+      // This software is released under the MIT License.
+      // https://opensource.org/licenses/MIT
+
+      /* ===
+      ml5 Example
+      Image classification using MobileNet and p5.js
+      This example uses a callback pattern to create the classifier
+      === */
+
+      // Initialize the Image Classifier method with MobileNet. A callback needs to be passed.
+      
+      let classifier;
+
+      // A variable to hold the image we want to classify
+      
+      let img;
+
+      function preload() {
+        classifier = ml5.imageClassifier('MobileNet');
+        img = loadImage('images/bird.jpg');
+      }
+
+      function setup() {
+        createCanvas(400, 400);
+        classifier.classify(img, gotResult);
+        image(img, 0, 0);
+      }
+
+      // A function to run when we get any errors and the results
+      
+      function gotResult(error, results) {
+        // Display error in the console
+        if (error) {
+          console.error(error);
+        }
+        // The results are in an array ordered by confidence.
+        console.log(results);
+        createDiv("Label:" + results[0].label);
+        createDiv("Confidence: " + nf(results[0].confidence, 0, 2));
+      }
+
+  - title: Image classifier on video
+    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/ImageClassification/ImageClassification_Video
+    demo: https://ml5js.github.io/ml5-examples/p5js/ImageClassification/ImageClassification_Video
+    code: >-
+      // Copyright (c) 2018 ml5
+      
+      //
+      
+      // This software is released under the MIT License.
+      
+      // https://opensource.org/licenses/MIT
+
+      /* ===
+      ml5 Example
+      Webcam Image Classification using MobileNet and p5.js
+      This example uses a callback pattern to create the classifier
+      === */
+
+      let classifier;
+      let video;
+      let resultsP;
+
+      function setup() {
+        noCanvas();
+        // Create a camera input
+        video = createCapture(VIDEO);
+        // Initialize the Image Classifier method with MobileNet and the video as the second argument
+        classifier = ml5.imageClassifier('MobileNet', video, modelReady);
+        resultsP = createP('Loading model and video...');
+      }
+
+      function modelReady() {
+        console.log('Model Ready');
+        classifyVideo();
+      }
+
+      // Get a prediction for the current video frame
+
+      function classifyVideo() {
+        classifier.classify(gotResult);
+      }
+
+      // When we get a result
+
+      function gotResult(err, results) {
+        // The results are in an array ordered by confidence.
+        resultsP.html(results[0].label + ' ' + nf(results[0].confidence, 0, 2));
+        classifyVideo();
+      }
+
 ---
 
 You can use neural networks to recognize the content of images. `ml5.imageClassifier()` is a method to create an object that classifies an image using a pre-trained model.
