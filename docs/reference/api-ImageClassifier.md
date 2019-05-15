@@ -12,7 +12,7 @@ tags:
 id: imageClassifier
 
 examples:
-  - title: Image classifier on video
+  - title: Image classifier on image
     github: https://github.com/ml5js/ml5-examples/tree/release/p5js/ImageClassification/ImageClassification
     demo: https://ml5js.github.io/ml5-examples/p5js/ImageClassification/ImageClassification
     code: >-
