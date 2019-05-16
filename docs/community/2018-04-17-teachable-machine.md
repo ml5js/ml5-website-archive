@@ -1,7 +1,7 @@
 ---
 templateKey: "community-post"
 title: Teachable Machine
-author: ml5 community
+author: Yining Shi
 description: Simple example based on Google's Teachable Machines Project.
 featuredimage: ../assets/teachable_machines_banner.jpg
 externalLink: https://ml5js.org/demos/teachableMachine/
