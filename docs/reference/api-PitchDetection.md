@@ -7,6 +7,55 @@ description: >-
   A pitch detection algorithm is a way of estimating the pitch or fundamental frequency of an audio signal.
 tags:
   - sound
+
+examples:
+  - title: Pitch Detection
+    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/PitchDetection/PitchDetection
+    demo: https://ml5js.github.io/ml5-examples/p5js/PitchDetection/PitchDetection
+    code: >-  
+      // Copyright (c) 2018 ml5
+      
+      //
+      
+      // This software is released under the MIT License.
+      
+      // https://opensource.org/licenses/MIT
+
+      /* ===
+      ml5 Example
+      Basic Pitch Detection
+      === */
+
+      let audioContext;
+      let mic;
+      let pitch;
+
+      function setup() {
+        noCanvas();
+        audioContext = getAudioContext();
+        mic = new p5.AudioIn();
+        mic.start(startPitch);
+      }
+
+      function startPitch() {
+        pitch = ml5.pitchDetection('./model/', audioContext , mic.stream, modelLoaded);
+      }
+
+      function modelLoaded() {
+        select('#status').html('Model Loaded');
+        getPitch();
+      }
+
+      function getPitch() {
+        pitch.getPitch(function(err, frequency) {
+          if (frequency) {
+            select('#result').html(frequency);
+          } else {
+            select('#result').html('No pitch detected');
+          }
+          getPitch();
+        })
+      }
 ---
 
 A pitch detection algorithm is a way of estimating the pitch or fundamental frequency of an audio signal. This method allows to use a pre-trained machine learning pitch detection model to estimate the pitch of sound file.
