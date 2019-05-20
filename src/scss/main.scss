@@ -2,7 +2,8 @@
 
 @import "./vendors/normalize.css";
 
-@import "./base/base", "./base/font", "./base/typography", "./base/prettify";
+@import "./base/base", "./base/font", "./base/typography",
+  "./base/syntaxHighlight";
 
 @import "./layout/Navbar", "./layout/Sidebar", "./layout/wrapper",
   "./layout/GridContainer", "./layout/Section", "./layout/Footer",

@@ -155,3 +155,29 @@ li {
     }
   }
 }
+
+// iframe
+.iframe__container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+  border: 1px $blue solid;
+  border-radius: 5px;
+
+  &--video {
+    border: none;
+    iframe {
+      // padding-top: 0 !important;
+    }
+  }
+
+  iframe {
+    padding: $gutter 0 $gutter 0;
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}

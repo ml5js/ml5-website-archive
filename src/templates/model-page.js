@@ -9,6 +9,7 @@ import ModelList from "../components/ModelList";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import MarkdownContent from "../components/MarkdownContent";
 import Highlight from "react-highlight.js";
+import ResponsiveIframe from "../components/ResponsiveIframe";
 
 export const ModelPageTemplate = ({
   content,
@@ -51,44 +52,59 @@ export const ModelPageTemplate = ({
           </TabList>
 
           <TabPanel>
-            {/* <h2>Documentation</h2> */}
             <PostContent className="ml5Grid__postWrapper" content={content} />
           </TabPanel>
 
           <TabPanel>
-            <h2>Examples</h2>
-            {/* <MarkdownContent content={example} />
-                <pre className="language-javascript">
-                  <code
-                    className="language-javascript"
-                    dangerouslySetInnerHTML={{
-                      __html: example
-                    }}
-                  />
-                </pre> */}
-            {examples
-              ? examples.map(example => (
-                  <div key="">
-                    <div
-                      dangerouslySetInnerHTML={{
-                        __html: example.demo
-                      }}
-                    />
-                    <MarkdownContent content={example.demo} />
-                    <Highlight language="javascript">{example.code}</Highlight>
-                  </div>
-                ))
-              : null}
+            <div className="ml5Grid__postWrapper">
+              {examples
+                ? examples.map(example => (
+                    <div key="">
+                      <h2>{example.title}</h2>
+                      <ResponsiveIframe
+                        url={example.demo}
+                        title={example.title}
+                      />
+
+                      <h2>Code Snippet</h2>
+
+                      <Highlight language="javascript">
+                        {example.code}
+                      </Highlight>
+                      <p>
+                        <h2>Source Code</h2>
+                        <a
+                          className="example"
+                          href={example.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Github: {example.title}
+                        </a>
+                      </p>
+                    </div>
+                  ))
+                : null}
+            </div>
           </TabPanel>
+
           {tutorials ? (
             <TabPanel>
-              <h2>Tutorial</h2>
+              <div className="ml5Grid__postWrapper">
+                {/* <h2>Tutorial</h2> */}
+                {tutorials.map(({ tutorial }) => (
+                  <MarkdownContent content={tutorial} />
+                ))}
+              </div>
             </TabPanel>
           ) : null}
 
           {training ? (
             <TabPanel>
-              <h2>Training</h2>
+              <div className="ml5Grid__postWrapper">
+                {/* <h2>Training</h2> */}
+                <MarkdownContent content={training} />
+              </div>
             </TabPanel>
           ) : null}
         </Tabs>
@@ -168,10 +184,14 @@ export const pageQuery = graphql`
         description
         tags
         examples {
+          title
+          github
           demo
           code
         }
-        tutorials
+        tutorials {
+          tutorial
+        }
         training
       }
     }

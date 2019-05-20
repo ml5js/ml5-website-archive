@@ -1,0 +1,126 @@
+.gatsby-highlight,
+.hljs {
+  background-color: #f9f9f9 !important;
+  font-size: $font-size-paragraph !important;
+  font-family: $monospace-font-family !important;
+}
+pre code {
+  font-family: $monospace-font-family !important;
+  background-color: #f9f9f9;
+  color: #444444 !important;
+  font-size: $font-size-paragraph !important;
+}
+
+pre .string,
+code .string,
+.hljs-string {
+  color: #8000ff !important;
+} /* string */
+
+pre .keyword,
+code .keyword,
+.hljs-keyword {
+  color: $blue !important;
+} /* keyword */
+
+pre .comment,
+code .comment,
+.hljs-comment {
+  color: #999999 !important;
+} /* comment */
+pre .function,
+code .function,
+.hljs-built_in {
+  color: #6db51e !important;
+} /* type */
+pre .number,
+code .number {
+  color: #ff0080 !important;
+} /* literal */
+pre .operator,
+code .operator {
+  color: #888888 !important;
+} /* punctuation */
+pre .tag,
+code .tag {
+  color: #008 !important;
+} /* plaintext */
+pre .doctype,
+code .doctype {
+  color: #22c0c4 !important;
+} /* decimal */
+
+pre .attr-value,
+code .attr-value {
+  color: #080 !important;
+}
+
+pre .attr-name,
+code .attr-name {
+  color: #606 !important;
+}
+
+.gatsby-highlight-code-line {
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+}
+
+/**
+ * Add back the container background-color, border-radius, padding, margin
+ * and overflow that we removed from <pre>.
+ */
+.gatsby-highlight {
+  border-radius: 0.3em;
+  margin: 0.5em 0;
+  padding: 1em;
+  overflow: auto;
+}
+
+/**
+ * Remove the default PrismJS theme background-color, border-radius, margin,
+ * padding and overflow.
+ * 1. Make the element just wide enough to fit its content.
+ * 2. Always fill the visible space in .gatsby-highlight.
+ * 3. Adjust the position of the line numbers
+ */
+.gatsby-highlight pre[class*="language-"] {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  overflow: initial;
+  float: left; /* 1 */
+  min-width: 100%; /* 2 */
+}
+
+code {
+  display: block;
+}
+
+.number {
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  // display: -webkit-inline-flex;
+  display: inline !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+}
+
+.tag:not(body) {
+  /* -webkit-align-items: center; */
+  align-items: normal !important;
+  background-color: transparent !important;
+  /* border-radius: 4px; */
+  /* color: #4a4a4a; */
+  // display: -webkit-inline-flex;
+  display: inline !important;
+  height: 1em !important;
+  /* -webkit-justify-content: center; */
+  /* justify-content: center; */
+  /* line-height: 1.5; */
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  /* white-space: nowrap; */
+}

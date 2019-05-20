@@ -4,16 +4,28 @@
 
 @font-face {
   font-family: "HK Grotesk";
-  src: url('/fonts/HKGrotesk-Regular.otf') format("opentype");
+  src: url("/fonts/HKGrotesk-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "HK Grotesk";
-  src: url('/fonts/HKGrotesk-Medium.otf') format("opentype");
+  src: url("/fonts/HKGrotesk-Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Inconsolata";
+  src: url("/fonts/Inconsolata-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "Inconsolata";
+  src: url("/fonts/Inconsolata-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}

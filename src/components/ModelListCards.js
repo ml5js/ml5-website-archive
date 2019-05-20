@@ -26,12 +26,16 @@ function displaySectionByTag(models, tag){
                 </div>
                 <div style={{width:"100%", 
                 padding:"none"}}>
+                {model.frontmatter.exampleimgsrc ? (
+                <Link activeClassName="ModelList__link--active" to={model.fields.slug}>
                     <PreviewCompatibleImage
                       imageInfo={{
                         image: model.frontmatter.exampleimgsrc || "../assets/logo-purple-circle.png",
                         alt: `featured image thumbnail for post ${model.frontmatter.description}`
                       }}
                     />
+                </Link>
+                ): null}
                 </div>
                 </div>
                 </li>

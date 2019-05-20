@@ -3,9 +3,10 @@ templateKey: "model-page"
 title: example()
 exampleimgsrc: ../assets/ref-yolo.png
 tags:
-  - tag1
-  - tag2
-  - tag3
+  - image
+  - text
+  - helpers
+  - sound
 
 description: >-
   RNN and [LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) (Long Short Term Memory networks) are a type of Neural Network architecture useful for working with sequential data (like characters in text or the musical notes of a song) where the order of the that sequence matters. This class allows you run a model pre-trained on a body of text to generate new text.
@@ -16,23 +17,9 @@ description: >-
   You can train your own models [using this tutorial](/docs/training-lstm) or use [this set of pre trained models](https://github.com/ml5js/ml5-data-and-training/tree/master/models/lstm).
 
 examples:
-  - demo: >-
-
-      <div class="example">
-      <script src="../assets/scripts/example-image-classification.js"></script>
-      <button id="btn" >test</button>
-         <script>
-            let btn = document.getElementById('btn')
-            console.log(btn);
-            btn.addEventListener('click', ()=>{
-              console.log("XX");
-            })
-
-        </script>
-      <img src="/assets/img/bird.jpg" id="targetImage" width=400/>
-      <p id="status">Loading Model...</p>
-      <p>The MobileNet model labeled this as <span id="result">...</span>, with a confidence of <span id="probability">...</span>.</p>
-      </div>
+  - title: the title of the demo
+    github: https://github.com/ml5js/ml5-examples/blob/release/javascript/ImageClassification_Video/sketch.js
+    demo: https://yining1023.github.io/fast_style_transfer_in_ML5/
     code: >-
       const video = document.getElementById("video");
 
@@ -48,26 +35,11 @@ examples:
       yolo.detect(function(err, results) {
         console.log(results); // Will output bounding boxes of detected objects
       });
-  - demo: >-
-      <div>
-          const video = document.getElementById("video");
 
-      // Create a YOLO method
-      const yolo = ml5.YOLO(video, modelLoaded);
-
-      // When the model is loaded
-      function modelLoaded() {
-        console.log("Model Loaded!");
-      }
-
-      // Detect objects in the video element
-      yolo.detect(function(err, results) {
-        console.log(results); // Will output bounding boxes of detected objects
-      });
-      </div>
-
+  - title: the title of the demo
+    github: https://github.com/ml5js/ml5-examples/blob/release/javascript/ImageClassification_Video/sketch.js
+    demo: https://yining1023.github.io/fast_style_transfer_in_ML5/
     code: >-
-
       const video = document.getElementById("video");
 
       // Create a YOLO method
@@ -83,8 +55,18 @@ examples:
         console.log(results); // Will output bounding boxes of detected objects
       });
 
-tutorials: ""
-training: ""
+tutorials:
+  - tutorial: '<div class="iframe__container iframe__container--video"><iframe src="https://www.youtube.com/embed/vYgIKn7iDH8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+  - tutorial: '<div class="iframe__container iframe__container--video"><iframe src="https://www.youtube.com/embed/vYgIKn7iDH8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+
+training: >
+  ## heading 2
+
+
+  [this is a link](https://www.wenqi.li)
+
+
+  This is some text
 ---
 
 ## Syntax ( A subject should use H2 )

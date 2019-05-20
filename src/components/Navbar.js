@@ -40,8 +40,9 @@ const Navbar = class extends React.Component {
             <Link to="/" className="Navbar__item" title="Logo">
               <img src={logo} alt="ml5.js logo" />
             </Link>
-            <div className={`Navbar__tagline ${this.state.navBarActiveClass}`}>
-            </div>
+            <div
+              className={`Navbar__tagline ${this.state.navBarActiveClass}`}
+            />
             {/* Hamburger menu */}
             <div
               className={`Burger navbar-burger burger ${
@@ -110,11 +111,11 @@ const Navbar = class extends React.Component {
               </a>
             </div>
 
-            <div className="Navbar__itemContainer">
+            {/* <div className="Navbar__itemContainer">
               <form className="Navbar__item">
                 <input type="text" name="search" value="search placeholder" />
               </form>
-            </div>
+            </div> */}
           </div>
         </div>
       </nav>
