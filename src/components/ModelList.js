@@ -7,10 +7,14 @@ class ModelList extends React.Component {
     const { data } = this.props;
     const { edges: models } = data.allMarkdownRemark;
 
+    const modelsFiltered = models.filter( ({ node: model }) => {
+      return !model.frontmatter.tags.includes('reference')
+    })
+
     return (
       <ul className="ModelList">
-        {models &&
-          models.map(({ node: model }) => (
+        {modelsFiltered &&
+          modelsFiltered.map(({ node: model }) => (
             <li className="ModelList__item" key={model.id}>
               <div className="ModelList__title">
                 <Link
@@ -55,6 +59,7 @@ export default () => (
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
+                tags
               }
             }
           }
