@@ -6,7 +6,7 @@ description: Humans of AI is an online exhibition comprised of three works based
 featuredimage: ../assets/community-humans-of-ai-2.jpg
 externalLink: https://philippschmitt.com/work/humans-of-ai
 featuredpost: false
-date: 2019-05-15T15:04:10.000Z
+date: 2019-05-01T15:04:10.000Z
 tags:
   - webcam
 ---
