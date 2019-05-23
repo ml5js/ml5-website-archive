@@ -51,30 +51,30 @@ examples:
 
 ---
 
-You can use neural networks to generate new content. Using Deep Convolutional Generative Adversarial Networks, you can use models that have been pre-trained on images to generate new images "inspired by" the training data.  
+You can use neural networks to generate new content. A Generative Adversarial Network (GAN) is a machine learning architecture where two neural networks are adversaries competing. One neural network is a "generator", it makes new images. The other is a "discriminator" and tries to guess if the image is "fake" (made by the generator) or "real" (from the training data). Once the discriminator can no longer guess correctly, the model is trained! A DCGAN is a Deep Convolutional Generative Adversarial Network.
+
 <br/>
-ml5.js provides a few default pre-trained models for DCGAN, but you may consider to train your own DCGAN to generate images of things you're interested in. 
+ml5.js provides a few default pre-trained models for DCGAN, but you may consider training your own DCGAN to generate images of things you're interested in. 
 
 ## Example
 
 ```javascript
 // Create a new Sentiment method
 const dcgan = ml5.DCGAN('face', modelReady);
-      
+
 // When the model is loaded
 function modelReady() {
-  // model is ready
-  dcgan.generate(displayImage);
+  // Generate a new image
+  dcgan.generate(gotImage);
 }
 
-function displayImage(err, result){
-    //some callback
-    if(err){
-        console.log(err);
-        return
-    }
-    // logs your results
-    console.log(result)
+function gotImage(err, result) {
+  if (err) {
+    console.log(err);
+    return;
+  }
+  // The generated image is in the result
+  console.log(result);
 }
 ```
 
