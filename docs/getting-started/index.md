@@ -1,32 +1,51 @@
 ---
 templateKey: "start-page"
 title: Getting Started
-sidebar_label: "Getting Started"
+sidebar_label: "Quickstart"
 order: 1
 id: getting-started
 ---
 
-ml5.js aims to make machine learning approachable for a broad audience of artists, creative coders, and students. The library provides access to machine learning algorithms and models in the browser, building on top of [TensorFlow.js](https://js.tensorflow.org/) with no other external dependencies.
 
-The library is supported by code examples, tutorials, and sample datasets with an emphasis on ethical computing. Bias in data, stereotypical harms, and responsible crowdsourcing are part of the documentation around data collection and usage.
+Take a ride on the Coding Train to watch Dan Shiffman's ["A Beginner's Guide to Machine Learning with ml5.js"](https://www.youtube.com/watch?v=jmznx0Q1fP0). Here Dan explains what ml5.js is and where it all comes from.
 
-ml5.js is heavily inspired by [Processing](https://processing.org/) and [p5.js](https://p5js.org/).
+<br/>
 
-## Setup
+ml5.js is maching learning _for the web_ in your web browser. Through some clever and exciting advancements, the folks building [tensorflow.js](https://www.tensorflow.org/js) figured out that it is possible to use the web browser's built in graphics processing unit (GPU) to do calculations that would otherwise run very slowly using central processing unit (CPU) based calculations. A really nice explantion of what is happening with GPUs can be found [here - Why are shaders fast?](https://thebookofshaders.com/01/). ml5 helps to make all these new and exciting developments in machine learning on the web more accessible for everyone.
 
-Reference the [latest version](https://unpkg.com/ml5@0.1.3/dist/ml5.min.js) of ml5.js using a script tag in an HTML file as below:
+
+<br/><br/>
+
+# Quickstart
+
+The fastest way to get started exploring the creative possibilities of ml5.js are to either:
+
+1. Download a ml5.js project boilerplate. You can download a zip file here: [ml5 project boilerplate](https://github.com/ml5js/ml5-boilerplate/releases). <br/> Or...
+2. Use the [p5 web editor](https://editor.p5js.org/joeyklee/sketches/5VbXAWaV6) with ml5.js added.
+
+
+## Quickstart Option 1 - without p5
+
+Reference the [latest version](https://unpkg.com/ml5@0.3.0/dist/ml5.min.js) of ml5.js using a script tag in an HTML file as below: 
+
+<br/>
+
+In an **index.html** file, copy and paste the following and open up that file in your web browser. 
 
 ```HTML
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Getting Started with ml5.js</title>
-    <script src="https://unpkg.com/ml5@0.1.3/dist/ml5.min.js"></script>
+    <title>Getting Started with ml5.js and p5.js</title>
+    <script src="https://unpkg.com/ml5@0.3.0/dist/ml5.min.js"></script>
   </head>
 
   <body>
     <script>
-      <!-- Your code will go here -->
+      // Your code will go here
+      // open up your console - if everything loaded properly you should see 0.3.0
+      console.log('ml5 version:', ml5.version);
+
     </script>
   </body>
 </html>
@@ -34,54 +53,53 @@ Reference the [latest version](https://unpkg.com/ml5@0.1.3/dist/ml5.min.js) of m
 
 That's all! 💥
 
-## Creating a simple image classification example
+<br/>
 
-Let's add something more to classify an image using the pre-trained MobileNet model.
+## Quickstart Option 2 - with p5.js
 
-```markup
+If you're familiar with [p5.js](https://p5js.org/), ml5.js has been designed to play very nicely with p5. You can use the following boilerplate code to get started:
+
+<br/>
+
+In an **index.html** file, copy and paste the following and open up that file in your web browser. 
+
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <head>
-      <title>Getting Started with ml5.js</title>
-      <script src="https://unpkg.com/ml5@0.1.3/dist/ml5.min.js"></script>
-    </head>
+    <title>Getting Started with ml5.js</title>
+    <!-- p5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
+    <!-- ml5 -->
+    <script src="https://unpkg.com/ml5@0.3.0/dist/ml5.min.js"></script>
+  </head>
 
   <body>
-    <h1>Image classification using MobileNet</h1>
-    <p>The MobileNet model labeled this as
-    <span id="result">...</span> with a confidence of
-    <span id="probability">...</span></p>
-    <img src="https://ml5js.org/docs/assets/img/bird.jpg"
-     crossorigin="anonymous" id="image" width="400" crossorigin="anonymous" id="image" width="400">
-
     <script>
-      // The image we want to classify
-      const image = document.getElementById('image');
-      // The result tag in the HTML
-      const result = document.getElementById('result');
-      // The probability tag in the HTML
-      const probability = document.getElementById('probability');
+      // Your code will go here
+      // open up your console - if everything loaded properly you should see 0.3.0
+      console.log('ml5 version:', ml5.version);
 
-      // Initialize the Image Classifier method with MobileNet
-      const classifier = ml5.imageClassifier('MobileNet', function() {
-        console.log('Model Loaded!');
-      });
 
-      // Make a prediction with the selected image
-      // This will return an array with a default of 10 options with their probabilities
-      classifier.predict(image, function(err, results) {
-        result.innerText = results[0].className;
-        probability.innerText = results[0].probability.toFixed(4);
-      });
+      function setup(){
+        createCanvas(400, 400);
 
+      }
+
+      function draw(){
+        background(200);
+
+      }
     </script>
   </body>
 </html>
 ```
 
-Open it in a web browser and you should see something like this (note it may take a few seconds for the model to load!):
+That's all! 💥
 
-<img src="assets/img/quickstart.png">
+<br/>
 
-💥🤖
+
+<center> <h2>Now that you've got a ml5.js project setup, move on to the next section to see ml5.js in action. </h2></center>
