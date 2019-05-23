@@ -3,6 +3,7 @@ templateKey: "start-page"
 id: data-types-of-datasets
 title: Types of Data
 order: 2
+draft: true
 ---
 
 There are many different types of data. You can have images, videos, text, sounds, files, graphs, and more. Here are some common types of datasets that might be interesting when using ml5js.

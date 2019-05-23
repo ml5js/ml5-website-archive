@@ -4,6 +4,7 @@ title: Getting Started
 sidebar_label: "Quickstart"
 order: 1
 id: getting-started
+draft: false
 ---
 
 
@@ -100,6 +101,3 @@ In an **index.html** file, copy and paste the following and open up that file in
 That's all! 💥
 
 <br/>
-
-
-<center> <h2>Now that you've got a ml5.js project setup, move on to the next section to see ml5.js in action. </h2></center>

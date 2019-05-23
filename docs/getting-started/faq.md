@@ -3,6 +3,7 @@ templateKey: "start-page"
 id: faq
 title: FAQ
 order: 10
+draft: false
 ---
 
 ## Frequently Asked Questions

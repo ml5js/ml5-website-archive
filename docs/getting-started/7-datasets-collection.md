@@ -3,6 +3,7 @@ templateKey: "start-page"
 id: data-collection
 title: Data Collection
 order: 10
+draft: true
 ---
 
 ## Responsible data collection

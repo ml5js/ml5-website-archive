@@ -1,16 +1,17 @@
 ---
 templateKey: "start-page"
-title: A note on using Promises and Callbacks
+title: A note on using promises and callbacks
 sidebar_label: Promises and Callbacks
 id: promises-callback
-order: 10
+order: 3
+draft: false
 ---
 
 ml5.js is heavily inspired by the syntax, patterns and style of the [p5.js](https://p5js.org/) library. However, there are several differences in how asynchronous operations are handled by ml5.js. ml5.js supports both <b>error-first callbacks</b> and Promises in all methods.
 
 ## Using Callbacks
 
-In [p5.js](https://p5js.org/), [callbacks](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function) are passed as arguments to functions that often perform some asynchronous operation. For example, [p5.js](https://p5js.org/) defines the [`loadJSON()`](https://p5js.org/reference/#/p5/loadJSON) function as the following:
+In [p5.js](https://p5js.org/), [callbacks](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function) are passed as arguments to functions that often perform some asynchronous operation. For example, [p5.js](https://p5js.org/) defines the [**loadJSON()**](https://p5js.org/reference/#/p5/loadJSON) function as the following:
 
 ```javascript
 loadJSON("http//example.com/data.json", function(results) {
@@ -22,9 +23,9 @@ Notice that the results from the callback in [p5.js](https://p5js.org/) are give
 
 ml5.js, on the other hand, uses a pattern referred to as an <b>error-first callback</b>:
 
-> With this pattern, a callback function is passed to the method as an argument. When the operation either completes or an error is raised, the callback function is called with the Error object (if any) passed as the first argument. If no error was raised, the first argument will be passed as null. [[Taken from the Node.js documentation](https://nodejs.org/api/errors.html#errors_error_first_callbacks)]
+> With this pattern, a callback function is passed to the method as an argument. When the operation either completes or an error is raised, the callback function is called with the Error object (if any) passed as the first argument. If no error was raised, the first argument will be passed as null. [Taken from the Node.js documentation](https://nodejs.org/api/errors.html#errors_error_first_callbacks)
 
-For example if you are using the `imageClassifier()` method, you will need to construct it in the following way:
+For example if you are using the **imageClassifier()** method, you will need to construct it in the following way:
 
 ```javascript
 // Pass a callback function to constructor
@@ -56,4 +57,4 @@ ml5
   });
 ```
 
-For some video tutorials about Promises, you can find this [Coding Train playlist](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bKLPQvPRNNE65kBL62mVfx). There is also a [video tutorial about the ES6 arrow notation (`=>`)](https://youtu.be/mrYMzpbFz18).
+For some video tutorials about Promises, you can find this [Coding Train playlist](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bKLPQvPRNNE65kBL62mVfx). There is also a [video tutorial about the ES6 arrow notation (**=>**)](https://youtu.be/mrYMzpbFz18).
