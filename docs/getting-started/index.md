@@ -6,7 +6,6 @@ order: 1
 id: getting-started
 ---
 
-## A Beginner's Guide to ml5.js
 
 Take a ride on the Coding Train to watch Dan Shiffman's ["A Beginner's Guide to Machine Learning with ml5.js"](https://www.youtube.com/watch?v=jmznx0Q1fP0). Here Dan explains what ml5.js is and where it all comes from.
 
@@ -102,3 +101,5 @@ That's all! 💥
 
 <br/>
 
+
+<center> <h2>Now that you've got a ml5.js project setup, move on to the next section to see ml5.js in action. </h2></center>
