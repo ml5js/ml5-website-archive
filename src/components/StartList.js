@@ -8,10 +8,12 @@ class StartList extends React.Component {
     const { data } = this.props;
     const { edges: models } = data.allMarkdownRemark;
 
+    const filteredPages = models.filter(({ node: item })  => item.frontmatter.draft !== true )
+
     return (
       <ul className="">
         {models &&
-          models.map(({ node: model }) => (
+          filteredPages.map(({ node: model }) => (
             <li className="ModelList__item" key={model.id}>
               <div className="ModelList__title">
                 <Link
@@ -44,7 +46,7 @@ export default () => (
     query={graphql`
       query StartListQuery {
         allMarkdownRemark(
-          sort: { order: ASC, fields: [fields___slug] }
+          sort: { order: ASC, fields: [frontmatter___order] }
           filter: { frontmatter: { templateKey: { eq: "start-page" } } }
         ) {
           edges {
@@ -57,6 +59,7 @@ export default () => (
               frontmatter {
                 title
                 sidebar_label
+                draft
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost

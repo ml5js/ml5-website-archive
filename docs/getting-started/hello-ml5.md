@@ -3,7 +3,8 @@ templateKey: "start-page"
 title: Hello ml5
 sidebar_label: "Hello ml5"
 id: image-classification-example
-order: 10
+order: 2
+draft: false
 ---
 
 Hello there! If you've landed here, that probably means you're interested in building your first ml5.js project. If so, wonderful! We invite you to read on.

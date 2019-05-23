@@ -14,6 +14,7 @@ export const StartPageTemplate = ({
   description,
   tags,
   title,
+  draft,
   helmet
 }) => {
   const PostContent = contentComponent || Content;
@@ -48,7 +49,8 @@ StartPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.object
+  helmet: PropTypes.object,
+  draft: PropTypes.bool
 };
 
 const StartPage = ({ data }) => {
@@ -106,6 +108,7 @@ export const pageQuery = graphql`
         title
         description
         tags
+        draft
       }
     }
   }

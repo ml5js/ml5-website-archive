@@ -3,6 +3,7 @@ templateKey: "start-page"
 id: data-overview
 title: Overview
 order: 10
+draft: true
 ---
 
 This section is devoted to data, datasets and data collection.📋 📜 📄

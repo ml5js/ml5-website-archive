@@ -3,6 +3,7 @@ templateKey: "start-page"
 id: data-preparing-your-own-data
 title: Preparing your own data
 order: 2
+draft: true
 ---
 
 ## Training, test, and validation datasets
