@@ -18,20 +18,6 @@ examples:
     github: https://github.com/ml5js/ml5-examples/tree/release/p5js/FeatureExtractor/FeatureExtractor_Image_Classification
     demo: https://ml5js.github.io/ml5-examples/p5js/FeatureExtractor/FeatureExtractor_Image_Classification
     code: >-  
-      // Copyright (c) 2018 ml5
-      
-      //
-      
-      // This software is released under the MIT License.
-      
-      // https://opensource.org/licenses/MIT
-
-      /* ===
-      ml5 Example
-      Image Classification using Feature Extraction with MobileNet. Built with p5.js
-      This example uses a callback pattern to create the classifier
-      === */
-
       let featureExtractor;
       let classifier;
       let video;

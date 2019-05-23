@@ -13,19 +13,6 @@ examples:
     github: https://github.com/ml5js/ml5-examples/tree/release/p5js/Word2Vec
     demo: https://ml5js.github.io/ml5-examples/p5js/Word2Vec
     code: >-
-      // Copyright (c) 2018 ml5
-      
-      //
-      
-      // This software is released under the MIT License.
-      
-      // https://opensource.org/licenses/MIT
-
-      /* ===
-      ml5 Example
-      Word2Vec example with p5.js. Using a pre-trained model on common English words.
-      === */
-
       let word2Vec;
 
       function modelLoaded() {

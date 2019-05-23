@@ -13,19 +13,6 @@ examples:
     github: https://github.com/ml5js/ml5-examples/tree/release/p5js/PitchDetection/PitchDetection
     demo: https://ml5js.github.io/ml5-examples/p5js/PitchDetection/PitchDetection
     code: >-  
-      // Copyright (c) 2018 ml5
-      
-      //
-      
-      // This software is released under the MIT License.
-      
-      // https://opensource.org/licenses/MIT
-
-      /* ===
-      ml5 Example
-      Basic Pitch Detection
-      === */
-
       let audioContext;
       let mic;
       let pitch;

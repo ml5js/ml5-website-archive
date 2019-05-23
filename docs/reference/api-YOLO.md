@@ -14,9 +14,6 @@ examples:
     github: https://github.com/ml5js/ml5-examples/tree/release/p5js/YOLO/YOLO_single_image
     demo: https://ml5js.github.io/ml5-examples/p5js/YOLO/YOLO_single_image
     code: >-
-      // Initialize the Image Classifier method with MobileNet. A callback needs to be passed.
-      // Create a YOLO method
-
       const yolo = ml5.YOLO(modelReady);
       let img;
       let objects = [];

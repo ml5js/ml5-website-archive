@@ -13,18 +13,6 @@ examples:
     github: https://github.com/ml5js/ml5-examples/tree/release/p5js/KNNClassification/KNNClassification_Video
     demo: https://ml5js.github.io/ml5-examples/p5js/KNNClassification/KNNClassification_Video
     code: >-
-      // Copyright (c) 2018 ml5
-      
-      //
-      // This software is released under the MIT License.
-      
-      // https://opensource.org/licenses/MIT
-
-      /* ===
-      ml5 Example
-      KNN Classification on Webcam Images with mobileNet. Built with p5.js
-      === */
-      
       let video;
       // Create a KNN classifier
       

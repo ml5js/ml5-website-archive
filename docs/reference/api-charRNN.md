@@ -18,21 +18,10 @@ examples:
     github: https://github.com/ml5js/ml5-examples/tree/release/p5js/CharRNN/CharRNN_Text
     demo: https://ml5js.github.io/ml5-examples/p5js/CharRNN/CharRNN_Text
     code: >-
-      // Copyright (c) 2018 ml5
-      
-      //
-      
-      // This software is released under the MIT License.
-      
-      // https://opensource.org/licenses/MIT
-
-      /* ===
-      ml5 Example
-      LSTM Generator example with p5.js
-      This uses a pre-trained model on a corpus of Virginia Woolf
-      For more models see: https://github.com/ml5js/ml5-data-and-training/tree/master/models/charRNN
-      === */
-
+      // LSTM Generator example with p5.js
+      // This uses a pre-trained model on a corpus of Virginia Woolf
+      // For more models see: https://github.com/ml5js/ml5-data-and-training/tree/master/models/charRNN
+        
       let charRNN;
       let textInput;
       let lengthSlider;

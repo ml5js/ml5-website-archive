@@ -14,19 +14,7 @@ examples:
     github: https://github.com/ml5js/ml5-examples/tree/release/p5js/StyleTransfer/StyleTransfer_Image
     demo: https://ml5js.github.io/ml5-examples/p5js/StyleTransfer/StyleTransfer_Image
     code: >-
-      // Copyright (c) 2018 ml5
-      
-      // 
-      
-      // This software is released under the MIT License.
-      
-      // https://opensource.org/licenses/MIT
-
-      /* ===
-      ml5 Example
-      Style Transfer Image Example using p5.js
-      This uses a pre-trained model of The Great Wave off Kanagawa and Udnie (Young American Girl, The Dance)
-      === */
+      // This uses a pre-trained model of The Great Wave off Kanagawa and Udnie (Young American Girl, The Dance)
 
       let inputImg;
       let statusMsg;
