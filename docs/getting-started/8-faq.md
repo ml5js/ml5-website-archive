@@ -21,15 +21,15 @@ order: 10
 > No. Not at the moment.
 
 
-> ml5.js uses tensorflow.js which uses the browser's GPU to run all the fancy calculations. As a result, all of the functionality that ml5.js is built on is based around using the browser GPU. We hope to have ml5.js run in node-js sometime in the near future (especially now that [node support for tensorflow is a thing](https://www.tensorflow.org/js/guide/nodejs) but the current ml5 setup does not support node.js.
+> ml5.js uses TensorFlow.js which uses the browser's GPU to run all the calculations. As a result, all of the ml5.js functionality is based around using the browser GPU. We hope to have ml5.js run in node-js sometime in the near future (especially now that [node support for TensorFlow is a thing](https://www.tensorflow.org/js/guide/nodejs) but the current ml5 setup does not support node.js.
 
 
-> See discussions [here](https://github.com/ml5js/ml5-library/issues/377)
+> [For more discussion about node and ml5.js, visit this issue thread.](https://github.com/ml5js/ml5-library/issues/377)
 
 
 ### Can I contribute?
 
-> Yes! Absolutely. We welcome all forms of socially and technically driven contributions. No contribution is too small. 
+> Yes! Absolutely. We welcome all forms of socially and technically driven contributions. No contribution is too small. Please contact us at [@ml5js on twitter](https://twitter.com/ml5js) or <a href="mailto:hello@ml5js.org">hello@ml5js.org</a>.
 
 ### How can I contribute?
 
