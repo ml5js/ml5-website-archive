@@ -14,39 +14,37 @@ examples:
     demo: 
     code: >-
       let dcgan;
-      let outputCanvas; 
-      let button; 
+      let outputCanvas;
+      let button;
       let statusMsg;
 
       function setup() {
-          createCanvas(400, 400)
-          //load the model
-          //we can have multiple pre-trained models (e.g. cats, flowers, etc.), just like SketchRNN
-          dcgan = ml5.DCGAN('face', modelReady);
+        createCanvas(400, 400);
+        // Load the model
+        // There can be multiple pre-trained models (e.g. cats, flowers, etc.), just like SketchRNN
+        dcgan = ml5.DCGAN('face', modelReady);
 
-          // //button to generate an image
-          button = createButton('generate');
-          button.mousePressed(generate);
-
-      }
-
-      function generate() {
-          //the generate function takes an output canvas to draw on
-          // and a callback with possible info like time elapsed to generate the image
-          dcgan.generate(displayImage);
-      }
-
-      function displayImage(err, result){
-          //some callback
-          if(err){
-              console.log(err);
-              return
-          }
-          image(result.image, 0, 0, 400, 400)
+        // Button to generate an image
+        button = createButton('generate');
+        button.mousePressed(generate);
       }
 
       function modelReady() {
-          generate();
+        // Generate a first image
+        generate();
+      }
+      function generate() {
+        // Generate requires a callback
+        dcgan.generate(displayImage);
+      }
+
+      function displayImage(err, result) {
+        if (err) {
+          console.log(err);
+          return;
+        }
+        // Draw the image on the p5 canvas
+        image(result.image, 0, 0, 400, 400);
       }
 
 ---
