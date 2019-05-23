@@ -16,19 +16,6 @@ examples:
     github: https://github.com/ml5js/ml5-examples/tree/release/p5js/ImageClassification/ImageClassification
     demo: https://ml5js.github.io/ml5-examples/p5js/ImageClassification/ImageClassification
     code: >-
-      // Copyright (c) 2018 ml5
-      
-      //
-      
-      // This software is released under the MIT License.
-      // https://opensource.org/licenses/MIT
-
-      /* ===
-      ml5 Example
-      Image classification using MobileNet and p5.js
-      This example uses a callback pattern to create the classifier
-      === */
-
       // Initialize the Image Classifier method with MobileNet. A callback needs to be passed.
       
       let classifier;
@@ -65,20 +52,6 @@ examples:
     github: https://github.com/ml5js/ml5-examples/tree/release/p5js/ImageClassification/ImageClassification_Video
     demo: https://ml5js.github.io/ml5-examples/p5js/ImageClassification/ImageClassification_Video
     code: >-
-      // Copyright (c) 2018 ml5
-      
-      //
-      
-      // This software is released under the MIT License.
-      
-      // https://opensource.org/licenses/MIT
-
-      /* ===
-      ml5 Example
-      Webcam Image Classification using MobileNet and p5.js
-      This example uses a callback pattern to create the classifier
-      === */
-
       let classifier;
       let video;
       let resultsP;
