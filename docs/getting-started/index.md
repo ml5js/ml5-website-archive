@@ -11,7 +11,7 @@ Take a ride on the Coding Train to watch Dan Shiffman's ["A Beginner's Guide to 
 
 <br/>
 
-ml5.js is maching learning _for the web_ in your web browser. Through some clever and exciting advancements, the folks building [tensorflow.js](https://www.tensorflow.org/js) figured out that it is possible to use the web browser's built in graphics processing unit (GPU) to do calculations that would otherwise run very slowly using central processing unit (CPU) based calculations. A really nice explantion of what is happening with GPUs can be found [here - Why are shaders fast?](https://thebookofshaders.com/01/). ml5 helps to make all these new and exciting developments in machine learning on the web more accessible for everyone.
+ml5.js is machine learning _for the web_ in your web browser. Through some clever and exciting advancements, the folks building [TensorFlow.js](https://www.tensorflow.org/js) figured out that it is possible to use the web browser's built in graphics processing unit (GPU) to do calculations that would otherwise run very slowly using central processing unit (CPU) based calculations. A really nice explantion of what is happening with GPUs can be found [here - Why are shaders fast?](https://thebookofshaders.com/01/). ml5 helps to make all these new developments in machine learning on the web more approachable for everyone.
 
 
 <br/><br/>
@@ -21,7 +21,7 @@ ml5.js is maching learning _for the web_ in your web browser. Through some cleve
 The fastest way to get started exploring the creative possibilities of ml5.js are to either:
 
 1. Download a ml5.js project boilerplate. You can download a zip file here: [ml5 project boilerplate](https://github.com/ml5js/ml5-boilerplate/releases). <br/> Or...
-2. Use the [p5 web editor](https://editor.p5js.org/joeyklee/sketches/5VbXAWaV6) with ml5.js added.
+2. Open this [p5 web editor sketch with ml5.js added](https://editor.p5js.org/joeyklee/sketches/5VbXAWaV6).
 
 
 ## Quickstart Option 1 - without p5
