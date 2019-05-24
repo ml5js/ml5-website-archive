@@ -11,7 +11,7 @@ tags:
 examples:
   - title: DCGAN - faces
     github: https://github.com/ml5js/ml5-examples/tree/development/p5js/DCGAN
-    demo: 
+    demo: https://ml5js.github.io/ml5-examples/p5js/DCGAN/
     code: >-
       let dcgan;
       let outputCanvas;
