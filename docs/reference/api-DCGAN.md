@@ -10,8 +10,8 @@ tags:
 
 examples:
   - title: DCGAN - faces
-    github: https://github.com/ml5js/ml5-examples/tree/development/p5js/DCGAN
-    demo: 
+    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/DCGAN
+    demo: https://ml5js.github.io/ml5-examples/p5js/DCGAN/
     code: >-
       let dcgan;
       let outputCanvas;
@@ -135,4 +135,4 @@ ml5.DCGAN(?modelName, ?callback)
 
 ## Source
 
-[/src/DCGAN/](https://github.com/ml5js/ml5-library/tree/development/src/DCGAN)
+[/src/DCGAN/](https://github.com/ml5js/ml5-library/tree/release/src/DCGAN)
