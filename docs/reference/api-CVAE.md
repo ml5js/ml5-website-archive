@@ -11,7 +11,7 @@ tags:
 examples:
   - title: CVAE using Quickdraw dataset
     github: https://github.com/ml5js/ml5-examples/tree/development/p5js/CVAE
-    demo: 
+    demo: https://ml5js.github.io/ml5-examples/p5js/CVAE/
     code: >-
       let cvae;
       let button;
