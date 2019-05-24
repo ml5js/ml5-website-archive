@@ -12,7 +12,7 @@ tags:
 examples:
   - title: UNET On Webcam
     github: https://github.com/ml5js/ml5-examples/tree/development/p5js/UNET/UNET_webcam
-    demo: 
+    demo: https://ml5js.github.io/ml5-examples/p5js/UNET/UNET_webcam/
     code: >-
       let video;
       let uNet;
