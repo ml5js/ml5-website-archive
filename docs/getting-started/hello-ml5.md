@@ -50,7 +50,7 @@ Your project directory should look something like this:
 
 ## Demo
 
-This example is built with p5.js. You can also find the same example without p5.js [here](https://github.com/ml5js/ml5-examples/tree/master/javascript/ImageClassification/ImageClassification).
+This example is built with p5.js. You can also find the same example without p5.js [here](https://github.com/ml5js/ml5-examples/tree/release/javascript/ImageClassification).
 
 <br/>
 
