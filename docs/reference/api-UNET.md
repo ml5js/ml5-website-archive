@@ -11,7 +11,7 @@ tags:
 
 examples:
   - title: UNET On Webcam
-    github: https://github.com/ml5js/ml5-examples/tree/development/p5js/UNET/UNET_webcam
+    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/UNET/UNET_webcam
     demo: https://ml5js.github.io/ml5-examples/p5js/UNET/UNET_webcam/
     code: >-
       let video;
@@ -124,5 +124,5 @@ ml5.uNet(model, ?callback)
 
 ## Source
 
-[/src/UNET/](https://github.com/ml5js/ml5-library/tree/development/src/UNET)
+[/src/UNET/](https://github.com/ml5js/ml5-library/tree/release/src/UNET)
 
