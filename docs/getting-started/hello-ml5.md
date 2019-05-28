@@ -76,9 +76,9 @@ Here you can see that we read in the javascript libraries. This includes our ml5
   <meta charset="UTF-8">
   <title>Image classification using MobileNet and p5.js</title>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
-  <script src="https://unpkg.com/ml5@0.2.3/dist/ml5.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.3.0/dist/ml5.min.js"></script>
 </head>
 
 <body>
@@ -92,7 +92,7 @@ Here you can see that we read in the javascript libraries. This includes our ml5
 
 ### Your sketch.js
 
-Inside your **sketch.js** file you can type out (or copy and paste) the following code. Notice in this example we have a reference to "images/bird.jpg". You'll replace this with the name of your image.
+Inside your **sketch.js** file you can type out (or copy and paste) the following code. Notice in this example we have a reference to "images/bird.png". You'll replace this with the name of your image.
 
 ```javascript
 // Initialize the Image Classifier method with MobileNet. A callback needs to be passed.
@@ -103,7 +103,7 @@ let img;
 
 function preload() {
   classifier = ml5.imageClassifier('MobileNet');
-  img = loadImage('images/bird.jpg');
+  img = loadImage('images/bird.png');
 }
 
 function setup() {
@@ -117,11 +117,12 @@ function gotResult(error, results) {
   // Display error in the console
   if (error) {
     console.error(error);
+  } else {
+    // The results are in an array ordered by confidence.
+    console.log(results);
+    createDiv('Label: ' + results[0].label);
+    createDiv('Confidence: ' + nf(results[0].confidence, 0, 2));
   }
-  // The results are in an array ordered by confidence.
-  console.log(results);
-  createDiv('Label: ' + results[0].label);
-  createDiv('Confidence: ' + nf(results[0].confidence, 0, 2));
 }
 ```
 
@@ -146,7 +147,7 @@ Use p5's **preload()** function to load our imageClassifier model and our bird i
 ```javascript
 function preload() {
   classifier = ml5.imageClassifier('MobileNet');
-  img = loadImage('images/bird.jpg');
+  img = loadImage('images/bird.png');
 }
 ```
 
@@ -154,7 +155,7 @@ function preload() {
 
 In p5.js we use the **setup()** function for everything in our program that just runs once. In our program, we use the **setup()** function to:
 1. create a canvas to render our image
-2. call .classify() onr our classifier to classify our image
+2. call .classify() on our classifier to classify our image
 3. render the image to the canvas
 
 You will notice that the **.classify()** function takes two parameters: 1. the image you want to classify, and 2. a callback function called **gotResult**. Let's look at what **gotResult** does.
@@ -169,7 +170,7 @@ function setup() {
 
 ### Step 4: Define the gotResult() callback function
 
-The **gotResult()** function takes two paramters: 1. error, and 2. results. These get passed along to **gotResult()** when the **.classify()** function finishes classifying the image. If there is an error, then an **error** will be logged. If our classifier manages to recognize the content of the image, then a **result** will be returned. 
+The **gotResult()** function takes two parameters: 1. error, and 2. results. These get passed along to **gotResult()** when the **.classify()** function finishes classifying the image. If there is an error, then an **error** will be logged. If our classifier manages to recognize the content of the image, then a **result** will be returned. 
 
 <br/>
 
@@ -181,11 +182,12 @@ function gotResult(error, results) {
   // Display error in the console
   if (error) {
     console.error(error);
+  } else {
+    // The results are in an array ordered by confidence.
+    console.log(results);
+    createDiv('Label: ' + results[0].label);
+    createDiv('Confidence: ' + nf(results[0].confidence, 0, 2));
   }
-  // The results are in an array ordered by confidence.
-  console.log(results);
-  createDiv('Label: ' + results[0].label);
-  createDiv('Confidence: ' + nf(results[0].confidence, 0, 2));
 }
 ```
 
@@ -194,7 +196,7 @@ function gotResult(error, results) {
 You've just made a simple machine learning powered program that:
 1. takes an image,
 2. classifies the content of that image, and
-3. displays the results all in your web brower!
+3. displays the results all in your web browser!
 
 Not all of our examples are structured exactly like this, but this provides a taste into how ml5.js is trying to make machine learning more approachable. Try using different images and seeing what kinds of things get returned. 
 
