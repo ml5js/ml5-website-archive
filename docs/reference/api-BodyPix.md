@@ -1,7 +1,7 @@
 ---
 templateKey: "model-page"
 id: BodyPix
-exampleimgsrc: ../assets/ref-bodyPix.png
+exampleimgsrc: ../assets/ref-bodypix-round.png
 title: bodyPix()
 description: >- 
   BodyPix is Real-time Person Segmentation in the Browser 

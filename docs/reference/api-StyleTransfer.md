@@ -1,7 +1,7 @@
 ---
 templateKey: "model-page"
 id: StyleTransfer
-exampleimgsrc: ../assets/ref-styletransfer.png
+exampleimgsrc: ../assets/ref-styletransfer-round.png
 title: styleTransfer()
 description: >-
   Style Transfer is a machine learning technique that allows to transfer the style of one image into another one. This is a two step process, first you need to train a model on one particular style and then you can apply this style to another image.

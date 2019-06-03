@@ -1,7 +1,7 @@
 ---
 templateKey: "model-page"
 title: pix2pix()
-exampleimgsrc: ../assets/ref-pix2pix.png
+exampleimgsrc: ../assets/ref-pix2pix-round.png
 tags:
   - image
 description: >-
