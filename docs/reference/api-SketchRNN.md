@@ -167,4 +167,4 @@ ml5.SketchRNN(model, ?callback)
 
 ## Source
 
-[/src/SketchRNN/](https://github.com/ml5js/ml5-library/tree/master/src/SketchRNN)
+[/src/SketchRNN/](https://github.com/ml5js/ml5-library/tree/release/src/SketchRNN)

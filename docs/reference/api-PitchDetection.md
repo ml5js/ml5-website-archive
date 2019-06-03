@@ -110,4 +110,4 @@ ml5.pitchDetection(model, audioContext, stream, callback);
 
 ## Source
 
-[/src/PitchDetection](https://github.com/ml5js/ml5-library/tree/master/src/PitchDetection)
+[/src/PitchDetection](https://github.com/ml5js/ml5-library/tree/release/src/PitchDetection)

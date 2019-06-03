@@ -9,32 +9,29 @@ tags:
   - image
 
 examples:
-  - title: DCGAN - faces
+  - title: DCGAN - generated lo-res aerial images
     github: https://github.com/ml5js/ml5-examples/tree/release/p5js/DCGAN
     demo: https://ml5js.github.io/ml5-examples/p5js/DCGAN/
     code: >-
       let dcgan;
-      let outputCanvas;
       let button;
-      let statusMsg;
+
+      function preload(){
+        dcgan = ml5.DCGAN('model/geo/manifest.json');
+      }
 
       function setup() {
-        createCanvas(400, 400);
-        // Load the model
-        // There can be multiple pre-trained models (e.g. cats, flowers, etc.), just like SketchRNN
-        dcgan = ml5.DCGAN('face', modelReady);
-
+        createCanvas(200, 200);
         // Button to generate an image
         button = createButton('generate');
         button.mousePressed(generate);
+
+        // generate an image on load
+        generate()
       }
 
-      function modelReady() {
-        // Generate a first image
-        generate();
-      }
       function generate() {
-        // Generate requires a callback
+        // Generate function receives a callback for when image is ready
         dcgan.generate(displayImage);
       }
 
@@ -43,8 +40,7 @@ examples:
           console.log(err);
           return;
         }
-        // Draw the image on the p5 canvas
-        image(result.image, 0, 0, 400, 400);
+        image(result.image, 0, 0, 200, 200);
       }
 
 ---
@@ -58,7 +54,7 @@ ml5.js provides a few default pre-trained models for DCGAN, but you may consider
 
 ```javascript
 // Create a new Sentiment method
-const dcgan = ml5.DCGAN('face', modelReady);
+const dcgan = ml5.DCGAN('model/geo/manifest.json', modelReady);
 
 // When the model is loaded
 function modelReady() {
@@ -80,21 +76,19 @@ function gotImage(err, result) {
 ## Syntax
 
 ```javascript
-ml5.DCGAN(?modelName, ?callback)
+ml5.DCGAN(?modelPath, ?callback)
 ```
 
 ### Parameters
 
-- `modelName` - Required. The name of your pre-trained model. In the example below, the modelName is "face" which is an object that contains the properties that allow DCGAN to run.
+- `modelPath` - Required. This will be a JSON object called `manifest.json` that contains information about your pre-trained GAN and the url to the `model.json` file that contains your pre-trained model. The `model` property can also point to an absolute URL e.g. `"https://raw.githubusercontent.com/ml5js/ml5-data-and-models/master/models/dcgan/face/model.json"`
 
-```
+```json
 {
-  face: {
-          description: 'DCGAN, human faces, 64x64',
-          modelUrl: "https://raw.githubusercontent.com/viztopia/ml5dcgan/master/model/model.json",
-          modelSize: 64,
-          modelLatentDim: 128
-      }
+    "description": "Aerial Images of Santiago, Chile 64x64 (16 MB)",
+    "model": "model/geo/model.json",
+    "modelSize": 64,
+    "modelLatentDim": 128
 }
 ```
 
@@ -104,7 +98,7 @@ ml5.DCGAN(?modelName, ?callback)
 ## Properties
 
 ```javascript
-.ready
+.readyReady
 ```
 
 > Boolean value that specifies if the model has loaded.
@@ -116,7 +110,7 @@ ml5.DCGAN(?modelName, ?callback)
 > An object that specifies the model properties
 
 ```javascript
-.modelName
+.modelPath
 ```
 
 > The name of the model being used to generate images

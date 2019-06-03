@@ -293,4 +293,4 @@ Boolean value to check if the model is predicting.
 
 ### Source
 
-[src/FeatureExtractor](https://github.com/ml5js/ml5-library/tree/master/src/FeatureExtractor)
+[src/FeatureExtractor](https://github.com/ml5js/ml5-library/tree/release/src/FeatureExtractor)

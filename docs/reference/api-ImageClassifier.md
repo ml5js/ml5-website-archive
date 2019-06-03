@@ -132,7 +132,7 @@ classifier.predict(document.getElementById('image'), function(err, results) {
 
 ### Parameters
 
-  - `model` - A String value of a valid model. Case insensitive. Models available are: ['MobileNet'](https://arxiv.org/abs/1704.04861), ['Darknet'](https://pjreddie.com/darknet/imagenet/) and ['Darknet-tiny'](https://pjreddie.com/darknet/tiny-darknet/)
+  - `model` - A String value of a valid model OR a url to a `model.json` that contains a pre-trained model. Case insensitive. Models available are: ['MobileNet'](https://arxiv.org/abs/1704.04861), ['Darknet'](https://pjreddie.com/darknet/imagenet/) and ['Darknet-tiny'](https://pjreddie.com/darknet/tiny-darknet/), or any image classifiation model trained in [Teachable Machine](https://teachablemachine.withgoogle.com/io19)
   - `callback` - Optional. A function to run once the model has been loaded. If no callback is provided, it will return a promise that will be resolved once the model has loaded.
   - `options` - Optional. An object describing a model accuracy and performance. For MobileNet the defaults are: `{ version: 1,
     alpha: 1.0, topk: 3, }`
@@ -158,19 +158,19 @@ classifier.predict(document.getElementById('image'), function(err, results) {
 ## Methods
 
   ```javascript
-  .predict(input, ?callback)
+  .classify(input, ?callback)
   ```
 
   ```javascript
-  .predict(input, ?numberOfClasses ,?callback)
+  .classify(input, ?numberOfClasses ,?callback)
   ```
 
   ```javascript
-  .predict(?callback)
+  .classify(?callback)
   ```
 
   ```javascript
-  .predict(?numberOfClasses ,?callback)
+  .classify(?numberOfClasses ,?callback)
   ```
 
   > Given an image or video, returns an array of objects containing class names and probabilities.
@@ -183,4 +183,4 @@ classifier.predict(document.getElementById('image'), function(err, results) {
 
 ## Source
 
-[/src/ImageClassifier](https://github.com/ml5js/ml5-library/blob/master/src/ImageClassifier/)
+[/src/ImageClassifier](https://github.com/ml5js/ml5-library/blob/release/src/ImageClassifier/)

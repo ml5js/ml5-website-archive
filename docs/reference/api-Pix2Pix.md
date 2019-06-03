@@ -185,4 +185,4 @@ ml5.pix2pix(model, ?callback);
 
 ## Source
 
-[/src/Pix2pix](https://github.com/ml5js/ml5-library/tree/master/src/Pix2pix)
+[/src/Pix2pix](https://github.com/ml5js/ml5-library/tree/release/src/Pix2pix)

@@ -313,4 +313,4 @@ ml5.KNNClassifier();
 
 ## Source
 
-[/src/KNNClassifier/](https://github.com/ml5js/ml5-library/tree/master/src/KNNClassifier)
+[/src/KNNClassifier/](https://github.com/ml5js/ml5-library/tree/release/src/KNNClassifier)

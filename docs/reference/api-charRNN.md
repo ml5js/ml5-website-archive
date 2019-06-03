@@ -186,4 +186,4 @@ The vocabulary size (or total number of possible characters).
 
 ### Source
 
-[/src/charRNN/](https://github.com/ml5js/ml5-library/tree/master/src/charRNN)
+[/src/charRNN/](https://github.com/ml5js/ml5-library/tree/release/src/charRNN)

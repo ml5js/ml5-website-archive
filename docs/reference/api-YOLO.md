@@ -157,4 +157,4 @@ ml5.YOLO(?options, ?callback)
 
 ## Source
 
-[/src/YOLO](https://github.com/ml5js/ml5-library/tree/master/src/YOLO)
+[/src/YOLO](https://github.com/ml5js/ml5-library/tree/release/src/YOLO)

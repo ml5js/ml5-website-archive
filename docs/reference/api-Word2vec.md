@@ -187,4 +187,4 @@ Word2Vec(model, ?callback)
 
 ## Source
 
-[/src/Word2vec/](https://github.com/ml5js/ml5-library/tree/master/src/Word2vec)
+[/src/Word2vec/](https://github.com/ml5js/ml5-library/tree/release/src/Word2vec)

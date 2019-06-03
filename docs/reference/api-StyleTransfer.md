@@ -138,4 +138,4 @@ ml5.styleTransfer(model, ?video, ?callback)
 
 ## Source
 
-[/src/StyleTransfer/](https://github.com/ml5js/ml5-library/tree/master/src/StyleTransfer)
+[/src/StyleTransfer/](https://github.com/ml5js/ml5-library/tree/release/src/StyleTransfer)
