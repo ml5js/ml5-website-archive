@@ -27,7 +27,7 @@ The fastest way to get started exploring the creative possibilities of ml5.js ar
 
 ## Quickstart Option 1 - without p5
 
-Reference the [latest version](https://unpkg.com/ml5@0.3.0/dist/ml5.min.js) of ml5.js using a script tag in an HTML file as below: 
+Reference the [latest version](https://unpkg.com/ml5@0.3.1/dist/ml5.min.js) of ml5.js using a script tag in an HTML file as below: 
 
 <br/>
 
@@ -38,13 +38,13 @@ In an **index.html** file, copy and paste the following and open up that file in
 <html lang="en">
   <head>
     <title>Getting Started with ml5.js and p5.js</title>
-    <script src="https://unpkg.com/ml5@0.3.0/dist/ml5.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
   </head>
 
   <body>
     <script>
       // Your code will go here
-      // open up your console - if everything loaded properly you should see 0.3.0
+      // open up your console - if everything loaded properly you should see 0.3.1
       console.log('ml5 version:', ml5.version);
 
     </script>
@@ -74,13 +74,13 @@ In an **index.html** file, copy and paste the following and open up that file in
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
     <!-- ml5 -->
-    <script src="https://unpkg.com/ml5@0.3.0/dist/ml5.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
   </head>
 
   <body>
     <script>
       // Your code will go here
-      // open up your console - if everything loaded properly you should see 0.3.0
+      // open up your console - if everything loaded properly you should see 0.3.1
       console.log('ml5 version:', ml5.version);
 
 
