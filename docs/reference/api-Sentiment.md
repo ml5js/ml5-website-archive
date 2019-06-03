@@ -111,7 +111,6 @@ currently the supported model name is 'moviereviews'. ml5 may support different 
 
 `text` - string of text to predict 
 
-```javascript
 
 
 ## Source

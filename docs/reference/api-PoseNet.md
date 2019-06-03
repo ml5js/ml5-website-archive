@@ -213,4 +213,4 @@ For more information about these options please refer to the [original PoseNet c
 
 ## Source
 
-[/src/PoseNet](https://github.com/ml5js/ml5-library/tree/master/src/PoseNet)
+[/src/PoseNet](https://github.com/ml5js/ml5-library/tree/release/src/PoseNet)
