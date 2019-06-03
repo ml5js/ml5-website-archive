@@ -3,7 +3,7 @@ templateKey: "start-page"
 title: A note on using promises and callbacks
 sidebar_label: Promises and Callbacks
 id: promises-callback
-order: 3
+order: 4
 draft: false
 ---
 
