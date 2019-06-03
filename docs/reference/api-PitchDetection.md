@@ -1,7 +1,7 @@
 ---
 templateKey: "model-page"
 id: PitchDetection
-exampleimgsrc: ../assets/ref-pitchDetection.png
+exampleimgsrc: ../assets/ref-pitchDetection-round.png
 title: pitchDetection()
 description: >-
   A pitch detection algorithm is a way of estimating the pitch or fundamental frequency of an audio signal.

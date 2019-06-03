@@ -1,7 +1,7 @@
 ---
 templateKey: "model-page"
 id: SoundClassifier
-exampleimgsrc: ../assets/ref-soundClassifier.png
+exampleimgsrc: ../assets/ref-soundClassifier-round.png
 title: soundClassifier()
 description: >- 
   ml5.soundClassifier() enables you to detect pre-trained voice and speech commands 
