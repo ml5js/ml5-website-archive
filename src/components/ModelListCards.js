@@ -15,8 +15,8 @@ function displaySectionByTag(models, tag){
             <ul className="ModelList">
             {selected.map(({ node: model }) => (
                 <li style={{padding:"0.5rem"}} className="ModelList__item" key={model.id}>
-                <div style={{border:"1px solid #D8D8D8", padding:"0.5rem",  borderRadius:"2px"}}>
-                <div className="ModelList__title">
+                <div style={{border:"none", padding:"0.5rem",  borderRadius:"2px"}}>
+                <div className="ModelList__title" style={{fontWeight:'bold', fontSize:20, padding:'0'}}>
                     <Link
                     activeClassName="ModelList__link--active"
                     to={model.fields.slug}
