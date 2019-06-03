@@ -1,7 +1,7 @@
 ---
 templateKey: "model-page"
 id: YOLO
-exampleimgsrc: ../assets/ref-yolo.png
+exampleimgsrc: ../assets/ref-yolo-round.png
 title: YOLO()
 description: >- 
   YOLO (You only look once) is a state-of-the-art, real-time object detection system.

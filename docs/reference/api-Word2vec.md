@@ -1,7 +1,7 @@
 ---
 templateKey: "model-page"
 id: Word2vec
-exampleimgsrc: ../assets/ref-word2vec.png
+exampleimgsrc: ../assets/ref-word2vec-round.png
 title: word2vec()
 description: >-
   Word2vec is a group of related models that are used to produce word embeddings. This method allows you to perform vector operations on a given set of input vectors.

@@ -1,7 +1,7 @@
 ---
 templateKey: "model-page"
 id: Sentiment
-exampleimgsrc: ../assets/ref-sentiment.png
+exampleimgsrc: ../assets/ref-sentiment-round.png
 title: Sentiment()
 description: >-
   Sentiment is a model trained to predict the sentiment of any given text. The default model, currently 'moviereviews', is trained using IMDB reviews that have been truncated to a maximum of 200 words, only the 20000 most used words in the reviews are used.

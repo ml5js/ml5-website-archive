@@ -1,7 +1,7 @@
 ---
 templateKey: "model-page"
 id: DCGAN
-exampleimgsrc: ../assets/ref-dcgan.png
+exampleimgsrc: ../assets/ref-dcgan-round.png
 title: DCGAN()
 description: >- 
   DCGAN - Deep Convolutional Generative Adversarial Networks - allow for the creation of generative images

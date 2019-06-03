@@ -1,7 +1,7 @@
 ---
 templateKey: "model-page"
 id: SketchRNN
-exampleimgsrc: ../assets/ref-sketchrnn.png
+exampleimgsrc: ../assets/ref-sketchrnn-round.png
 title: SketchRNN()
 description: >-
   The SketchRNN model can create new drawings (from a list of categories) based on an initial path.
