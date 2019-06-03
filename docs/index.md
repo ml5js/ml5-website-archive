@@ -84,8 +84,8 @@ team:
 
 ## ml5.js provides an approachable API and examples to help you get started
 
-Current version: 0.3.0
-Last update: 30, May 2019
+Current version: 0.3.1
+Last update: 3, June 2019
 
 ```javascript
 // Step 1: Create an image classifier with MobileNet
