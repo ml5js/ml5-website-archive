@@ -8,6 +8,7 @@ description: >-
 tags:
   - image
   - video
+order: 4
 
 examples:
   - title: Style Transfer on Image

@@ -8,6 +8,7 @@ description: >-
 tags:
   - image
   - video
+order: 9
 
 examples:
   - title: YOLO Image Classification

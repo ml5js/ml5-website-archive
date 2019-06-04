@@ -89,7 +89,7 @@ export default () => (
     query={graphql`
       query ModelListCardsQuery {
         allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
+          sort: { order: ASC, fields: [frontmatter___order] }
           filter: { frontmatter: { templateKey: { eq: "model-page" } } }
         ) {
           edges {
@@ -112,6 +112,7 @@ export default () => (
                     }
                 }
                 tags
+                order
               }
             }
           }

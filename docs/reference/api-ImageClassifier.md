@@ -10,6 +10,7 @@ tags:
   - image
   - video
 id: imageClassifier
+order: 0
 
 examples:
   - title: Image classifier on image

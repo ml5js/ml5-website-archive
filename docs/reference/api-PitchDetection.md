@@ -7,6 +7,7 @@ description: >-
   A pitch detection algorithm is a way of estimating the pitch or fundamental frequency of an audio signal.
 tags:
   - sound
+order: 1
 
 examples:
   - title: Pitch Detection

@@ -2,6 +2,35 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql, StaticQuery } from "gatsby";
 
+
+function displaySectionByTag(models, tag){
+  if(!models) return ""
+
+  const selected = models.filter( ({ node: model }) => model.frontmatter.tags.includes(tag));
+  console.log(selected)
+  return (
+      <section id={`section-${tag}`}>
+          <h2 style={{"paddingLeft":"0.75rem"}}>{tag}</h2>
+          <ul className="ModelList">
+          
+          {selected.map(({ node: model }) => (
+              <li className="ModelList__item" key={model.id}>
+              <div className="ModelList__title">
+                <Link
+                  activeClassName="ModelList__link--active"
+                  to={model.fields.slug}
+                >
+                  {model.frontmatter.title}
+                </Link>
+              </div>
+            </li>
+          ))}
+      </ul>
+      </section>
+  )
+
+}
+
 class ModelList extends React.Component {
   render() {
     const { data } = this.props;
@@ -11,9 +40,11 @@ class ModelList extends React.Component {
       return !model.frontmatter.tags.includes('reference')
     })
 
+    
+
     return (
-      <ul className="ModelList">
-        {modelsFiltered &&
+      <ul className="ModelList" style={{"paddingBottom":"6rem"}}>
+        {/* {modelsFiltered &&
           modelsFiltered.map(({ node: model }) => (
             <li className="ModelList__item" key={model.id}>
               <div className="ModelList__title">
@@ -25,7 +56,11 @@ class ModelList extends React.Component {
                 </Link>
               </div>
             </li>
-          ))}
+          ))} */}
+          { displaySectionByTag(modelsFiltered, 'image')}
+          { displaySectionByTag(modelsFiltered, 'sound')}
+          { displaySectionByTag(modelsFiltered, 'text')}
+          { displaySectionByTag(modelsFiltered, 'helpers')}
       </ul>
     );
   }
@@ -44,7 +79,7 @@ export default () => (
     query={graphql`
       query ModelListQuery {
         allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
+          sort: { order: ASC, fields: [frontmatter___order] }
           filter: { frontmatter: { templateKey: { eq: "model-page" } } }
         ) {
           edges {
@@ -60,6 +95,7 @@ export default () => (
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
                 tags
+                order
               }
             }
           }

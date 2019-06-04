@@ -6,6 +6,7 @@ tags:
   - image
 description: >-
   pix2pix or image-to-image translation with conditional adversarial nets.
+order: 5
 
 examples:
   - title: Pix2Pix with Callbacks

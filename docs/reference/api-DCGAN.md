@@ -7,6 +7,7 @@ description: >-
   DCGAN - Deep Convolutional Generative Adversarial Networks - allow for the creation of generative images
 tags:
   - image
+order: 7
 
 examples:
   - title: DCGAN - generated lo-res aerial images
