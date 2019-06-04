@@ -8,6 +8,7 @@ description: >-
 tags:
   - image
   - text
+order: 8
 
 examples:
   - title: SketchRNN Basic

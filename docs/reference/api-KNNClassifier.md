@@ -7,6 +7,7 @@ description: >-
   This class allows you to create a classifier using the K-Nearest Neighbors.
 tags:
   - helpers
+order: 1
 
 examples:
   - title: KNN Classfication on video

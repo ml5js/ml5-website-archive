@@ -7,6 +7,7 @@ description: >-
   Word2vec is a group of related models that are used to produce word embeddings. This method allows you to perform vector operations on a given set of input vectors.
 tags:
   - text
+order: 2
 
 examples:
   - title: Word2Vec Demo

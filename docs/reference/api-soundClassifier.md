@@ -7,6 +7,7 @@ description: >-
   ml5.soundClassifier() enables you to detect pre-trained voice and speech commands 
 tags:
   - sound
+order: 0
 
 examples:
   - title: SoundClassifier "SpeechCommands18w"

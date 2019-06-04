@@ -7,6 +7,7 @@ description: >-
   BodyPix is Real-time Person Segmentation in the Browser 
 tags:
   - image
+order: 2
 
 examples:
   - title: BodyPix Webcam

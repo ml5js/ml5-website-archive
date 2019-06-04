@@ -7,6 +7,7 @@ description: >-
   Conditional Variational Autoencoder (CVAE) is an extension of Variational Autoencoder (VAE), a generative model
 tags:
   - image
+order: 6
 
 examples:
   - title: CVAE using Quickdraw dataset
