@@ -1,4 +1,5 @@
 # New ml5 website
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 ## Description
 
@@ -85,3 +86,15 @@ $ npm run serve
 ### Setting up the CMS
 
 Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick-start/#authentication) to set up authentication, and hosting.
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table><tr><td align="center"><a href="http://waxy.org/"><img src="https://avatars2.githubusercontent.com/u/6759?v=4" width="100px;" alt="Andy Baio"/><br /><sub><b>Andy Baio</b></sub></a><br /><a href="#content-waxpancake" title="Content">🖋</a> <a href="#maintenance-waxpancake" title="Maintenance">🚧</a></td></tr></table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

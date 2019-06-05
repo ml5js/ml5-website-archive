@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "waxpancake",
+      "name": "Andy Baio",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/6759?v=4",
+      "profile": "http://waxy.org/",
+      "contributions": [
+        "content",
+        "maintenance"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "ml5-website-2",
+  "projectOwner": "ml5js",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
