@@ -8,7 +8,7 @@ description: >-
 
 image: ./assets/itay-banner.jpg
 heading: Friendly Machine Learning for the Web
-subheading: A neighborly approach to creating and exploring artifical intelligence in the browser.
+subheading: A neighborly approach to creating and exploring artificial intelligence in the browser.
 featureheading: >- 
   Let’s read a story! Discover how Itay Niv created a story-telling app for children!
 
