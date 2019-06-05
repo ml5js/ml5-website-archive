@@ -24,6 +24,19 @@
         "content",
         "code"
       ]
+    },
+    {
+      "login": "wenqili",
+      "name": "Wenqi Li",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/22087042?v=4",
+      "profile": "https://www.wenqi.li",
+      "contributions": [
+        "content",
+        "code",
+        "infra",
+        "maintenance",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
