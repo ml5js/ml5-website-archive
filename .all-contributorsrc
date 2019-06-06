@@ -75,6 +75,17 @@
         "code",
         "maintenance"
       ]
+    },
+    {
+      "login": "hx2A",
+      "name": "Jim",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/4044283?v=4",
+      "profile": "http://ixora.io",
+      "contributions": [
+        "content",
+        "maintenance",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
