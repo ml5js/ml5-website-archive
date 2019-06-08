@@ -47,7 +47,7 @@ const Footer = class extends React.Component {
                   <li>
                     <span
                       className="Footer__item Footer__item--title"
-                      to="/start"
+                      to="/getting-started"
                     >
                       Community
                     </span>
