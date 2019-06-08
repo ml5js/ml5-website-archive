@@ -29,7 +29,7 @@ const Footer = class extends React.Component {
                     </span>
                   </li>
                   <li>
-                    <Link className="Footer__item" to="/start">
+                    <Link className="Footer__item" to="/getting-started">
                       Getting Started
                     </Link>
                   </li>
@@ -47,7 +47,7 @@ const Footer = class extends React.Component {
                   <li>
                     <span
                       className="Footer__item Footer__item--title"
-                      to="/getting-started"
+                      to="/start"
                     >
                       Community
                     </span>
