@@ -86,6 +86,16 @@
         "maintenance",
         "ideas"
       ]
+    },
+    {
+      "login": "yeswanth",
+      "name": "Yeswanth ",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/855011?v=4",
+      "profile": "https://medium.com/@s1thsv",
+      "contributions": [
+        "maintenance",
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
