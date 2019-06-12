@@ -23,6 +23,8 @@ Learn more about the history and origins of the ml5.js project [published on Med
 
 ### ml5.js Community Statement
 
+Adapted from the [p5.js community statement](http://p5js.org/community/).
+
 ml5.js is a community interested in exploring the creation of art and design with technology. 
 
 <br/>
