@@ -96,6 +96,16 @@
         "maintenance",
         "bug"
       ]
+    },
+    {
+      "login": "Pettrus",
+      "name": "Pettrus Sherlock",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/6400794?v=4",
+      "profile": "http://psherlock.com.br",
+      "contributions": [
+        "bug",
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
