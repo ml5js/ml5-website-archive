@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const ResponsiveIframe = ({ url, title }) => (
   <div className="iframe__container">
-    <iframe src={url} title={title} allowFullScreen />
+    <iframe src={url} title={title} allow="microphone; camera" allowFullScreen />
   </div>
 );
 
