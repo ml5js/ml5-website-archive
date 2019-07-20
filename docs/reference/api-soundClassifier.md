@@ -82,7 +82,7 @@ function modelReady() {
   classifier.classify(gotResult);
 }
 
-function gotImage(error, result) {
+function gotResult(error, result) {
   if (error) {
     console.log(error);
     return;
