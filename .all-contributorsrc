@@ -115,6 +115,15 @@
       "contributions": [
         "content"
       ]
+    },
+    {
+      "login": "AndreasRef",
+      "name": "Andreas Refsgaard",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/9645568?v=4",
+      "profile": "http://andreasrefsgaard.dk",
+      "contributions": [
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
