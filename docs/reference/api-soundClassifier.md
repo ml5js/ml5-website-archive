@@ -78,11 +78,11 @@ const options = { probabilityThreshold: 0.7 };
 const classifier = ml5.soundClassifier('SpeechCommands18w', options, modelReady);
 
 function modelReady() {
-  // segment the image given
+  // classify sound
   classifier.classify(gotResult);
 }
 
-function gotImage(error, result) {
+function gotResult(error, result) {
   if (error) {
     console.log(error);
     return;
