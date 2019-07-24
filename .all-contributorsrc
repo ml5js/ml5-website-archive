@@ -106,10 +106,19 @@
         "bug",
         "maintenance"
       ]
+    },
+    {
+      "login": "tezzutezzu",
+      "name": "danilo",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/135866?v=4",
+      "profile": "https://github.com/tezzutezzu",
+      "contributions": [
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
-  "projectName": "ml5-website-2",
+  "projectName": "ml5-website",
   "projectOwner": "ml5js",
   "repoType": "github",
   "repoHost": "https://github.com"
