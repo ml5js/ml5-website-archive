@@ -189,7 +189,7 @@ classifier.classify(document.getElementById("dogB"), function(err, result) {
 >   learningRate: 0.0001,
 >   hiddenUnits: 100,
 >   epochs: 20,
->   numClasses: 2,
+>   numLabels: 2,
 >   batchSize: 0.4,
 > }
 > ```
