@@ -124,6 +124,15 @@
       "contributions": [
         "content"
       ]
+    },
+    {
+      "login": "bcjordan",
+      "name": "Brian Jordan",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/206973?v=4",
+      "profile": "http://bcjordan.com",
+      "contributions": [
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,

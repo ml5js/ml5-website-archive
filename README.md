@@ -1,5 +1,5 @@
 # New ml5 website
-[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors)
 
 ## Description
 
@@ -109,6 +109,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://psherlock.com.br"><img src="https://avatars0.githubusercontent.com/u/6400794?v=4" width="100px;" alt="Pettrus Sherlock"/><br /><sub><b>Pettrus Sherlock</b></sub></a><br /><a href="https://github.com/ml5js/ml5-website/issues?q=author%3APettrus" title="Bug reports">🐛</a> <a href="#maintenance-Pettrus" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://github.com/tezzutezzu"><img src="https://avatars2.githubusercontent.com/u/135866?v=4" width="100px;" alt="danilo"/><br /><sub><b>danilo</b></sub></a><br /><a href="#content-tezzutezzu" title="Content">🖋</a></td>
     <td align="center"><a href="http://andreasrefsgaard.dk"><img src="https://avatars2.githubusercontent.com/u/9645568?v=4" width="100px;" alt="Andreas Refsgaard"/><br /><sub><b>Andreas Refsgaard</b></sub></a><br /><a href="#content-AndreasRef" title="Content">🖋</a></td>
+    <td align="center"><a href="http://bcjordan.com"><img src="https://avatars2.githubusercontent.com/u/206973?v=4" width="100px;" alt="Brian Jordan"/><br /><sub><b>Brian Jordan</b></sub></a><br /><a href="#content-bcjordan" title="Content">🖋</a></td>
   </tr>
 </table>
 
