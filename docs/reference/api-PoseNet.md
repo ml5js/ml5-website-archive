@@ -178,7 +178,8 @@ ml5.poseNet(?callback, ?options)
 }
 ```
 
-For more information about these options please refer to the [original PoseNet code](https://github.com/tensorflow/tfjs-models/tree/master/posenet)
+For more information about these options please refer to the [original PoseNet code](https://github.com/tensorflow/tfjs-models/tree/master/posenet). 
+
 
 ## Properties
 
@@ -190,13 +191,60 @@ For more information about these options please refer to the [original PoseNet c
 
 ## Methods
 
+
 ```javascript
 .singlePose(?input)
 ```
 
+Returns and array with a single object:
+
+```js
+[
+  {
+    pose: {
+      keypoints: [{position:{x,y}, score, part}, ...],
+      leftAngle:{x, y, confidence},
+      leftEar:{x, y, confidence},
+      leftElbow:{x, y, confidence},
+      ...
+    }
+  }
+]
+```
+
+</br></br>
+
 ```javascript
 .multiPose(?input)
 ```
+
+Returns and array with a multiple objects:
+```js
+[
+  {
+    pose: {
+      keypoints: [{position:{x,y}, score, part}, ...],
+      leftAngle:{x, y, confidence},
+      leftEar:{x, y, confidence},
+      leftElbow:{x, y, confidence},
+      ...
+    }
+  },
+  {
+    pose: {
+      keypoints: [{position:{x,y}, score, part}, ...],
+      leftAngle:{x, y, confidence},
+      leftEar:{x, y, confidence},
+      leftElbow:{x, y, confidence},
+      ...
+    }
+  }
+]
+```
+
+For more details about the poseNet outputs, read more [here](https://github.com/tensorflow/tfjs-models/blob/master/posenet/README.md#single-person-pose-estimation)
+
+</br></br>
 
 > Given an image or video, returns an array of objects containing pose estimations using single or multi-pose detection
 
@@ -211,6 +259,7 @@ For more information about these options please refer to the [original PoseNet c
 ```
 
 > Triggers every time there's a new pose detected. If you create a new poseNet method with a video element, this Event Listener will be called continuously over the video frames. Returns an array of objects containing pose estimations using single detection
+
 
 ## Source
 
