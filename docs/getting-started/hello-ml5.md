@@ -11,7 +11,7 @@ Hello there! If you've landed here, that probably means you're interested in bui
 
 <br/>
 
-ml5.js is being developed to make machine learning more accessible to a wider audience. Along with supporting education and critical engagement with machine learning, the ml5 team is working actively to wrap exciting machine learning functionality in friendlier and easier-to-use way. The following example introduces you ml5.js through a classic application of machine learning: **image classification**.
+ml5.js is being developed to make machine learning more accessible to a wider audience. Along with supporting education and critical engagement with machine learning, the ml5 team is working actively to wrap exciting machine learning functionality in a friendlier and easier-to-use way. The following example introduces you ml5.js through a classic application of machine learning: **image classification**.
 
 <br/>
 
