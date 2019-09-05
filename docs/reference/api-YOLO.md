@@ -100,7 +100,7 @@ yolo.detect(function(err, results) {
 });
 ```
 
-[Here](https://github.com/ml5js/ml5-examples/blob/master/p5js/YOLO/sketch.js) is a complete example.
+[Here](https://github.com/ml5js/ml5-examples/tree/release/p5js/YOLO) is a complete example.
 
 ## Syntax
 

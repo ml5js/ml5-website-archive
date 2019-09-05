@@ -141,7 +141,7 @@ poseNet.on("pose", function(results) {
 });
 ```
 
-[Here](https://github.com/ml5js/ml5-examples/blob/master/p5js/PoseNet/sketch.js) is a complete example.
+[Here](https://github.com/ml5js/ml5-examples/tree/release/p5js/PoseNet/PoseNet_webcam) is a complete example.
 
 ## Syntax
 

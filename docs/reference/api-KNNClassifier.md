@@ -202,7 +202,9 @@ This class allows you to create a classifier using the [K-Nearest Neighbors](htt
 
 For example, you could get features of an image by calling `FeatureExtractor.infer()`, and feed the features to KNNClassifier to classify an image.
 
-You can also collect any kind of data, construct them into an array of numbers and feed them to KNNClassifier. Check out this [example](/docs/knnclassifier-posenet) that uses KNNClassifier to classify data from [PoseNet](/docs/PoseNet) model.
+You can also collect any kind of data, construct them into an array of numbers and feed them to KNNClassifier. Check out this [example](https://github.com/ml5js/ml5-examples/tree/release/p5js/KNNClassification/KNNClassification_PoseNet
+
+) that uses KNNClassifier to classify data from [PoseNet](https://ml5js.org/reference/api-PoseNet/) model.
 
 ## Example
 
