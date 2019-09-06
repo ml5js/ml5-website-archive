@@ -184,4 +184,4 @@ classifier.predict(document.getElementById('image'), function(err, results) {
 
 ## Source
 
-[/src/ImageClassifier](https://github.com/ml5js/ml5-library/blob/release/src/ImageClassifier/)
+[/src/ImageClassifier](https://github.com/ml5js/ml5-library/tree/release/src/ImageClassifier)
