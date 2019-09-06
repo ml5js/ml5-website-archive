@@ -124,7 +124,7 @@ function gotSketch(err, result) {
 }
 ```
 
-Here is [a complete example](https://github.com/ml5js/ml5-examples/blob/master/p5js/SketchRNN/sketch.js).
+Here is [a complete example](https://github.com/ml5js/ml5-examples/tree/release/p5js/SketchRNN/SketchRNN_basic).
 
 ## Syntax
 

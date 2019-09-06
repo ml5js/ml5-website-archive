@@ -13,7 +13,7 @@ description: >-
   <br />
   <br />
 
-  You can train your own models [using this tutorial](/docs/training-lstm) or use [this set of pre trained models](https://github.com/ml5js/ml5-data-and-training/tree/master/models/lstm).
+  You can train your own models [using this tutorial](https://github.com/ml5js/training-lstm) or use [this set of pre trained models](https://github.com/ml5js/ml5-data-and-training/tree/master/models/lstm).
 
 examples:
   - title: CharRNN Text Generator Example
@@ -121,7 +121,7 @@ rnn.generate({ seed: "the meaning of pizza is" }, function(err, results) {
 });
 ```
 
-[Here](https://github.com/ml5js/ml5-examples/blob/master/p5js/LSTM/LSTM_Text/sketch.js) is a complete example using the [p5.js](https://p5js.org) library.
+[Here](https://github.com/ml5js/ml5-examples/tree/release/p5js/CharRNN/CharRNN_Text) is a complete example using the [p5.js](https://p5js.org) library.
 
 ## Syntax
 
@@ -188,4 +188,4 @@ The vocabulary size (or total number of possible characters).
 
 ### Source
 
-[/src/charRNN/](https://github.com/ml5js/ml5-library/tree/release/src/charRNN)
+[/src/charRNN/](https://github.com/ml5js/ml5-library/tree/release/src/CharRNN)
