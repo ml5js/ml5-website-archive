@@ -13,6 +13,7 @@ const NotFoundPage = () => (
           <h1>Sorry, we lost a page here, but we found a Shiffman video!</h1>
           <div class="iframe__container iframe__container--video">
             <iframe
+              title="404"
               src="https://www.youtube.com/embed/jmznx0Q1fP0"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

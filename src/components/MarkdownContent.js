@@ -1,8 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import showdown from "showdown";
+/* eslint-disable */
 import prettify from "showdown-prettify";
 // import prettify from "code-prettify";
+
+
 
 const converter = new showdown.Converter({ extensions: ["prettify"] });
 

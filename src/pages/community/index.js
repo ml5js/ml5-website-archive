@@ -18,10 +18,10 @@ export default class BlogIndexPage extends React.Component {
                 Many of these posts not only showcase what is possible with ml5.js but also what can be done when applying machine learning methodologies and technologies more broadly. Special emphasis is given to projects that highlight ethical and critical engagement with technology and/or are simply delightful.
               </p>
               <br/>
-              <p>If you are interested to share your work, highlight an interesting article/video, or get in touch, we'd love to hear from you. Get in touch via Google Forms here: <a href="https://forms.gle/18aaSc6J2QbDmLdz6" target="_blank">ml5js.org Community Submission Form</a>.</p>
+              <p>If you are interested to share your work, highlight an interesting article/video, or get in touch, we'd love to hear from you. Get in touch via Google Forms here: <a href="https://forms.gle/18aaSc6J2QbDmLdz6" target="_blank" rel="noopener noreferrer">ml5js.org Community Submission Form</a>.</p>
               <br/><br/>
               <BlogRoll />
-              <h3>Have something to share? Get in touch via Google Forms here: <br/>↳<a href="https://forms.gle/18aaSc6J2QbDmLdz6" target="_blank">ml5js.org Community Submission Form</a>.</h3>
+              <h3>Have something to share? Get in touch via Google Forms here: <br/>↳<a rel="noopener noreferrer" href="https://forms.gle/18aaSc6J2QbDmLdz6" target="_blank">ml5js.org Community Submission Form</a>.</h3>
             </div>
           </div>
         </section>
