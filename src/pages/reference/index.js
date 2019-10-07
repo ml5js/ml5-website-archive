@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import ModelList from "../../components/ModelList";
-import ModelListCards from "../../components/ModelListCards";
+// import ModelList from "../../components/ModelList";
+// import ModelListCards from "../../components/ModelListCards";
 
 export default class ReferenceIndexPage extends React.Component {
   render() {
