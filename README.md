@@ -1,5 +1,5 @@
 # New ml5 website
-[![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors)
 
 ## Description
 
@@ -114,6 +114,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/Kaushl2208"><img src="https://avatars0.githubusercontent.com/u/41343571?v=4" width="100px;" alt="Kaushlendra Pratap"/><br /><sub><b>Kaushlendra Pratap</b></sub></a><br /><a href="#content-Kaushl2208" title="Content">🖋</a></td>
+    <td align="center"><a href="http://twitter.com/maxdevjs"><img src="https://avatars2.githubusercontent.com/u/22229196?v=4" width="100px;" alt="maxdevjs"/><br /><sub><b>maxdevjs</b></sub></a><br /><a href="#content-maxdevjs" title="Content">🖋</a></td>
   </tr>
 </table>
 
