@@ -14,13 +14,15 @@ export default class ReferenceIndexPage extends React.Component {
                 <div>
                   <span className="ml5Grid__sidebarTitle">Reference</span>
                 </div>
-                <ModelList />
+                {/* <ModelList /> */}
               </div>
             </section>
             <article className="ml5Grid__content">
               <h1>Reference</h1>
               <div className="reference__wrapper">
-                <ModelListCards />
+                {/* <ModelListCards /> */}
+                <p>Hello! We are currently updating our website.</p>
+                <p>The latest documentation on Getting Started with ml5 can be found here: <a href="https://ml5js.github.io/ml5-library/docs/#/reference/index">ml5 references</a></p>
               </div>
             </article>
           </div>

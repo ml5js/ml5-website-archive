@@ -66,7 +66,7 @@ const StartPage = ({ data }) => {
                 <span className="ml5Grid__sidebarTitle">Getting Started</span>
               </div>
             </div>
-            <StartList />
+            {/* <StartList /> */}
           </section>
           <StartPageTemplate
             content={post.html}
