@@ -69,7 +69,7 @@ model:
     - image: ./assets/ref-sketchrnn.png
       text: >
         Generate new doodles with a neural network based on Google's Quick Draw. 
-  heading: Discover the creative possiblities of machine learning!
+  heading: Discover the creative possibilities of machine learning!
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
     java’s origin and support the farmers that grew it. We take coffee
