@@ -39,7 +39,7 @@ intro:
 
 version:
   heading: Build tools using easy classification systems with tons of **pre trained models**!
-  recent: "Current version: 0.71   Last update: 24 April, 2019"
+  recent: "Current version: 0.4.0  Last update: 17 October 2019"
   snippet: >
     const pix2pix = ml5.pix2pix('models/customModel.pict', modelLoaded);
 
@@ -84,8 +84,8 @@ team:
 
 ## ml5.js provides an approachable API and examples to help you get started
 
-Current version: 0.3.1
-Last update: 3, June 2019
+Current version: 0.4.0
+Last update: 17, October 2019
 
 ```javascript
 // Step 1: Create an image classifier with MobileNet
