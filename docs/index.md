@@ -39,7 +39,7 @@ intro:
 
 version:
   heading: Build tools using easy classification systems with tons of **pre trained models**!
-  recent: "Current version: 0.4.0  Last update: 17 October 2019"
+  recent: "Current version: 0.4.1  Last update: 24 October 2019"
   snippet: >
     const pix2pix = ml5.pix2pix('models/customModel.pict', modelLoaded);
 
