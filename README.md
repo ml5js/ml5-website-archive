@@ -89,35 +89,4 @@ Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick
 
 ## Contributors
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
-<table>
-  <tr>
-    <td align="center"><a href="http://waxy.org/"><img src="https://avatars2.githubusercontent.com/u/6759?v=4" width="100px;" alt="Andy Baio"/><br /><sub><b>Andy Baio</b></sub></a><br /><a href="#content-waxpancake" title="Content">🖋</a> <a href="#maintenance-waxpancake" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="http://www.shiffman.net"><img src="https://avatars0.githubusercontent.com/u/191758?v=4" width="100px;" alt="Daniel Shiffman"/><br /><sub><b>Daniel Shiffman</b></sub></a><br /><a href="#content-shiffman" title="Content">🖋</a> <a href="https://github.com/ml5js/ml5-website/commits?author=shiffman" title="Code">💻</a></td>
-    <td align="center"><a href="https://www.wenqi.li"><img src="https://avatars1.githubusercontent.com/u/22087042?v=4" width="100px;" alt="Wenqi Li"/><br /><sub><b>Wenqi Li</b></sub></a><br /><a href="#content-wenqili" title="Content">🖋</a> <a href="https://github.com/ml5js/ml5-website/commits?author=wenqili" title="Code">💻</a> <a href="#infra-wenqili" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-wenqili" title="Maintenance">🚧</a> <a href="#ideas-wenqili" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://github.com/garym140"><img src="https://avatars1.githubusercontent.com/u/30574513?v=4" width="100px;" alt="garym140"/><br /><sub><b>garym140</b></sub></a><br /><a href="#design-garym140" title="Design">🎨</a></td>
-    <td align="center"><a href="https://github.com/nicoleflloyd"><img src="https://avatars3.githubusercontent.com/u/35693567?v=4" width="100px;" alt="nicoleflloyd"/><br /><sub><b>nicoleflloyd</b></sub></a><br /><a href="#design-nicoleflloyd" title="Design">🎨</a></td>
-    <td align="center"><a href="http://www.arnabchakravarty.com"><img src="https://avatars2.githubusercontent.com/u/19427655?v=4" width="100px;" alt="Arnab Chakravarty"/><br /><sub><b>Arnab Chakravarty</b></sub></a><br /><a href="#design-AbolTaabol" title="Design">🎨</a></td>
-    <td align="center"><a href="https://jk-lee.com/"><img src="https://avatars1.githubusercontent.com/u/3622055?v=4" width="100px;" alt="Joey Lee"/><br /><sub><b>Joey Lee</b></sub></a><br /><a href="#design-joeyklee" title="Design">🎨</a> <a href="https://github.com/ml5js/ml5-website/commits?author=joeyklee" title="Code">💻</a> <a href="#maintenance-joeyklee" title="Maintenance">🚧</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="http://ixora.io"><img src="https://avatars3.githubusercontent.com/u/4044283?v=4" width="100px;" alt="Jim"/><br /><sub><b>Jim</b></sub></a><br /><a href="#content-hx2A" title="Content">🖋</a> <a href="#maintenance-hx2A" title="Maintenance">🚧</a> <a href="#ideas-hx2A" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://medium.com/@s1thsv"><img src="https://avatars1.githubusercontent.com/u/855011?v=4" width="100px;" alt="Yeswanth "/><br /><sub><b>Yeswanth </b></sub></a><br /><a href="#maintenance-yeswanth" title="Maintenance">🚧</a> <a href="https://github.com/ml5js/ml5-website/issues?q=author%3Ayeswanth" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="http://psherlock.com.br"><img src="https://avatars0.githubusercontent.com/u/6400794?v=4" width="100px;" alt="Pettrus Sherlock"/><br /><sub><b>Pettrus Sherlock</b></sub></a><br /><a href="https://github.com/ml5js/ml5-website/issues?q=author%3APettrus" title="Bug reports">🐛</a> <a href="#maintenance-Pettrus" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://github.com/tezzutezzu"><img src="https://avatars2.githubusercontent.com/u/135866?v=4" width="100px;" alt="danilo"/><br /><sub><b>danilo</b></sub></a><br /><a href="#content-tezzutezzu" title="Content">🖋</a></td>
-    <td align="center"><a href="http://andreasrefsgaard.dk"><img src="https://avatars2.githubusercontent.com/u/9645568?v=4" width="100px;" alt="Andreas Refsgaard"/><br /><sub><b>Andreas Refsgaard</b></sub></a><br /><a href="#content-AndreasRef" title="Content">🖋</a></td>
-    <td align="center"><a href="http://bcjordan.com"><img src="https://avatars2.githubusercontent.com/u/206973?v=4" width="100px;" alt="Brian Jordan"/><br /><sub><b>Brian Jordan</b></sub></a><br /><a href="#content-bcjordan" title="Content">🖋</a></td>
-    <td align="center"><a href="http://bradley.im"><img src="https://avatars0.githubusercontent.com/u/8131020?v=4" width="100px;" alt="bradley inniss"/><br /><sub><b>bradley inniss</b></sub></a><br /><a href="#content-ratley" title="Content">🖋</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/Kaushl2208"><img src="https://avatars0.githubusercontent.com/u/41343571?v=4" width="100px;" alt="Kaushlendra Pratap"/><br /><sub><b>Kaushlendra Pratap</b></sub></a><br /><a href="#content-Kaushl2208" title="Content">🖋</a></td>
-    <td align="center"><a href="http://twitter.com/maxdevjs"><img src="https://avatars2.githubusercontent.com/u/22229196?v=4" width="100px;" alt="maxdevjs"/><br /><sub><b>maxdevjs</b></sub></a><br /><a href="#content-maxdevjs" title="Content">🖋</a></td>
-  </tr>
-</table>
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+* See: [ml5 contributors](https://github.com/ml5js/ml5-library#contributors)
