@@ -29,14 +29,14 @@ const Footer = class extends React.Component {
                     </span>
                   </li>
                   <li>
-                    <Link className="Footer__item" to="/getting-started">
+                    <a className="Footer__item" href="https://learn.ml5js.org/docs/#/">
                       Getting Started
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link className="Footer__item" to="/reference">
+                    <a className="Footer__item" href="https://learn.ml5js.org/docs/#/reference/index">
                       API Reference
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </section>
@@ -54,8 +54,13 @@ const Footer = class extends React.Component {
                   </li>
                   <li>
                     <Link className="Footer__item" to="/community">
-                      Experiments
+                      Blog
                     </Link>
+                  </li>
+                  <li>
+                    <a className="Footer__item" href="https://docs.google.com/forms/d/e/1FAIpQLSdPz0ICzTSVdLAteIKwJ-zFzX6dX5l3dOpjWGzm6LIZutKvlA/viewform" target="_blank" rel="noopener noreferrer">
+                      Submit
+                    </a>
                   </li>
                   <li>
                     <a
