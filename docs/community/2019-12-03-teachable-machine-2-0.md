@@ -1,6 +1,7 @@
 ---
 templateKey: community-post
 title: Teachable Machine 2.0
+author: Google Creative Lab
 date: 2019-12-03T16:10:10.627Z
 description: >-
   Google's new Teachable Machine 2.0 is released! Train your own machine
