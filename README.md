@@ -87,6 +87,12 @@ $ npm run serve
 
 Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick-start/#authentication) to set up authentication, and hosting.
 
+### Running Netlify CMS
+
+```
+$ netlify dev # or ntl dev
+```
+
 ## Contributors
 
 * See: [ml5 contributors](https://github.com/ml5js/ml5-library#contributors)

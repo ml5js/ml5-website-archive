@@ -64,28 +64,28 @@ const Navbar = class extends React.Component {
             <div className="Navbar__itemContainer">
               <a
                 className="Navbar__item"
-                activeClassName="is-active"
+                activeclassname="is-active"
                 href="https://ml5js.github.io/ml5-library/docs/#/"
               >
                 Getting Started
               </a>
               <a
                 className="Navbar__item"
-                activeClassName="is-active"
+                activeclassname="is-active"
                 href="https://ml5js.github.io/ml5-library/docs/#/reference/index"
               >
                 Reference
               </a>
               <Link
                 className="Navbar__item"
-                activeClassName="is-active"
+                activeclassname="is-active"
                 to="/community"
               >
                 Community
               </Link>
               <Link
                 className="Navbar__item"
-                activeClassName="is-active"
+                activeclassname="is-active"
                 to="/about"
               >
                 About
