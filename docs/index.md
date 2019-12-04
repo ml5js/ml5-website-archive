@@ -9,8 +9,6 @@ description: >-
 image: ./assets/itay-banner.jpg
 heading: Friendly Machine Learning for the Web
 subheading: A neighborly approach to creating and exploring artificial intelligence in the browser.
-featureheading: >- 
-  Let’s read a story! Discover how Itay Niv created a story-telling app for children!
 
 mainpitch:
   title: Why ml5.js?
@@ -30,16 +28,10 @@ intro:
     - image: ./assets/everyday-ai-mimi.png
       text: >
         ml5.js aims to support broader public understanding of machine learning and foster deeper engagement with ethical computing, responsible data collection, and accessiblity and diversity of people and perspectives in technology and the arts.
-  heading: What we offer
-  description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
 
 version:
   heading: Build tools using easy classification systems with tons of **pre trained models**!
-  recent: "Current version: 0.4.1  Last update: 24 October 2019"
+  recent: "Current version: 0.4.3  Last update: 04 November 2019"
   snippet: >
     const pix2pix = ml5.pix2pix('models/customModel.pict', modelLoaded);
 
@@ -70,11 +62,6 @@ model:
       text: >
         Generate new doodles with a neural network based on Google's Quick Draw. 
   heading: Discover the creative possibilities of machine learning!
-  description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
 
 team:
   heading: Meet our team!
