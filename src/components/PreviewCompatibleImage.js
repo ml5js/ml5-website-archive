@@ -6,6 +6,7 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
   const imageStyle = { borderRadius: '5px' }
   const { alt = '', childImageSharp, image } = imageInfo
 
+
   if (!!image && !!image.childImageSharp) {
     return (
       <Img style={imageStyle} fluid={image.childImageSharp.fluid} alt={alt} />
@@ -19,7 +20,9 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
   if (!!image && typeof image === 'string')
     return <img style={imageStyle} src={image} alt={alt} />
 
-  return null
+  // return null
+  console.log(imageInfo);
+  return <img style={imageStyle} src={image} alt={alt} />
 }
 
 PreviewCompatibleImage.propTypes = {
