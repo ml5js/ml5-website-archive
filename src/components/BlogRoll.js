@@ -8,10 +8,15 @@ class BlogRoll extends React.Component {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
 
+    
+
     return (
       <div className="GridContainer GridContainer--vertical">
         {posts &&
-          posts.map(({ node: post }) => (
+          posts.map(({ node: post }) => {
+
+            console.log(post.frontmatter.featuredimage)
+            return(
             <div className="Post" key={post.id}>
               <div
                 className={`Post__wrapper ${
@@ -78,7 +83,9 @@ class BlogRoll extends React.Component {
                 </header>
               </div>
             </div>
-          ))}
+            )
+          }
+          )}
       </div>
     );
   }
