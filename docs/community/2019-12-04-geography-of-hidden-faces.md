@@ -7,7 +7,7 @@ description: >-
   Geography of Hidden Faces uses ml5's face-api to explore how of facial
   recognition algorithms behave when applied to aerial imagery.
 externalLink: 'https://geo.hidden-faces.net/'
-featuredimage: /img/img_32.72984_36.65759_10.84338.jpg
+featuredimage: ../assets/community-geo-hidden-faces.jpg
 tags:
   - ml5
   - face-api
