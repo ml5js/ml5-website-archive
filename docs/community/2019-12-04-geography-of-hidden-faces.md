@@ -1,7 +1,7 @@
 ---
 templateKey: community-post
 title: Geography of Hidden Faces
-authro: Joey Lee
+author: Joey Lee
 date: 2019-12-04T22:08:56.982Z
 description: >-
   Geography of Hidden Faces uses ml5's face-api to explore how of facial
