@@ -7,7 +7,7 @@ description: >-
   Google's new Teachable Machine 2.0 is released! Train your own machine
   learning models in the browser with this beautifully designed tool.
 externalLink: 'https://teachablemachine.withgoogle.com/'
-featuredimage: ../assets/community-teachable-machine-2.png
+featuredimage: ../../static/img/community-teachable-machine-2.png
 tags:
   - teachable machine
   - tensorflowjs

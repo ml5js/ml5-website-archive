@@ -19,13 +19,13 @@ mainpitch:
 
 intro:
   blurbs:
-    - image: ./assets/2000px-TensorFlowLogo-branded.png
+    - image: ../static/img/2000px-TensorFlowLogo-branded.png
       text: >
         ml5.js is an open source, friendly high level interface to TensorFlow.js, a library for handling GPU-accelerated mathematical operations and memory management for machine learning algorithms.
-    - image: ./assets/imageclassification-demo-bg.png
+    - image: ../static/img/imageclassification-demo-bg.png
       text: >
         ml5.js provides immediate access in the browser to pre-trained models for detecting human poses, generating text, styling an image with another, composing music, pitch detection, and common English language word relationships, and much more.
-    - image: ./assets/everyday-ai-mimi.png
+    - image: ../static/img/everyday-ai-mimi.png
       text: >
         ml5.js aims to support broader public understanding of machine learning and foster deeper engagement with ethical computing, responsible data collection, and accessiblity and diversity of people and perspectives in technology and the arts.
 
@@ -46,26 +46,26 @@ version:
 
 model:
   blurbs:
-    - image: ./assets/ref-posenet.png
+    - image: ../static/img/ref-posenet.png
       text: >
         PoseNet is a machine learning model that allows for Real-time Human Pose Estimation.
-    - image: ./assets/ref-yolo.png
+    - image: ../static/img/ref-yolo.png
       text: >
         YOLO (You only look once) is a state-of-the-art, real-time object detection and classification system.
-    - image: ./assets/ref-styletransfer.png
+    - image: ../static/img/ref-styletransfer.png
       text: >
         pix2pix is image-to-image translation with conditional adversarial networks. 
-    - image: ./assets/ref-classification.png
+    - image: ../static/img/ref-classification.png
       text: >
         Classify the content of images with pre-trained models. 
-    - image: ./assets/ref-sketchrnn.png
+    - image: ../static/img/ref-sketchrnn.png
       text: >
         Generate new doodles with a neural network based on Google's Quick Draw. 
   heading: Discover the creative possibilities of machine learning!
 
 team:
   heading: Meet our team!
-  image: ./assets/logo-purple-circle.png
+  image: ../static/img/logo-purple-circle.png
   profile: ml5.js is an open source project developed and maintained by NYU's Interactive Telecommunications/Interactive Media Arts program and by artists, designers, students, technologists, and developers from all over the world.
 ---
 
