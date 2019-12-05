@@ -14,8 +14,6 @@ class BlogRoll extends React.Component {
       <div className="GridContainer GridContainer--vertical">
         {posts &&
           posts.map(({ node: post }) => {
-
-            console.log(post.frontmatter.featuredimage)
             return(
             <div className="Post" key={post.id}>
               <div
