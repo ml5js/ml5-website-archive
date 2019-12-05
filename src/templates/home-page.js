@@ -159,7 +159,6 @@ export const pageQuery = graphql`
           }
         }
         heading
-        featureheading
         subheading
 
         mainpitch {
@@ -178,8 +177,6 @@ export const pageQuery = graphql`
             }
             text
           }
-          heading
-          description
         }
         version {
           heading
@@ -199,7 +196,6 @@ export const pageQuery = graphql`
             text
           }
           heading
-          description
         }
         team {
           image {
