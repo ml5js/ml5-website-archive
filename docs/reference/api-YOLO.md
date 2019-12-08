@@ -4,6 +4,8 @@ id: YOLO
 exampleimgsrc: ../assets/ref-yolo-round.png
 title: YOLO()
 description: >- 
+  Note: the YOLO object will soon be deprecated, please refer to [ObjectDetector](https://learn.ml5js.org/docs/#/reference/object-detector)
+  <br/><br/>
   YOLO (You only look once) is a state-of-the-art, real-time object detection system.
 tags:
   - image
@@ -121,7 +123,6 @@ ml5.YOLO(?options, ?callback)
 ```
 
 ### Parameters
-
 - `video` - Optional. A HTML video element or a p5 video element.
 - `options` - Optional. An object describing a model accuracy and performance. For MobileNet this are: `{ filterBoxesThreshold: 0.01, IOUThreshold: 0.4, classProbThreshold: 0.4 }`
 - `callback` - Optional. A function to run once the model has been loaded. If no callback is provided, it will return a promise that will be resolved once the model has loaded.
