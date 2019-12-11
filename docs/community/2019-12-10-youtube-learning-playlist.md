@@ -9,7 +9,7 @@ description: >-
   algorithms is demonstrated in JavaScript using the p5.js and ml5.js
   libraries. 
 externalLink: 'https://youtu.be/26uABexmOX4?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y'
-featuredimage: /../assets/ml-youtube.png
+featuredimage: /../assets/ml-youtube.jpg
 tags:
   - coding train
   - video
