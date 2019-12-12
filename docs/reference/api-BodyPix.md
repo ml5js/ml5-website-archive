@@ -3,8 +3,8 @@ templateKey: "model-page"
 id: BodyPix
 exampleimgsrc: ../assets/ref-bodypix-round.png
 title: bodyPix()
-description: >- 
-  BodyPix is Real-time Person Segmentation in the Browser 
+description: >-
+  BodyPix is Real-time Person Segmentation in the Browser
 tags:
   - image
 order: 2
@@ -21,7 +21,7 @@ examples:
 
       const options = {
           "outputStride": 8, // 8, 16, or 32, default is 16
-          "segmentationThreshold": 0.3 // 0 - 1, defaults to 0.5 
+          "segmentationThreshold": 0.3 // 0 - 1, defaults to 0.5
       }
 
       function setup() {
@@ -72,7 +72,7 @@ function modelReady() {
   bodypix.segment(img, gotResults)
 }
 
-function gotImage(error, result) {
+function gotResults(error, result) {
   if (error) {
     console.log(error);
     return;
@@ -100,7 +100,7 @@ ml5.bodyPix(?video, ?options, ?callback)
 {
   "multiplier": 0.75, // 1.0, 0.75, or 0.50, 0.25
   "outputStride": 16, // 8, 16, or 32, default is 16
-  "segmentationThreshold": 0.5, // 0 - 1, defaults to 0.5 
+  "segmentationThreshold": 0.5, // 0 - 1, defaults to 0.5
   "palette":{
     "leftFace": {
         "id": 0,
@@ -214,7 +214,7 @@ ml5.bodyPix(?video, ?options, ?callback)
 .model
 ```
 
-> The model 
+> The model
 
 ## Methods
 
@@ -236,7 +236,7 @@ ml5.bodyPix(?video, ?options, ?callback)
 > Allows you to get the segmented body parts of the person. Returns "{raw}", "{image}", and "{bodyParts}". The returns will either be a UInt8 array corresponding to the image array or a p5Image if p5.js is available.
 
 - `input` - an HTMLImageElement. Videos should be added in the constructor.
-- `options` - Object. You can change the `outputStride`, `segmentationThreshold`, and `palette`. 
+- `options` - Object. You can change the `outputStride`, `segmentationThreshold`, and `palette`.
 - `callback` - A function to handle the results of ".segment()". Likely a function to do something with the segmented image.
 
 
