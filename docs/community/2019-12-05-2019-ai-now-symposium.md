@@ -8,7 +8,7 @@ description: >-
   the frontlines of the growing pushback against harmful AI. The videos of the
   talks are available to watch online. 
 externalLink: 'https://ainowinstitute.org/symposia/2019-symposium.html'
-featuredimage: /../assets/community-ai-now-symposium-2019.jpg
+featuredimage: ../assets/community-ai-now-symposium-2019.jpg
 tags:
   - ai now institute
   - talk
