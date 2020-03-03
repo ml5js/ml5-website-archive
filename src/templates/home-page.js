@@ -46,10 +46,6 @@ export const HomePageTemplate = ({
         backgroundColor:"white",
         textAlign:"center"}} className="home__subheading">{subheading}</p>
       </Link>
-
-      {/* <Link to="">
-        <h2 className="home__featuredTitle">{featureheading}</h2>
-      </Link> */}
     </section>
 
     <section className="home__container home__gridContainer">
