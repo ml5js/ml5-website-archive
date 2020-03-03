@@ -50,8 +50,7 @@ team:
 
 ## ml5.js provides an approachable API and examples to help you get started
 
-Current version: 0.4.3
-Last update: 04, November 2019
+![npm](https://img.shields.io/npm/v/ml5?color=%230ace81&label=Latest%20Version)
 
 ```javascript
 // Step 1: Create an image classifier with MobileNet
