@@ -8,43 +8,53 @@ import Features from "../components/Features";
 
 export const HomePageTemplate = ({
   content,
-  image,
-  title,
   heading,
-  featureheading,
   subheading,
   mainpitch,
-  description,
   intro,
-  version,
   model,
   team
 }) => (
   <div className="ml5Grid__container--homePage">
     <section
       className="circles-1"
-      style={{display:"flex", 
-      flexDirection:"column", 
-      justifyContent:"center",
-      alignItems:"center"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center"
       }}
     >
       <div className="home__overlay" />
-      <Link style={{zIndex:"9"}} to="">
+      <Link style={{ zIndex: "9" }} to="">
         {/* heading */}
-        <h2 style={{width:"100%", 
-        maxWidth:"680px", 
-        fontSize:"4rem", 
-        color:"#a15ffb",
-        backgroundColor:"white",
-        textAlign:"center"}} className="home__heading">{heading}</h2>
+        <h2
+          style={{
+            width: "100%",
+            maxWidth: "680px",
+            fontSize: "4rem",
+            color: "#a15ffb",
+            backgroundColor: "white",
+            textAlign: "center"
+          }}
+          className="home__heading"
+        >
+          {heading}
+        </h2>
         {/* subheading */}
-        <p style={{width:"100%", 
-        maxWidth:"680px", 
-        fontSize:"1.5rem", 
-        color:"#a15ffb",
-        backgroundColor:"white",
-        textAlign:"center"}} className="home__subheading">{subheading}</p>
+        <p
+          style={{
+            width: "100%",
+            maxWidth: "680px",
+            fontSize: "1.5rem",
+            color: "#a15ffb",
+            backgroundColor: "white",
+            textAlign: "center"
+          }}
+          className="home__subheading"
+        >
+          {subheading}
+        </p>
       </Link>
     </section>
 
@@ -115,15 +125,10 @@ const HomePage = ({ data }) => {
     <Layout>
       <HomePageTemplate
         content={content}
-        image={frontmatter.image}
-        title={frontmatter.title}
         heading={frontmatter.heading}
-        featureheading={frontmatter.featureheading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
         intro={frontmatter.intro}
-        version={frontmatter.version}
         model={frontmatter.model}
         team={frontmatter.team}
       />
@@ -146,14 +151,6 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "home-page" } }) {
       html
       frontmatter {
-        title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
         heading
         subheading
 
@@ -161,7 +158,7 @@ export const pageQuery = graphql`
           title
           description
         }
-        description
+
         intro {
           blurbs {
             image {
@@ -173,11 +170,6 @@ export const pageQuery = graphql`
             }
             text
           }
-        }
-        version {
-          heading
-          recent
-          snippet
         }
 
         model {
@@ -193,6 +185,7 @@ export const pageQuery = graphql`
           }
           heading
         }
+
         team {
           image {
             childImageSharp {
