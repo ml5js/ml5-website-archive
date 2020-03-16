@@ -21,7 +21,7 @@ intro:
         ml5.js provides immediate access in the browser to pre-trained models for detecting human poses, generating text, styling an image with another, composing music, pitch detection, and common English language word relationships, and much more.
     - image: ./assets/everyday-ai-mimi.png
       text: >
-        ml5.js aims to support broader public understanding of machine learning and foster deeper engagement with ethical computing, responsible data collection, and accessiblity and diversity of people and perspectives in technology and the arts.
+        ml5.js aims to support broader public understanding of machine learning and foster deeper engagement with ethical computing, responsible data collection, and accessibility and diversity of people and perspectives in technology and the arts.
 
 model:
   blurbs:
