@@ -99,6 +99,21 @@ const Footer = class extends React.Component {
                 </ul>
               </section>
             </div>
+            <div className="flexContainer__item">
+              <section>
+                <ul className="Footer_list">
+                  <li>
+                    <span className="Footer__item--title Footer__item">
+                      <a href="https://www.netlify.com" 
+                         target="_blank"
+                         rel="noopener noreferrer">
+                        <img src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Deploys by Netlify" />
+                      </a>
+                    </span>
+                  </li>
+                </ul>
+              </section>
+            </div>
           </div>
 
           {/* <div className="Footer__social">
