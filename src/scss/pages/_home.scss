@@ -118,6 +118,35 @@
     font-size: $font-size-1;
     padding: 0 $gutter;
   }
+
+  &__sponsors{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
+
+.home__acknowledgements{
+  padding: calc(#{$gutter} * 2) $gutter;
+  h2 {
+    text-align: center;
+  }
+}
+
+.features-container{
+  display: grid;
+  width:100%;
+  grid-template-columns: repeat( 3, minmax(80px, 200px) );
+  grid-column-gap: 2rem;
+  grid-row-gap:2rem;
+  justify-content: center;
+
+  &__item{
+    display: grid;
+    align-items: center;
+    width:100%;
+  }
+
 }
 
 .home__update {

@@ -41,7 +41,24 @@ model:
       text: >
         Generate new doodles with a neural network based on Google's Quick Draw.
   heading: Discover the creative possibilities of machine learning!
-
+acknowledgements:
+  blurbs:
+    - image: ./assets/acknowledgements__google-research.png
+      text: >
+        Google Faculty Research Grant
+    - image: ./assets/acknowledgements__itp-logo.png
+      text: >
+        NYU ITP
+    - image: ./assets/acknowledgements__processing.png
+      text: >
+        Processing Foundation
+    - image: ./assets/acknowledgements__STUDIO.jpg
+      text: >
+        Frank-Ratchye STUDIO
+    - image: ./assets/acknowledgements__cosaSticker.jpg
+      text: >
+        COSA
+  heading: ml5.js has received support and funding from these generous folks
 team:
   heading: Meet our team!
   image: ./assets/logo-purple-circle.png
