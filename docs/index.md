@@ -52,6 +52,9 @@ acknowledgements:
     - image: ./assets/acknowledgements__processing.png
       text: >
         Processing Foundation
+    - image: ./assets/acknowledgements__engelberg-center.jpg
+      text: >
+        NYU Engelberg Center
     - image: ./assets/acknowledgements__STUDIO.jpg
       text: >
         Frank-Ratchye STUDIO
