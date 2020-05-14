@@ -5,15 +5,17 @@ import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 import Layout from "../components/Layout";
 import Features from "../components/Features";
+import Features2 from "../components/Features2";
 
 export const HomePageTemplate = ({
   content,
   heading,
   subheading,
   mainpitch,
+  acknowledgements,
   intro,
   model,
-  team
+  team,
 }) => (
   <div className="ml5Grid__container--homePage">
     <section
@@ -22,7 +24,7 @@ export const HomePageTemplate = ({
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
       }}
     >
       <div className="home__overlay" />
@@ -35,7 +37,7 @@ export const HomePageTemplate = ({
             fontSize: "4rem",
             color: "#a15ffb",
             backgroundColor: "white",
-            textAlign: "center"
+            textAlign: "center",
           }}
           className="home__heading"
         >
@@ -49,7 +51,7 @@ export const HomePageTemplate = ({
             fontSize: "1.5rem",
             color: "#a15ffb",
             backgroundColor: "white",
-            textAlign: "center"
+            textAlign: "center",
           }}
           className="home__subheading"
         >
@@ -81,7 +83,7 @@ export const HomePageTemplate = ({
         <div
           className="home__updateContent"
           dangerouslySetInnerHTML={{
-            __html: content
+            __html: content,
           }}
         />
       </div>
@@ -103,6 +105,11 @@ export const HomePageTemplate = ({
         </div>
       </div>
     </section>
+
+    <section className="home__container home__acknowledgements">
+      <h2>{acknowledgements.heading}</h2>
+      <Features2 gridItems={acknowledgements.blurbs} />
+    </section>
   </div>
 );
 
@@ -111,10 +118,11 @@ HomePageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   mainpitch: PropTypes.object,
+  acknowledgements: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
-    blurbs: PropTypes.array
-  })
+    blurbs: PropTypes.array,
+  }),
 };
 
 const HomePage = ({ data }) => {
@@ -128,6 +136,7 @@ const HomePage = ({ data }) => {
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
+        acknowledgements={frontmatter.acknowledgements}
         intro={frontmatter.intro}
         model={frontmatter.model}
         team={frontmatter.team}
@@ -139,9 +148,9 @@ const HomePage = ({ data }) => {
 HomePage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object
-    })
-  })
+      frontmatter: PropTypes.object,
+    }),
+  }),
 };
 
 export default HomePage;
@@ -173,6 +182,20 @@ export const pageQuery = graphql`
         }
 
         model {
+          blurbs {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 240, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            text
+          }
+          heading
+        }
+
+        acknowledgements {
           blurbs {
             image {
               childImageSharp {
