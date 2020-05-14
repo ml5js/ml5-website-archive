@@ -58,6 +58,12 @@ acknowledgements:
     - image: ./assets/acknowledgements__cosaSticker.jpg
       text: >
         COSA
+    - image: ./assets/acknowledgements__netlify.png
+      text: >
+        Netlify
+    - image: ./assets/acknowledgements__browserstack.png
+      text: >
+        Browserstack
   heading: ml5.js has received support and funding from these generous folks
 team:
   heading: Meet our team!
