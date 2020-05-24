@@ -12,7 +12,7 @@ order: 1
 
 examples:
   - title: PoseNet on Image
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/PoseNet/PoseNet_image_single
+    github: https://github.com/ml5js/ml5-library/tree/development/examples/p5js/PoseNet/PoseNet_image_single
     demo: https://ml5js.github.io/ml5-examples/p5js/PoseNet/PoseNet_image_single
     code: >-
       let img;
@@ -108,7 +108,7 @@ examples:
       }
 
   - title: Posenet on Webcam
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/PoseNet/PoseNet_webcam
+    github: https://github.com/ml5js/ml5-library/tree/development/examples/p5js/PoseNet/PoseNet_webcam
     demo: https://ml5js.github.io/ml5-examples/p5js/PoseNet/PoseNet_webcam
     code: >-
      see source code for details
@@ -141,7 +141,7 @@ poseNet.on("pose", function(results) {
 });
 ```
 
-[Here](https://github.com/ml5js/ml5-examples/tree/release/p5js/PoseNet/PoseNet_webcam) is a complete example.
+[Here](https://github.com/ml5js/ml5-library/tree/development/examples/p5js/PoseNet/PoseNet_webcam) is a complete example.
 
 ## Syntax
 

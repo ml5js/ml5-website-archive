@@ -12,7 +12,7 @@ order: 8
 
 examples:
   - title: SketchRNN Basic
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/SketchRNN/SketchRNN_basic
+    github: https://github.com/ml5js/ml5-library/tree/development/examples/p5js/SketchRNN/SketchRNN_basic
     demo: https://ml5js.github.io/ml5-examples/p5js/SketchRNN/SketchRNN_basic
     code: >-
       // The SketchRNN model
@@ -124,7 +124,7 @@ function gotSketch(err, result) {
 }
 ```
 
-Here is [a complete example](https://github.com/ml5js/ml5-examples/tree/release/p5js/SketchRNN/SketchRNN_basic).
+Here is [a complete example](https://github.com/ml5js/ml5-library/tree/development/examples/p5js/SketchRNN/SketchRNN_basic).
 
 ## Syntax
 

@@ -11,7 +11,7 @@ order: 1
 
 examples:
   - title: Pitch Detection
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/PitchDetection/PitchDetection
+    github: https://github.com/ml5js/ml5-library/tree/development/examples/p5js/PitchDetection/PitchDetection
     demo: https://ml5js.github.io/ml5-examples/p5js/PitchDetection/PitchDetection
     code: >-
       let audioContext;
@@ -75,7 +75,7 @@ pitch.getPitch(function(err, frequency) {
 });
 ```
 
-[Here](https://github.com/ml5js/ml5-examples/blob/master/p5js/PitchDetection/PitchDetection_Game/sketch.js) is a complete example.
+[Here](https://github.com/ml5js/ml5-library/blob/development/examples/p5js/PitchDetection/PitchDetection_Game/sketch.js) is a complete example.
 
 ## Constructor
 

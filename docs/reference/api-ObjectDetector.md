@@ -12,7 +12,7 @@ order: 10
 
 examples:
   - title: Image Classification (Coco Ssd)
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/ObjectDetector/ObjectDetector_COCOSSD_single_image
+    github: https://github.com/ml5js/ml5-library/tree/development/examples/p5js/ObjectDetector/ObjectDetector_COCOSSD_single_image
     demo: https://ml5js.github.io/ml5-examples/p5js/ObjectDetector/ObjectDetector_COCOSSD_single_image
     code: >-
         // Create a cocoSsd classifier
@@ -109,7 +109,7 @@ objectDetector.detect(function(err, results) {
 });
 ```
 
-[Here](https://github.com/ml5js/ml5-examples/tree/release/p5js/ObjectDetector) is a complete example.
+[Here](https://github.com/ml5js/ml5-library/tree/development/examples/p5js/ObjectDetector) is a complete example.
 
 ## Syntax
 

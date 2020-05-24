@@ -11,7 +11,7 @@ order: 0
 
 examples:
   - title: SoundClassifier "SpeechCommands18w"
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/SoundClassification/SoundClassification_speechcommand
+    github: https://github.com/ml5js/ml5-library/tree/development/examples/p5js/SoundClassification/SoundClassification_speechcommand
     demo: https://ml5js.github.io/ml5-examples/p5js/SoundClassification/SoundClassification_speechcommand/
     code: >-
       // Initialize a sound classifier method with SpeechCommands18w model. A callback needs to be passed.

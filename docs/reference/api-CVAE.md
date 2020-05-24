@@ -11,7 +11,7 @@ order: 6
 
 examples:
   - title: CVAE using Quickdraw dataset
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/CVAE
+    github: https://github.com/ml5js/ml5-library/tree/development/examples/p5js/CVAE/CVAE_QuickDraw
     demo: https://ml5js.github.io/ml5-examples/p5js/CVAE/
     code: >-
       let cvae;

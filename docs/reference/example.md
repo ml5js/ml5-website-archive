@@ -15,7 +15,7 @@ description: >-
 
 examples:
   - title: the title of the demo
-    github: https://github.com/ml5js/ml5-examples/blob/release/javascript/ImageClassification_Video/sketch.js
+    github: https://github.com/ml5js/ml5-library/blob/development/examples/p5js/ImageClassification/ImageClassification_Video/sketch.js
     demo: https://yining1023.github.io/fast_style_transfer_in_ML5/
     code: >-
       const video = document.getElementById("video");
@@ -34,7 +34,7 @@ examples:
       });
 
   - title: the title of the demo
-    github: https://github.com/ml5js/ml5-examples/blob/release/javascript/ImageClassification_Video/sketch.js
+    github: https://github.com/ml5js/ml5-library/blob/development/examples/p5js/ImageClassification/ImageClassification_Video/sketch.js
     demo: https://yining1023.github.io/fast_style_transfer_in_ML5/
     code: >-
       const video = document.getElementById("video");

@@ -10,7 +10,7 @@ order: 5
 
 examples:
   - title: Pix2Pix with Callbacks
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/Pix2Pix/Pix2Pix_callback
+    github: https://github.com/ml5js/ml5-library/tree/development/examples/p5js/Pix2Pix/Pix2Pix_callback
     demo: https://ml5js.github.io/ml5-examples/p5js/Pix2Pix/Pix2Pix_callback
     code: >
       // Pix2pix Edges2Pikachu example with p5.js using callback functions
@@ -151,7 +151,7 @@ pix2pix.transfer(canvas, function(err, result) {
 });
 ```
 
-[Here](https://github.com/ml5js/ml5-examples/blob/master/p5js/Pix2Pix/Pix2Pix_callback/sketch.js) is a complete example.
+[Here](https://github.com/ml5js/ml5-library/blob/development/examples/p5js/Pix2Pix/Pix2Pix_callback/sketch.js) is a complete example.
 
 ## Syntax
 

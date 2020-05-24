@@ -11,7 +11,7 @@ order: 2
 
 examples:
   - title: Word2Vec Demo
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/Word2Vec
+    github: https://github.com/ml5js/ml5-library/tree/development/examples/p5js/Word2Vec
     demo: https://ml5js.github.io/ml5-examples/p5js/Word2Vec
     code: >-
       let word2Vec;
@@ -82,7 +82,7 @@ examples:
 
 Word2vec is a group of related models that are used to produce [word embeddings](https://en.wikipedia.org/wiki/Word2vec)</sup>. This method allows you to perform vector operations on a given set of input vectors.
 
-You can use the word models [we provide](https://github.com/ml5js/ml5-examples/tree/master/p5js/Word2Vec/data), trained on a corpus of english words (watch out for bias data!), or you can train your own vector models following [this tutorial](https://github.com/ml5js/training-word2vec). More of this soon!
+You can use the word models [we provide](https://github.com/ml5js/ml5-library/tree/development/examples/p5js/Word2Vec/Word2Vec_Interactive/data), trained on a corpus of english words (watch out for bias data!), or you can train your own vector models following [this tutorial](https://github.com/ml5js/training-word2vec). More of this soon!
 
 ### Example
 
@@ -101,7 +101,7 @@ wordVectors.nearest("rainbow", function(err, results) {
 });
 ```
 
-[Here](https://github.com/ml5js/ml5-examples/blob/master/p5js/Word2Vec/sketch.js) is a complete example.
+[Here](https://github.com/ml5js/ml5-library/blob/development/examples/p5js/Word2Vec/Word2Vec_Interactive/sketch.js) is a complete example.
 
 ## Constructor
 

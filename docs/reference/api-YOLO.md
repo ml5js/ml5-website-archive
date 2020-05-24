@@ -14,7 +14,7 @@ order: 9
 
 examples:
   - title: YOLO Image Classification
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/YOLO/YOLO_single_image
+    github: https://github.com/ml5js/ml5-library/tree/development/examples/p5js/YOLO/YOLO_single_image
     demo: https://ml5js.github.io/ml5-examples/p5js/YOLO/YOLO_single_image
     code: >-
       const yolo = ml5.YOLO(modelReady);
@@ -102,7 +102,7 @@ yolo.detect(function(err, results) {
 });
 ```
 
-[Here](https://github.com/ml5js/ml5-examples/tree/release/p5js/YOLO) is a complete example.
+[Here](https://github.com/ml5js/ml5-library/tree/development/examples/p5js/YOLO/YOLO_single_image) is a complete example.
 
 ## Syntax
 

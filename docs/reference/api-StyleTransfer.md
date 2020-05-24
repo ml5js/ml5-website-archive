@@ -12,7 +12,7 @@ order: 4
 
 examples:
   - title: Style Transfer on Image
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/StyleTransfer/StyleTransfer_Image
+    github: https://github.com/ml5js/ml5-library/tree/development/examples/p5js/StyleTransfer/StyleTransfer_Image
     demo: https://ml5js.github.io/ml5-examples/p5js/StyleTransfer/StyleTransfer_Image
     code: >-
       // This uses a pre-trained model of The Great Wave off Kanagawa and Udnie (Young American Girl, The Dance)
@@ -93,7 +93,7 @@ style.transfer(document.getElementById("img"), function(err, resultImg) {
 });
 ```
 
-[Here](https://github.com/ml5js/ml5-examples/blob/master/p5js/StyleTransfer/StyleTransfer_Image/sketch.js) is a complete example.
+[Here](https://github.com/ml5js/ml5-library/blob/development/examples/p5js/StyleTransfer/StyleTransfer_Image/sketch.js) is a complete example.
 
 ## Syntax
 

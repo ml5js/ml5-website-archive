@@ -11,7 +11,7 @@ order: 2
 
 examples:
   - title: BodyPix Webcam
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/BodyPix
+    github: https://github.com/ml5js/ml5-library/tree/development/examples/p5js/BodyPix
     demo: https://ml5js.github.io/ml5-examples/p5js/BodyPix/BodyPix_Webcam/
     code: >-
       let bodypix;

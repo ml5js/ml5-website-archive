@@ -11,7 +11,7 @@ order: 7
 
 examples:
   - title: DCGAN - generated lo-res aerial images
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/DCGAN
+    github: https://github.com/ml5js/ml5-library/tree/development/examples/p5js/DCGAN
     demo: https://ml5js.github.io/ml5-examples/p5js/DCGAN/
     code: >-
       let dcgan;

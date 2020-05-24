@@ -17,7 +17,7 @@ description: >-
 
 examples:
   - title: CharRNN Text Generator Example
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/CharRNN/CharRNN_Text
+    github: https://github.com/ml5js/ml5-library/tree/development/examples/p5js/CharRNN/CharRNN_Text
     demo: https://ml5js.github.io/ml5-examples/p5js/CharRNN/CharRNN_Text
     code: >-
       // LSTM Generator example with p5.js
@@ -121,7 +121,7 @@ rnn.generate({ seed: "the meaning of pizza is" }, function(err, results) {
 });
 ```
 
-[Here](https://github.com/ml5js/ml5-examples/tree/release/p5js/CharRNN/CharRNN_Text) is a complete example using the [p5.js](https://p5js.org) library.
+[Here](https://github.com/ml5js/ml5-library/tree/development/examples/p5js/CharRNN/CharRNN_Text) is a complete example using the [p5.js](https://p5js.org) library.
 
 ## Syntax
 

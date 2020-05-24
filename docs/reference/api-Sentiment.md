@@ -11,7 +11,7 @@ order: 1
 
 examples:
   - title: Sentiment Analysis trained on movie reviews
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/Sentiment
+    github: https://github.com/ml5js/ml5-library/tree/development/examples/p5js/Sentiment
     demo: https://ml5js.github.io/ml5-examples/p5js/Sentiment
     code: >-
       let sentiment;
