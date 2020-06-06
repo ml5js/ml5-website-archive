@@ -77,6 +77,7 @@ const BLMSolidarityModal = () => {
             Please consider donating to <a href="https://bailfunds.github.io/">your local bail fund</a>,
             <a href="https://codecooperative.org/">Code Cooperative</a>, 
             <a href="https://emergencyreleasefund.com/">Emergency Release Fund</a>,
+            <a href="https://spny.wedid.it/campaigns/7636/contribute">Survived & Punished Mutual Aid Fund</a>,
             <a href="https://www.gofundme.com/f/9v4q2-justice-for-breonna-taylor">Justice for Breonna Taylor</a>,
             <a href="https://www.gofundme.com/f/georgefloyd">George Floyd Memorial Fund</a>,
             and
