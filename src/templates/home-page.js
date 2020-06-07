@@ -49,8 +49,9 @@ const BLMSolidarityModal = () => {
         <main class="modal-main" style={{maxHeight:"200px",
           overflowY:"scroll", marginBottom:"1rem"}}>
           <p style={{marginBottom:"1rem"}}>
-            George Floyd, Natosha McDade, Yassin Mohamed, Finan H. Berhe, Sean
-            Reed, Steven Demarco Taylor, Breonna Taylor, Ariane McCree, Terrance
+            George Floyd, Tony McDade, Regis Korchinski-Paquet, Nina Pop, Monika
+            Diamond, Yassin Mohamed, Finan H. Berhe, Sean Reed, Steven Demarco 
+            Taylor, Breonna Taylor, Ariane McCree, Terrance
             Franklin, Miles Hall, Darius Tarver, William Green, Samuel David
             Mallard, Kwame Jones, De’von Bailey, Christopher Whitfield, Anthony
             Hill, De’Von Bailey, Eric Logan, Jamarion Robinson, Gregory Hill Jr,
@@ -73,13 +74,14 @@ const BLMSolidarityModal = () => {
           </p>
         </main>
         <p style={{marginBottom:"1rem"}}>
-            Please consider donating to <a href="https://blacklivesmatter.com/" noreferrer>Black Lives Matter</a>, 
-            <a href="https://www.naacpldf.org/" noreferrer>The NAACP Legal Defense and Educational Fund</a>, 
-            <a href="https://eji.org/">The Equal Justice Initiative</a>, 
-            <a href="https://www.wetheprotesters.org/">We The Protesters and Campaign Zero</a>,
-            <a href="https://codecooperative.org/">Code Cooperative</a>,
-             and 
-            <a href="https://www.gofundme.com/f/georgefloyd"> George Floyd Memorial Fund</a>.
+            Please consider donating to <a href="https://bailfunds.github.io/">your local bail fund</a>,
+            <a href="https://codecooperative.org/">Code Cooperative</a>, 
+            <a href="https://emergencyreleasefund.com/">Emergency Release Fund</a>,
+            <a href="https://spny.wedid.it/campaigns/7636/contribute">Survived & Punished Mutual Aid Fund</a>,
+            <a href="https://www.gofundme.com/f/9v4q2-justice-for-breonna-taylor">Justice for Breonna Taylor</a>,
+            <a href="https://www.gofundme.com/f/georgefloyd">George Floyd Memorial Fund</a>,
+            and
+            <a href="https://m4bl.org/"Movement for Black Lives</a>. 
         </p>
         <button aria-label="Close" style={{
           border:"1px solid yellow",
