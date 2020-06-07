@@ -81,7 +81,7 @@ const BLMSolidarityModal = () => {
             <a href="https://www.gofundme.com/f/9v4q2-justice-for-breonna-taylor">Justice for Breonna Taylor</a>,
             <a href="https://www.gofundme.com/f/georgefloyd">George Floyd Memorial Fund</a>,
             and
-            <a href="https://m4bl.org/"Movement for Black Lives</a>. 
+            <a href="https://m4bl.org/">Movement for Black Lives</a>. 
         </p>
         <button aria-label="Close" style={{
           border:"1px solid yellow",
