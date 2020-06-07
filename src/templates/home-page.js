@@ -49,9 +49,9 @@ const BLMSolidarityModal = () => {
         <main class="modal-main" style={{maxHeight:"200px",
           overflowY:"scroll", marginBottom:"1rem"}}>
           <p style={{marginBottom:"1rem"}}>
-            George Floyd, Tony McDade, Regis Korchinski-Paquet, Nina Pop, Monika
-            Diamond, Yassin Mohamed, Finan H. Berhe, Sean Reed, Steven Demarco 
-            Taylor, Breonna Taylor, Ariane McCree, Terrance
+            George Floyd, Ahmaud Arbery, Tony McDade, Regis Korchinski-Paquet, Nina Pop, 
+            Monika Diamond, Yassin Mohamed, Finan H. Berhe, Sean Reed, Steven Demarco 
+            Taylor, Breonna Taylor, Sandra Bland, David McAtee, Ariane McCree, Terrance 
             Franklin, Miles Hall, Darius Tarver, William Green, Samuel David
             Mallard, Kwame Jones, De’von Bailey, Christopher Whitfield, Anthony
             Hill, De’Von Bailey, Eric Logan, Jamarion Robinson, Gregory Hill Jr,
