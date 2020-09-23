@@ -22,7 +22,7 @@ export default class ReferenceIndexPage extends React.Component {
               <div className="reference__wrapper">
                 {/* <ModelListCards /> */}
                 <p>Hello! We are currently updating our website.</p>
-                <p>The latest documentation on Getting Started with ml5 can be found here: <a href="https://ml5js.github.io/ml5-library/docs/#/reference/index">ml5 references</a></p>
+                <p>The latest documentation on Getting Started with ml5 can be found here: <a href="https://learn.ml5js.org/#/reference/index">ml5 references</a></p>
               </div>
             </article>
           </div>
