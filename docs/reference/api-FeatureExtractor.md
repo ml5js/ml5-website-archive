@@ -16,8 +16,8 @@ description: >-
 
 examples:
   - title: Feature Extractor for Image Classification
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/FeatureExtractor/FeatureExtractor_Image_Classification
-    demo: https://ml5js.github.io/ml5-examples/p5js/FeatureExtractor/FeatureExtractor_Image_Classification
+    github: https://github.com/ml5js/ml5-library/tree/main/examples/p5js/FeatureExtractor/FeatureExtractor_Image_Classification
+    demo: https://examples.ml5js.org/p5js/FeatureExtractor/FeatureExtractor_Image_Classification
     code: >-  
       let featureExtractor;
       let classifier;
@@ -165,9 +165,9 @@ classifier.classify(document.getElementById("dogB"), function(err, result) {
 });
 ```
 
-[Here](https://github.com/ml5js/ml5-examples/blob/master/p5js/FeatureExtractor/FeatureExtractor_Image_Regression/sketch.js) is a complete example to create a custom regression.
+[Here](https://github.com/ml5js/ml5-library/blob/main/examples/p5js/FeatureExtractor/FeatureExtractor_Image_Regression/sketch.js) is a complete example to create a custom regression.
 
-[Here](https://github.com/ml5js/ml5-examples/blob/master/p5js/FeatureExtractor/FeatureExtractor_Image_Classification/sketch.js) is a complete example to create a custom classifier.
+[Here](https://github.com/ml5js/ml5-library/blob/main/examples/p5js/FeatureExtractor/FeatureExtractor_Image_Classification/sketch.js) is a complete example to create a custom classifier.
 
 ### Syntax
 
@@ -294,4 +294,4 @@ Boolean value to check if the model is predicting.
 
 ### Source
 
-[src/FeatureExtractor](https://github.com/ml5js/ml5-library/tree/release/src/FeatureExtractor)
+[src/FeatureExtractor](https://github.com/ml5js/ml5-library/tree/main/src/FeatureExtractor)

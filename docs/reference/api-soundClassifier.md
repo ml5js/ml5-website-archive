@@ -11,8 +11,8 @@ order: 0
 
 examples:
   - title: SoundClassifier "SpeechCommands18w"
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/SoundClassification/SoundClassification_speechcommand
-    demo: https://ml5js.github.io/ml5-examples/p5js/SoundClassification/SoundClassification_speechcommand/
+    github: https://github.com/ml5js/ml5-library/tree/main/examples/p5js/SoundClassification/SoundClassification_speechcommand
+    demo: https://examples.ml5js.org/p5js/SoundClassification/SoundClassification_speechcommand/
     code: >-
       // Initialize a sound classifier method with SpeechCommands18w model. A callback needs to be passed.
 
@@ -136,4 +136,4 @@ By default the soundClassifier will start the default microphone.
 
 ## Source
 
-[/src/SoundClassifier/](https://github.com/ml5js/ml5-library/tree/release/src/SoundClassifier)
+[/src/SoundClassifier/](https://github.com/ml5js/ml5-library/tree/main/src/SoundClassifier)

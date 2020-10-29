@@ -17,8 +17,8 @@ description: >-
 
 examples:
   - title: CharRNN Text Generator Example
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/CharRNN/CharRNN_Text
-    demo: https://ml5js.github.io/ml5-examples/p5js/CharRNN/CharRNN_Text
+    github: https://github.com/ml5js/ml5-library/tree/main/examples/p5js/CharRNN/CharRNN_Text
+    demo: https://examples.ml5js.org/p5js/CharRNN/CharRNN_Text
     code: >-
       // LSTM Generator example with p5.js
       // This uses a pre-trained model on a corpus of Virginia Woolf
@@ -121,7 +121,7 @@ rnn.generate({ seed: "the meaning of pizza is" }, function(err, results) {
 });
 ```
 
-[Here](https://github.com/ml5js/ml5-examples/tree/release/p5js/CharRNN/CharRNN_Text) is a complete example using the [p5.js](https://p5js.org) library.
+[Here](https://github.com/ml5js/ml5-library/tree/main/examples/p5js/CharRNN/CharRNN_Text) is a complete example using the [p5.js](https://p5js.org) library.
 
 ## Syntax
 
@@ -188,4 +188,4 @@ The vocabulary size (or total number of possible characters).
 
 ### Source
 
-[/src/charRNN/](https://github.com/ml5js/ml5-library/tree/release/src/CharRNN)
+[/src/charRNN/](https://github.com/ml5js/ml5-library/tree/main/src/CharRNN)

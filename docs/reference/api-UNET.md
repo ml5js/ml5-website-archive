@@ -12,8 +12,8 @@ order: 3
 
 examples:
   - title: UNET On Webcam
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/UNET/UNET_webcam
-    demo: https://ml5js.github.io/ml5-examples/p5js/UNET/UNET_webcam/
+    github: https://github.com/ml5js/ml5-library/tree/main/examples/p5js/UNET/UNET_webcam
+    demo: https://examples.ml5js.org/p5js/UNET/UNET_webcam/
     code: >-
       let video;
       let uNet;
@@ -125,5 +125,5 @@ ml5.uNet(model, ?callback)
 
 ## Source
 
-[/src/UNET/](https://github.com/ml5js/ml5-library/tree/release/src/UNET)
+[/src/UNET/](https://github.com/ml5js/ml5-library/tree/main/src/UNET)
 

@@ -11,8 +11,8 @@ order: 1
 
 examples:
   - title: Sentiment Analysis trained on movie reviews
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/Sentiment
-    demo: https://ml5js.github.io/ml5-examples/p5js/Sentiment
+    github: https://github.com/ml5js/ml5-library/tree/main/examples/p5js/Sentiment
+    demo: https://examples.ml5js.org/p5js/Sentiment
     code: >-
       let sentiment;
       let statusEl;
@@ -116,4 +116,4 @@ currently the supported model name is 'moviereviews'. ml5 may support different 
 
 ## Source
 
-[/src/Sentiment/](https://github.com/ml5js/ml5-library/tree/release/src/Sentiment)
+[/src/Sentiment/](https://github.com/ml5js/ml5-library/tree/main/src/Sentiment)
