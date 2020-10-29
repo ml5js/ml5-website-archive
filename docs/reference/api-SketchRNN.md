@@ -12,8 +12,8 @@ order: 8
 
 examples:
   - title: SketchRNN Basic
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/SketchRNN/SketchRNN_basic
-    demo: https://ml5js.github.io/ml5-examples/p5js/SketchRNN/SketchRNN_basic
+    github: https://github.com/ml5js/ml5-library/tree/main/examples/p5js/SketchRNN/SketchRNN_basic
+    demo: https://examples.ml5js.org/p5js/SketchRNN/SketchRNN_basic
     code: >-
       // The SketchRNN model
 
@@ -124,7 +124,7 @@ function gotSketch(err, result) {
 }
 ```
 
-Here is [a complete example](https://github.com/ml5js/ml5-examples/tree/release/p5js/SketchRNN/SketchRNN_basic).
+Here is [a complete example](https://github.com/ml5js/ml5-library/tree/main/examples/p5js/SketchRNN/SketchRNN_basic).
 
 ## Syntax
 
@@ -168,4 +168,4 @@ ml5.SketchRNN(model, ?callback)
 
 ## Source
 
-[/src/SketchRNN/](https://github.com/ml5js/ml5-library/tree/release/src/SketchRNN)
+[/src/SketchRNN/](https://github.com/ml5js/ml5-library/tree/main/src/SketchRNN)

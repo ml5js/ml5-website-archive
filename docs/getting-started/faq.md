@@ -34,4 +34,4 @@ draft: false
 
 ### How can I contribute?
 
-> Please refer to the contributor documentation [on Github](https://github.com/ml5js/ml5-library/blob/development/CONTRIBUTING.md).
+> Please refer to the contributor documentation [on Github](https://github.com/ml5js/ml5-library/blob/main/CONTRIBUTING.md).
