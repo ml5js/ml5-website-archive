@@ -109,6 +109,29 @@ module.exports = {
             }
           },
           {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+              name: `ml5.js - Friendly machine learning for the web.`,
+              short_name: `ml5.js`,
+              start_url: `/`,
+              theme_color: `#A256FF`,
+              display: `standalone`,
+              icon: `src/img/favicon.png`,
+              icons: [
+                {
+                  src: `src/img/favicon-192px.png`,
+                  sizes: `192x192`,
+                  type: `image/png`,
+                },
+                {
+                  src: `src/img/favicon-512px.png`,
+                  sizes: `512x512`,
+                  type: `image/png`,
+                },
+              ], // Add or remove icon sizes as desired
+            },
+          },
+          {
             resolve: "gatsby-remark-images",
             options: {
               // It's important to specify the maxWidth (in pixels) of
