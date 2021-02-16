@@ -130,4 +130,4 @@ ml5.DCGAN(?modelPath, ?callback)
 
 ## Source
 
-[/src/DCGAN/](https://github.com/ml5js/ml5-library/tree/release/src/DCGAN)
+[/src/DCGAN/](https://github.com/ml5js/ml5-library/tree/main/src/DCGAN)
