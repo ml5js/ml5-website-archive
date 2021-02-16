@@ -11,8 +11,8 @@ order: 2
 
 examples:
   - title: BodyPix Webcam
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/BodyPix
-    demo: https://ml5js.github.io/ml5-examples/p5js/BodyPix/BodyPix_Webcam/
+    github: https://github.com/ml5js/ml5-library/tree/main/examples/p5js/BodyPix
+    demo: https://examples.ml5js.org/p5js/BodyPix/BodyPix_Webcam/
     code: >-
       let bodypix;
       let video;
@@ -243,4 +243,4 @@ ml5.bodyPix(?video, ?options, ?callback)
 
 ## Source
 
-[/src/BodyPix/](https://github.com/ml5js/ml5-library/tree/release/src/BodyPix)
+[/src/BodyPix/](https://github.com/ml5js/ml5-library/tree/main/src/BodyPix)

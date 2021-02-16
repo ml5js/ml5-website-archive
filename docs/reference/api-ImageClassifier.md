@@ -14,8 +14,8 @@ order: 0
 
 examples:
   - title: Image classifier on image
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/ImageClassification/ImageClassification
-    demo: https://ml5js.github.io/ml5-examples/p5js/ImageClassification/ImageClassification
+    github: https://github.com/ml5js/ml5-library/tree/main/examples/p5js/ImageClassification/ImageClassification
+    demo: https://examples.ml5js.org/p5js/ImageClassification/ImageClassification
     code: >-
       // Initialize the Image Classifier method with MobileNet. A callback needs to be passed.
       
@@ -50,8 +50,8 @@ examples:
       }
 
   - title: Image classifier on video
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/ImageClassification/ImageClassification_Video
-    demo: https://ml5js.github.io/ml5-examples/p5js/ImageClassification/ImageClassification_Video
+    github: https://github.com/ml5js/ml5-library/tree/main/examples/p5js/ImageClassification/ImageClassification_Video
+    demo: https://examples.ml5js.org/p5js/ImageClassification/ImageClassification_Video
     code: >-
       let classifier;
       let video;
@@ -112,7 +112,7 @@ classifier.predict(document.getElementById('image'), function(err, results) {
 });
 ```
 
-[Here](https://github.com/ml5js/ml5-examples/blob/master/p5js/ImageClassification/ImageClassification/sketch.js) is a complete example using the [p5.js](https://p5js.org/) library for loading and displaying the image.
+[Here](https://github.com/ml5js/ml5-library/blob/main/examples/p5js/ImageClassification/ImageClassification/sketch.js) is a complete example using the [p5.js](https://p5js.org/) library for loading and displaying the image.
 
 ## Syntax
   ```javascript
@@ -184,4 +184,4 @@ classifier.predict(document.getElementById('image'), function(err, results) {
 
 ## Source
 
-[/src/ImageClassifier](https://github.com/ml5js/ml5-library/tree/release/src/ImageClassifier)
+[/src/ImageClassifier](https://github.com/ml5js/ml5-library/tree/main/src/ImageClassifier)

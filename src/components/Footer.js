@@ -29,12 +29,12 @@ const Footer = class extends React.Component {
                     </span>
                   </li>
                   <li>
-                    <a className="Footer__item" href="https://learn.ml5js.org/docs/#/">
+                    <a className="Footer__item" href="https://learn.ml5js.org">
                       Getting Started
                     </a>
                   </li>
                   <li>
-                    <a className="Footer__item" href="https://learn.ml5js.org/docs/#/reference/index">
+                    <a className="Footer__item" href="https://learn.ml5js.org/#/reference/index">
                       API Reference
                     </a>
                   </li>

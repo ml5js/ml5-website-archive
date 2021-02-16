@@ -11,8 +11,8 @@ order: 1
 
 examples:
   - title: KNN Classfication on video
-    github: https://github.com/ml5js/ml5-examples/tree/release/p5js/KNNClassification/KNNClassification_Video
-    demo: https://ml5js.github.io/ml5-examples/p5js/KNNClassification/KNNClassification_Video
+    github: https://github.com/ml5js/ml5-library/tree/main/examples/p5js/KNNClassification/KNNClassification_Video
+    demo: https://examples.ml5js.org/p5js/KNNClassification/KNNClassification_Video
     code: >-
       let video;
       // Create a KNN classifier
@@ -202,7 +202,7 @@ This class allows you to create a classifier using the [K-Nearest Neighbors](htt
 
 For example, you could get features of an image by calling `FeatureExtractor.infer()`, and feed the features to KNNClassifier to classify an image.
 
-You can also collect any kind of data, construct them into an array of numbers and feed them to KNNClassifier. Check out this [example](https://github.com/ml5js/ml5-examples/tree/release/p5js/KNNClassification/KNNClassification_PoseNet
+You can also collect any kind of data, construct them into an array of numbers and feed them to KNNClassifier. Check out this [example](https://github.com/ml5js/ml5-library/tree/main/examples/p5js/KNNClassification/KNNClassification_PoseNet
 
 ) that uses KNNClassifier to classify data from [PoseNet](https://ml5js.org/reference/api-PoseNet/) model.
 
@@ -229,7 +229,7 @@ knnClassifier.classify(features, function(err, result) {
 });
 ```
 
-[Here](https://github.com/ml5js/ml5-examples/tree/master/p5js/KNNClassification/KNNClassification_Video) is a complete example to create a customizable classifier on live webcam images.
+[Here](https://github.com/ml5js/ml5-library/tree/main/examples/p5js/KNNClassification/KNNClassification_Video) is a complete example to create a customizable classifier on live webcam images.
 
 ## Syntax
 
@@ -316,4 +316,4 @@ ml5.KNNClassifier();
 
 ## Source
 
-[/src/KNNClassifier/](https://github.com/ml5js/ml5-library/tree/release/src/KNNClassifier)
+[/src/KNNClassifier/](https://github.com/ml5js/ml5-library/tree/main/src/KNNClassifier)
