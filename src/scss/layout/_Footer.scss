@@ -11,8 +11,9 @@
   }
 
   a:hover {
-    color: $secondary-font-color;
-    // background: white;
+    // color: $secondary-font-color;
+    color: #fff;
+    text-decoration: underline;
   }
 }
 
