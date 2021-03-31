@@ -74,14 +74,13 @@ const BLMSolidarityModal = () => {
           </p>
         </main>
         <p style={{marginBottom:"1rem"}}>
-            Please consider donating to <a href="https://bailfunds.github.io/">your local bail fund</a>,&nbsp;
-            <a href="https://codecooperative.org/">Code Cooperative</a>,&nbsp;
-            <a href="https://emergencyreleasefund.com/">Emergency Release Fund</a>,&nbsp;
-            <a href="https://spny.wedid.it/campaigns/7636/contribute">Survived & Punished Mutual Aid Fund</a>,&nbsp;
-            <a href="https://www.gofundme.com/f/9v4q2-justice-for-breonna-taylor">Justice for Breonna Taylor</a>,&nbsp;
-            <a href="https://www.gofundme.com/f/georgefloyd">George Floyd Memorial Fund</a>,&nbsp;
-            and
-            <a href="https://m4bl.org/">Movement for Black Lives</a>. 
+            Please consider donating to <a style={{color:"#A15FFB"}} href="https://bailfunds.github.io/">your local bail fund</a>,&nbsp;
+            <a style={{color:"#A15FFB"}} href="https://codecooperative.org/">Code Cooperative</a>,&nbsp;
+            <a style={{color:"#A15FFB"}} href="https://emergencyreleasefund.com/">Emergency Release Fund</a>,&nbsp;
+            <a style={{color:"#A15FFB"}} href="https://spny.wedid.it/campaigns/7636/contribute">Survived & Punished Mutual Aid Fund</a>,&nbsp;
+            <a style={{color:"#A15FFB"}} href="https://www.gofundme.com/f/9v4q2-justice-for-breonna-taylor">Justice for Breonna Taylor</a>,&nbsp;
+            <a style={{color:"#A15FFB"}} href="https://www.gofundme.com/f/georgefloyd">George Floyd Memorial Fund</a>&nbsp;and&nbsp;
+            <a style={{color:"#A15FFB"}} href="https://m4bl.org/">Movement for Black Lives</a>. 
         </p>
         <button aria-label="Close" style={{
           border:"1px solid yellow",
