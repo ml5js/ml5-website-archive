@@ -7,7 +7,7 @@
 pre code {
   font-family: $monospace-font-family !important;
   background-color: #f9f9f9;
-  color: #444444 !important;
+  color: #212121 !important;
   font-size: $font-size-paragraph !important;
 }
 
@@ -26,12 +26,12 @@ code .keyword,
 pre .comment,
 code .comment,
 .hljs-comment {
-  color: #999999 !important;
+  color: #707070 !important;
 } /* comment */
 pre .function,
 code .function,
 .hljs-built_in {
-  color: #6db51e !important;
+  color: #1E8025 !important;
 } /* type */
 pre .number,
 code .number {
@@ -39,7 +39,7 @@ code .number {
 } /* literal */
 pre .operator,
 code .operator {
-  color: #888888 !important;
+  color: #212121 !important;
 } /* punctuation */
 pre .tag,
 code .tag {
