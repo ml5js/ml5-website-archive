@@ -12,7 +12,7 @@ order: 1
 examples:
   - title: Sentiment Analysis trained on movie reviews
     github: https://github.com/ml5js/ml5-library/tree/main/examples/p5js/Sentiment
-    demo: https://examples.ml5js.org/p5js/Sentiment
+    demo: https://examples.ml5js.org/p5js/sentiment/sentiment_interactive/
     code: >-
       let sentiment;
       let statusEl;
