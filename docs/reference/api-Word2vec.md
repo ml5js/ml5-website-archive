@@ -12,7 +12,7 @@ order: 2
 examples:
   - title: Word2Vec Demo
     github: https://github.com/ml5js/ml5-library/tree/main/examples/p5js/Word2Vec
-    demo: https://examples.ml5js.org/p5js/Word2Vec
+    demo: https://examples.ml5js.org/p5js/word2vec/word2vec_interactive/
     code: >-
       let word2Vec;
 
