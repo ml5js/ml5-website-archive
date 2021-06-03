@@ -37,6 +37,14 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 
 ## Updating Instructions
 
+### markdown source files
+
+- [docs/index.md](https://github.com/ml5js/ml5-website-2/blob/master/docs/index.md): home page content
+- [docs/getting-started/](https://github.com/ml5js/ml5-website-2/tree/master/docs/getting-started): Getting start docs, sorted by file names, except index.md
+- [docs/reference/](https://github.com/ml5js/ml5-website-2/tree/master/docs/reference): API documentation, no sorting
+- [docs/community/](https://github.com/ml5js/ml5-website-2/tree/master/docs/community): Experiments, currently feature image doesn't support gif and svg files
+- [docs/about.md](https://github.com/ml5js/ml5-website-2/blob/master/docs/about.md): about page content
+
 ### markdown templates
 
 - [getting-start markdown template](<https://github.com/ml5js/ml5-website-2/blob/master/markdown_templates/model(reference)-markdown-template.md>)
@@ -50,6 +58,7 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 
 ### Assets
 
+- [docs/assets](https://github.com/ml5js/ml5-website-2/tree/master/docs/assets): markdown file assets, use relative path `../assets/` or `./assets/` to embed in markdown files.
 - [src/img](https://github.com/ml5js/ml5-website-2/tree/master/src/img): site assets, logos, social platform icons
 - [static/img](https://github.com/ml5js/ml5-website-2/tree/master/static/assets/img)(**depracated**): images that used in templates
 
