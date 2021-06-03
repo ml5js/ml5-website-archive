@@ -5,11 +5,10 @@
 @import "./base/base", "./base/font", "./base/typography",
   "./base/syntaxHighlight";
 
-@import "./layout/Navbar", "./layout/Sidebar", "./layout/wrapper",
+@import "./layout/Navbar", "./layout/wrapper",
   "./layout/GridContainer", "./layout/Section", "./layout/Footer",
   "./layout/Container", "./layout/ml5Grid";
 
-@import "./components/ModelList", "./components/TagList", "./components/Post",
-  "./components/Button", "./components/Tab", "./components/Burger";
+@import "./components/Post", "./components/Button", "./components/Burger";
 
-@import "./pages/home", "./pages/reference", "./pages/community";
+@import "./pages/home", "./pages/community";
