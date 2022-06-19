@@ -1,36 +1,17 @@
 .GridContainer {
-  // display: flex;
-  // flex-grow: 0.5;
-  // padding-left: 1.5rem;
-  // padding-right: 1.5rem;
-  // flex-wrap: wrap;
-  display: grid;
-  grid-gap: $gutter;
-  grid-auto-flow: column;
+  display: flex;
+  gap: $gutter;
 
   @include mobile-only() {
-    grid-auto-flow: row;
+    flex-direction: column;
   }
 
   &--vertical {
-    grid-auto-flow: row;
+    flex-direction: column;
   }
 
   &--center {
     text-align: center;
-  }
-
-  &--homeUpdate {
-    flex-direction: column;
-    width: 60%;
-    padding: 60px;
-    margin: auto;
-  }
-
-  &--hometeam {
-    flex-direction: column;
-    width: 50%;
-    // margin: auto;
   }
 }
 
@@ -38,4 +19,7 @@
   flex-grow: 1;
   flex-basis: 0;
   padding: 0 $gutter;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
