@@ -122,9 +122,7 @@ export default () => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 1440, quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
+                    gatsbyImageData(quality: 100, layout: FULL_WIDTH)
                   }
                 }
               }
@@ -133,6 +131,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <BlogRoll data={data} count={count} />}
+    render={(data) => <BlogRoll data={data}/>}
   />
 );

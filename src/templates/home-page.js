@@ -16,7 +16,7 @@ const BLMSolidarityModal = () => {
 
   return (
     <div
-      class="modal-container"
+      className="modal-container"
       style={{
         display: display.display === true ? "flex" : "none",
         flexDirection:"column",
@@ -31,7 +31,7 @@ const BLMSolidarityModal = () => {
         backgroundColor: "rgba(0,0,0,0.85)",
       }}
     >
-      <div class="modal" style={{
+      <div className="modal" style={{
           maxWidth:"800px",
           padding:"1rem",
           borderRadius: "4px",
@@ -41,12 +41,12 @@ const BLMSolidarityModal = () => {
           margin:"0 auto",
           border:"2px solid yellow",
         }}>
-        <header class="modal-header">
+        <header className="modal-header">
           <h1 style={{maxWidth:"600px", color:"#A15FFB"}}>
             The ml5.js community stands in solidarity with Black Lives Matter.
           </h1>
         </header>
-        <main class="modal-main" style={{maxHeight:"200px",
+        <main className="modal-main" style={{maxHeight:"200px",
           overflowY:"scroll", marginBottom:"1rem"}}>
           <p style={{marginBottom:"1rem"}}>
             Breonna Taylor, George Floyd, Ahmaud Arbery, Tony McDade, Regis Korchinski-Paquet, Nina Pop, 
@@ -260,9 +260,7 @@ export const pageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
               }
             }
             text
@@ -273,9 +271,7 @@ export const pageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
               }
             }
             text
@@ -287,9 +283,14 @@ export const pageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(
+                  width: 240,
+                  aspectRatio: 2,
+                  quality: 64,
+                  layout: CONSTRAINED,
+                  backgroundColor: "#FFFFFF",
+                  transformOptions: { fit: CONTAIN, trim: 10 }
+                 )
               }
             }
             text
@@ -300,9 +301,7 @@ export const pageQuery = graphql`
         team {
           image {
             childImageSharp {
-              fluid(maxWidth: 240, quality: 64) {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
             }
           }
           heading
