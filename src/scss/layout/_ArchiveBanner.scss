@@ -1,0 +1,38 @@
+$ArchiveBanner-background-color: #f0f0f0 !default; // Light gray background
+$ArchiveBanner-text-color: #333 !default; // Dark gray text
+
+.ArchiveBanner {
+  width: 100%;
+  background-color: $ArchiveBanner-background-color;
+  color: $ArchiveBanner-text-color;
+  cursor:pointer;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid darken($ArchiveBanner-background-color, 10%);
+  border-bottom: 1px solid darken($ArchiveBanner-background-color, 10%);
+
+  p {
+    margin: 0 auto;
+    max-width: 800px; // Adjust this value as needed
+    line-height: 1.4;
+  }
+
+  a {
+    color: $purple;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: darken($purple, 15%);
+    }
+  }
+}
+
+// Add responsive adjustments if needed
+@media (max-width: 768px) {
+  .ArchiveBanner {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
+  }
+}

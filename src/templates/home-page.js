@@ -116,7 +116,7 @@ export const HomePageTemplate = ({
       }}
     >
       <div className="home__overlay" />
-      <Link style={{ zIndex: "9" }} to="https://learn.ml5js.org/#/">
+      <Link style={{ zIndex: "9" }} to="https://archive-docs.ml5js.org/#/">
         {/* heading */}
         <h2
           style={{
@@ -151,7 +151,7 @@ export const HomePageTemplate = ({
     <section className="home__container home__gridContainer">
       <div className="home__gridItem--6out12">
         <h2 className="Button__wrapper">
-          <Link className="Button" to="https://learn.ml5js.org/#/">
+          <Link className="Button" to="https://archive-docs.ml5js.org/#/">
             Get started with ml5.js
           </Link>
         </h2>
