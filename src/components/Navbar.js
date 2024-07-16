@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import ArchiveBanner from "./ArchiveBanner";
 import github from "../img/github-icon.svg";
 import logo from "../img/ml5_logo_purple.png";
 
@@ -13,27 +14,21 @@ const Navbar = class extends React.Component {
   }
 
   toggleHamburger = () => {
-    // toggle the active boolean in the state
     this.setState(
       {
         active: !this.state.active
       },
-      // after state has been updated,
       () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: "is-active"
-            })
-          : this.setState({
-              navBarActiveClass: ""
-            });
+        this.setState({
+          navBarActiveClass: this.state.active ? "is-active" : ""
+        });
       }
     );
   };
 
   render() {
     return (
+      <div className="Navbar__container">
       <nav className="Navbar" role="navigation" aria-label="main-navigation">
         <div className={`Navbar__wrapper ${this.state.navBarActiveClass}`}>
           <div className="Navbar__brand">
@@ -65,14 +60,14 @@ const Navbar = class extends React.Component {
               <a
                 className="Navbar__item"
                 activeclassname="is-active"
-                href="https://learn.ml5js.org/"
+                href="https://archive-docs.ml5js.org/#/"
               >
                 Getting Started
               </a>
               <a
                 className="Navbar__item"
                 activeclassname="is-active"
-                href="https://learn.ml5js.org/#/reference/index"
+                href="https://archive-docs.ml5js.org/#/reference/index"
               >
                 Reference
               </a>
@@ -119,6 +114,8 @@ const Navbar = class extends React.Component {
           </div>
         </div>
       </nav>
+      <ArchiveBanner />
+      </div>
     );
   }
 };

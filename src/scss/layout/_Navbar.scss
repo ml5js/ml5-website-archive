@@ -1,28 +1,28 @@
 $Navbar-background-color: white !default;
 $Navbar-breakpoint: $tablet !default;
 
-.Navbar {
+.Navbar__container {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  min-height: $Navbar-height;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
 
+.Navbar {
+  min-height: $Navbar-height;
   display: flex;
   align-items: stretch;
-
   background-color: $Navbar-background-color;
-
-  z-index: 10;
 }
 
 .Navbar__wrapper {
   display: block;
-  width: 100vw;
-  // padding-top: 0.8rem;
+  width: 100%;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  // padding-bottom: 0.8rem;
   min-height: $Navbar-height;
 
   @include tablet-up() {
