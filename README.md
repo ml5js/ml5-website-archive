@@ -1,39 +1,14 @@
-# New ml5 website
+# ml5-website-archive
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors)
-
-## Description
-
-This is the experimental repo for a ml5 website redesign! ml5.js is a library for beginners and creative coders. We want to create a website that is usable, embeds concepts around critical ML research, and can be easily adapted as the project grows.
-
-See below for our roadmap and how to get involved in the project.
-
-## Road Map
-
-Here is what we are currently working on:
-
-- **Creating a centralized reference page**
-
-  We want to create one documentation page that lists all of the objects in the library and their methods (see [p5.js](https://p5js.org/reference/) for reference). When users click on a method, it should link to example pages with contain more of an explanation, code with details, and demo for how to use.
-
-- **Fleshing Out Tutorials**
-
-  The tutorials page will contain step-by-step information for how to create projects using ml5.js. It will include videos and more in-depth text, and will be an opportunity to pull together projects that use multiple objects, as well as a chance to fold in topics related to ethics and more critical situatings of ml technologies.
-
-  We also want to find a way of tagging tutorials with their level of difficulty/
-
-- **Glossary**
-
-  We want to revisit the glossary, and make sure that we only define terms that people coding with ml5.js would come across while using the examples and references on the site. With this in mind, we are planning on building the glossary after we've worked out the reference and tutorials pages.
-
-  We also plan to have a tooltip glossary function, so that when people mouseover over a word that they don't know, the definition (maybe pulling from the glossary page), the definition will show up on hover.
-
-# ml5.js website 2.0
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/924e3469-3080-465f-a02b-26600b91c69b/deploy-status)](https://app.netlify.com/sites/ml5-website-2/deploys)
 
-This repo contains ml5.js website 2.0 that is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://www.netlifycms.org): **[Preview Link](https://ml5-website-2.netlify.com/)**.
+This repo contains the legacy version of ml5.js website that is built with [Gatsby](https://www.gatsbyjs.org/) and [Netlify CMS](https://www.netlifycms.org). This website hosted at [archive.ml5js.org](https://archive.ml5js.org).
 
-It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
+ > [!WARNING]
+ > This repository is now archived. The latest ml5.js website is hosted at [ml5js.org](https://ml5js.org) and its source code is available at [ml5-website-v02-gatsby](https://github.com/ml5js/ml5-website-v02-gatsby).
+
 
 ## Updating Instructions
 
@@ -60,21 +35,24 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 
 ## Prerequisites
 
-- Node (I recommend using v8.2.0 or higher)
+- Node
+  - version: `v10.19.0`
+  - Recommend using [nvm](https://github.com/nvm-sh/nvm)
 - [Gatsby CLI](https://www.gatsbyjs.org/docs/)
 
 ### Access Locally
 
-```
+```console
 $ git clone https://github.com/[GITHUB_USERNAME]/[REPO_NAME].git
 $ cd [REPO_NAME]
+$ nvm install // if you have nvm installed
 $ npm i
 $ npm run start
 ```
 
 To test the CMS locally, you'll need run a production build of the site:
 
-```
+```console
 $ npm run build
 $ npm run serve
 ```
@@ -88,7 +66,3 @@ Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick
 ```
 $ netlify dev # or ntl dev
 ```
-
-## Contributors
-
-* See: [ml5 contributors](https://github.com/ml5js/ml5-library#contributors)
